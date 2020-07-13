@@ -12,14 +12,14 @@
     </item>
 
     <item
-        android:id="@+id/like"
+        android:id="@+id/quiz"
         android:icon="@drawable/ic_baseline_extension_24"
         android:title="Quiz"
         app:cnb_iconColor = "@color/text_colour">
     </item>
 
     <item
-        android:id="@+id/search"
+        android:id="@+id/fun_facts"
         android:icon="@drawable/ic_baseline_live_tv_24"
         android:title="Fun Facts"
         app:cnb_iconColor = "@color/text_colour">
