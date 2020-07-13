@@ -4,8 +4,7 @@
     <color name="colorPrimaryDark">#ffffff</color>
     <color name="colorAccent">@color/text_colour</color>
 
-    <color name="brown">#D84315</color>
-    <color name="brown_light">#b35e3a</color>
+
     <color name="background">#EAC8B4</color>
     <color name="text_colour">#E65100</color>
 
