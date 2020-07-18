@@ -62,8 +62,6 @@
 
         </com.google.android.material.card.MaterialCardView>
 
-
-
     <LinearLayout
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
@@ -75,6 +73,8 @@
 
 
     <com.google.android.material.card.MaterialCardView
+        android:focusable="true"
+        android:id="@+id/numbers_card"
         android:clickable="true"
         app:rippleColor="@color/white_colour"
         android:layout_marginRight="20dp"
@@ -302,6 +302,7 @@
         android:layout_height="wrap_content">
 
     </androidx.recyclerview.widget.RecyclerView>
+
 
 
 

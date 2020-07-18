@@ -7,6 +7,15 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="Activities" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@android:color/transparent</item>
+        <item name="colorPrimaryDark">@color/text_colour</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+
 
 
 </resources>
