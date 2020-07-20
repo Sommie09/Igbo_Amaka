@@ -9,14 +9,15 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.igboamaka.alphabets.Alphabets;
+import com.example.igboamaka.alphabets.AlphabetsActivity;
 import com.example.igboamaka.colors.ColoursActivity;
 import com.example.igboamaka.numbers.NumbersActivity;
 import com.google.android.material.card.MaterialCardView;
 
 
 public class HomeFragment extends Fragment {
-    MaterialCardView numbersCard;
-    MaterialCardView coloursCard;
+    MaterialCardView numbersCard, coloursCard, alphabetCard;
 
 
     public HomeFragment() {
@@ -44,6 +45,15 @@ public class HomeFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getContext(), ColoursActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        alphabetCard = rootView.findViewById(R.id.alphabet_card);
+        alphabetCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getContext(), AlphabetsActivity.class);
                 startActivity(intent);
             }
         });

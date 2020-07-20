@@ -107,6 +107,7 @@
 
     <com.google.android.material.card.MaterialCardView
         android:clickable="true"
+        android:id="@+id/alphabet_card"
         app:rippleColor="@color/white_colour"
         app:cardBackgroundColor="@color/red"
         app:cardCornerRadius="15dp"
@@ -114,7 +115,8 @@
         android:layout_width="150dp"
         android:layout_height="140dp"
         tools:layout_editor_absoluteX="215dp"
-        tools:layout_editor_absoluteY="165dp" >
+        tools:layout_editor_absoluteY="165dp"
+        android:focusable="true">
 
         <TextView
             android:layout_width="wrap_content"

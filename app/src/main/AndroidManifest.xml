@@ -9,15 +9,21 @@
         android:roundIcon="@mipmap/ic_launcher_igbo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".alphabets.AlphabetsActivity"></activity>
+        <activity
+            android:name=".alphabets.AlphabetsActivity"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/Activities">
+        </activity>
         <activity
             android:name=".colors.ColoursActivity"
             android:parentActivityName=".MainActivity"
-            android:theme="@style/Activities"></activity>
+            android:theme="@style/Activities">
+        </activity>
         <activity
             android:name=".numbers.NumbersActivity"
             android:parentActivityName=".MainActivity"
-            android:theme="@style/Activities"></activity>
+            android:theme="@style/Activities">
+        </activity>
         <activity android:name=".SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -25,7 +31,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".MainActivity">
+        </activity>
     </application>
 
 </manifest>
