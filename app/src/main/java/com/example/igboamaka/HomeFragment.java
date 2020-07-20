@@ -9,12 +9,15 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.igboamaka.colors.ColoursActivity;
 import com.example.igboamaka.numbers.NumbersActivity;
 import com.google.android.material.card.MaterialCardView;
 
 
 public class HomeFragment extends Fragment {
     MaterialCardView numbersCard;
+    MaterialCardView coloursCard;
+
 
     public HomeFragment() {
         // Required empty public constructor
@@ -27,11 +30,20 @@ public class HomeFragment extends Fragment {
         // Inflate the layout for this fragment
         View rootView = inflater.inflate(R.layout.fragment_home, container, false);
 
-        numbersCard = (MaterialCardView) rootView.findViewById(R.id.numbers_card);
+        numbersCard = rootView.findViewById(R.id.numbers_card);
         numbersCard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getContext(), NumbersActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        coloursCard = rootView.findViewById(R.id.colours_card);
+        coloursCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getContext(), ColoursActivity.class);
                 startActivity(intent);
             }
         });

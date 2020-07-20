@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    app:cnb_unselectedColor="@color/text_colour">
+    app:cnb_unselectedColor="@color/orange">
 
     <item
         android:id="@+id/home"
         android:icon="@drawable/ic_baseline_home_24"
         android:title="Home"
-        app:cnb_iconColor = "@color/text_colour">
+        app:cnb_iconColor = "@color/orange">
 
     </item>
 
@@ -15,14 +15,14 @@
         android:id="@+id/quiz"
         android:icon="@drawable/ic_baseline_extension_24"
         android:title="Quiz"
-        app:cnb_iconColor = "@color/text_colour">
+        app:cnb_iconColor = "@color/orange">
     </item>
 
     <item
         android:id="@+id/fun_facts"
         android:icon="@drawable/ic_baseline_live_tv_24"
         android:title="Fun Facts"
-        app:cnb_iconColor = "@color/text_colour">
+        app:cnb_iconColor = "@color/orange">
     </item>
 
 

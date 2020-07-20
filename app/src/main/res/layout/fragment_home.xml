@@ -27,7 +27,6 @@
     </TextView>
 
     <TextView
-        android:textColor="@color/text_colour"
         android:textStyle="bold"
         android:layout_marginStart="30dp"
         android:id="@+id/textView"
@@ -78,7 +77,7 @@
         android:clickable="true"
         app:rippleColor="@color/white_colour"
         android:layout_marginRight="20dp"
-        app:cardBackgroundColor="@color/text_colour"
+        app:cardBackgroundColor="@color/orange"
         app:cardCornerRadius="15dp"
         app:cardElevation="10dp"
         android:layout_width="150dp"
@@ -109,7 +108,7 @@
     <com.google.android.material.card.MaterialCardView
         android:clickable="true"
         app:rippleColor="@color/white_colour"
-        app:cardBackgroundColor="@color/text_colour"
+        app:cardBackgroundColor="@color/red"
         app:cardCornerRadius="15dp"
         app:cardElevation="10dp"
         android:layout_width="150dp"
@@ -151,7 +150,7 @@
         android:clickable="true"
         app:rippleColor="@color/white_colour"
         android:layout_marginRight="20dp"
-        app:cardBackgroundColor="@color/text_colour"
+        app:cardBackgroundColor="@color/yellow"
         app:cardCornerRadius="15dp"
         app:cardElevation="10dp"
         android:layout_width="150dp"
@@ -182,7 +181,7 @@
     <com.google.android.material.card.MaterialCardView
         android:clickable="true"
         app:rippleColor="@color/white_colour"
-        app:cardBackgroundColor="@color/text_colour"
+        app:cardBackgroundColor="@color/orange"
         app:cardCornerRadius="15dp"
         app:cardElevation="10dp"
         android:layout_width="150dp"
@@ -221,9 +220,11 @@
 
         <com.google.android.material.card.MaterialCardView
             android:clickable="true"
+            android:focusable="true"
+            android:id="@+id/colours_card"
             app:rippleColor="@color/white_colour"
             android:layout_marginRight="20dp"
-            app:cardBackgroundColor="@color/text_colour"
+            app:cardBackgroundColor="@color/red"
             app:cardCornerRadius="15dp"
             app:cardElevation="10dp"
             android:layout_width="150dp"
@@ -254,7 +255,7 @@
         <com.google.android.material.card.MaterialCardView
             android:clickable="true"
             app:rippleColor="@color/white_colour"
-            app:cardBackgroundColor="@color/text_colour"
+            app:cardBackgroundColor="@color/yellow"
             app:cardCornerRadius="15dp"
             app:cardElevation="10dp"
             android:layout_width="150dp"

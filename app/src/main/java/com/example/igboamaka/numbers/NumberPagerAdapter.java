@@ -54,7 +54,7 @@ public class NumberPagerAdapter extends FragmentPagerAdapter {
         if (position == 0) {
             title = "1-10";
         } else if (position == 1) {
-            title = "11-20";
+            title = "11-30";
         } else if (position == 2) {
             title = "TENS";
         }else{
