@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">@color/orange</color>
-    <color name="colorPrimaryDark">@color/orange</color>
+    <color name="colorPrimary">@color/purple</color>
+    <color name="colorPrimaryDark">@color/purple</color>
     <color name="colorAccent">@color/white_colour</color>
 
-
     <color name="white_colour">#ffffff</color>
-    <color name="orange">#E65100</color>
-    <color name="red">#e60022</color>
-    <color name="yellow"> #daa520</color>
-    <color name="blue"> #0095e6</color>
 
+    <color name="orange">#B13254</color>
+    <color name="red">#FF5449</color>
+    <color name="yellow"> #FF7349</color>
+
+    <color name="blue"> #0095e6</color>
     <color name="green"> #00b300</color>
     <color name="dusty_yellow">#f5d8ac</color>
     <color name="brown">#8B4513</color>
@@ -20,6 +20,12 @@
     <color name="gold"> #FFD700</color>
     <color name="pink"> #FFC0CB</color>
     <color name="silver"> #C0C0C0</color>
+
+    <color name="purple">#471437</color>
+    <color name="pink_red">#B13254</color>
+    <color name="orange_pink"> #FF5449</color>
+    <color name="yellow_orange"> #FF7349</color>
+    <color name="pale_yellow"> #FF9249</color>
 
 
 

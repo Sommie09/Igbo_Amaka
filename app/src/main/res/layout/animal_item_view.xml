@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/animal_item_card_view"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="5dp"
+    app:cardBackgroundColor="@color/orange"
+    app:cardPreventCornerOverlap="true"
+    app:cardUseCompatPadding="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:padding="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.card.MaterialCardView
+            app:cardCornerRadius="50dp"
+            android:backgroundTint="@color/white_colour"
+            android:layout_width="70dp"
+            android:layout_height="60dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/animal_image"
+                android:src="@drawable/dog_image"
+                android:scaleType="centerCrop">
+            </ImageView>
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:layout_marginTop="2dp"
+            android:textColor="@color/white_colour"
+            android:fontFamily="@font/lato_regular"
+            android:id="@+id/animal_english"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Dog"
+            android:textSize="25sp">
+        </TextView>
+
+        <TextView
+            android:textStyle="bold"
+            android:layout_marginTop="2dp"
+            android:textColor="@color/white_colour"
+            android:fontFamily="@font/lato_regular"
+            android:layout_below="@id/animal_english"
+            android:id="@+id/animal_igbo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="nkita"
+            android:textSize="20dp">
+        </TextView>
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom|right"
+        android:background="@drawable/endview_background">
+
+    </View>
+
+</com.google.android.material.card.MaterialCardView>

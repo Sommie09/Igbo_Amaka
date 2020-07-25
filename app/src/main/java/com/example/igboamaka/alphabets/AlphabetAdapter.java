@@ -42,6 +42,7 @@ public class AlphabetAdapter extends RecyclerView.Adapter<AlphabetAdapter.ViewHo
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         holder.igboTranslation.setText(alphabet.get(position).getIgboTranslation());
         holder.cardView.setCardBackgroundColor(alphabet.get(position).getBackGroundColour());
+
     }
 
 

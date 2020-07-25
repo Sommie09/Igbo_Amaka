@@ -1,314 +1,283 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
-    tools:context=".HomeFragment"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:fillViewport="true"
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools">
 <LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical">
+    android:layout_height="match_parent"
+    android:background="@color/purple"
+    android:orientation="vertical"
+    tools:context=".HomeFragment">
 
 
     <TextView
-        android:textStyle="bold"
-        android:fontFamily="@font/lato_regular"
-        android:textSize="25dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginStart="30dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:text="Hey, Chisom">
-
-    </TextView>
-
-    <TextView
-        android:textStyle="bold"
-        android:layout_marginStart="30dp"
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/lato_regular"
-        android:text="Welcome back"
-        android:textSize="18dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.054"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="78dp">
-    </TextView>
-
-    <com.google.android.material.card.MaterialCardView
-        android:layout_marginTop="30dp"
-            android:layout_gravity="center"
-            app:cardCornerRadius="15dp"
-            app:cardElevation="10dp"
-            android:layout_width="320dp"
-            android:layout_height="140dp"
-            tools:layout_editor_absoluteX="215dp"
-            tools:layout_editor_absoluteY="165dp" >
-
-            <ImageView
-                android:layout_width="350dp"
-                android:scaleType="centerCrop"
-                android:layout_height="wrap_content"
-                android:src="@drawable/igbo_splash_screen">
-            </ImageView>
-
-
-        </com.google.android.material.card.MaterialCardView>
-
-    <LinearLayout
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginTop="35dp"
-        android:layout_gravity="center"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-
-    <com.google.android.material.card.MaterialCardView
-        android:focusable="true"
-        android:id="@+id/numbers_card"
-        android:clickable="true"
-        app:rippleColor="@color/white_colour"
-        android:layout_marginRight="20dp"
-        app:cardBackgroundColor="@color/orange"
-        app:cardCornerRadius="15dp"
-        app:cardElevation="10dp"
-        android:layout_width="150dp"
-        android:layout_height="140dp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="166dp" >
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="NUMBERS"
-            android:layout_gravity="center"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="25dp"
+            android:text="Welcome!"
+            android:textSize="35sp"
+            android:textColor="@color/white_colour"
             android:fontFamily="@font/lato_regular"
-            android:textColor="@color/white_colour">
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
 
         </TextView>
 
-        <View
-            android:layout_width="70dp"
-            android:layout_height="70dp"
-            android:background="@drawable/endview_background"
-            android:layout_gravity="bottom|right">
-
-        </View>
-
-    </com.google.android.material.card.MaterialCardView>
-
-    <com.google.android.material.card.MaterialCardView
-        android:clickable="true"
-        android:id="@+id/alphabet_card"
-        app:rippleColor="@color/white_colour"
-        app:cardBackgroundColor="@color/red"
-        app:cardCornerRadius="15dp"
-        app:cardElevation="10dp"
-        android:layout_width="150dp"
-        android:layout_height="140dp"
-        tools:layout_editor_absoluteX="215dp"
-        tools:layout_editor_absoluteY="165dp"
-        android:focusable="true">
-
         <TextView
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="20dp"
+            android:textSize="25sp"
+            android:textColor="@color/white_colour"
+            android:fontFamily="@font/lato_regular"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="ALPHABETS"
-            android:layout_gravity="center"
-            android:fontFamily="@font/lato_regular"
-            android:textColor="@color/white_colour">
+            android:text="Kedu ka ị mere?">
 
         </TextView>
 
-        <View
-            android:layout_width="70dp"
-            android:layout_height="70dp"
-            android:background="@drawable/endview_background"
-            android:layout_gravity="bottom|right">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-        </View>
+        <EditText
+            android:layout_marginTop="40dp"
+            android:layout_width="260dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:hint="Search"
+            android:id="@+id/search_edit_text"
+            android:paddingLeft="20dp"
+            android:background="@drawable/bg_edit_text">
 
-    </com.google.android.material.card.MaterialCardView>
+        </EditText>
 
-    </LinearLayout>
+        <com.google.android.material.button.MaterialButton
+            app:iconSize="20dp"
+            app:icon="@drawable/ic_baseline_search_24"
+            android:layout_marginLeft="15dp"
+            app:cornerRadius="15dp"
+            android:layout_marginTop="34dp"
+           android:layout_toRightOf="@id/search_edit_text"
+            android:backgroundTint="@color/pale_yellow"
+            android:layout_width="50dp"
+            android:layout_height="60dp">
 
-    <LinearLayout
-        android:elevation="60dp"
-        android:layout_marginTop="30dp"
-        android:layout_gravity="center"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
 
-    <com.google.android.material.card.MaterialCardView
-        android:clickable="true"
-        app:rippleColor="@color/white_colour"
-        android:layout_marginRight="20dp"
-        app:cardBackgroundColor="@color/yellow"
-        app:cardCornerRadius="15dp"
-        app:cardElevation="10dp"
-        android:layout_width="150dp"
-        android:layout_height="140dp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="361dp" >
+        </com.google.android.material.button.MaterialButton>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="ANIMALS"
-            android:layout_gravity="center"
-            android:fontFamily="@font/lato_regular"
-            android:textColor="@color/white_colour">
+        </RelativeLayout>
 
-        </TextView>
+<!--    android:layoutAnimation="@anim/layout_animation_slide_from_buttom"-->
 
-        <View
-            android:layout_width="70dp"
-            android:layout_height="70dp"
-            android:background="@drawable/endview_background"
-            android:layout_gravity="bottom|right">
 
-        </View>
 
-    </com.google.android.material.card.MaterialCardView>
+    <GridLayout
+        android:padding="20dp"
+        android:rowCount="2"
+        android:columnCount="3"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:background="@drawable/bg_menu"
+        android:layout_marginTop="41dp">
 
-    <com.google.android.material.card.MaterialCardView
-        android:clickable="true"
-        app:rippleColor="@color/white_colour"
-        app:cardBackgroundColor="@color/orange"
-        app:cardCornerRadius="15dp"
-        app:cardElevation="10dp"
-        android:layout_width="150dp"
-        android:layout_height="140dp"
-        tools:layout_editor_absoluteX="215dp"
-        tools:layout_editor_absoluteY="361dp">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="SENTENCES"
-            android:layout_gravity="center"
-            android:fontFamily="@font/lato_regular"
-            android:textColor="@color/white_colour">
-
-        </TextView>
-
-        <View
-            android:layout_width="70dp"
-            android:layout_height="70dp"
-            android:background="@drawable/endview_background"
-            android:layout_gravity="bottom|right">
-
-        </View>
-    </com.google.android.material.card.MaterialCardView>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:elevation="60dp"
-        android:layout_marginTop="30dp"
-        android:layout_gravity="center"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
 
         <com.google.android.material.card.MaterialCardView
+                android:layout_margin="10dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:focusable="true"
+                android:id="@+id/numbers_card"
+                android:clickable="true"
+                app:rippleColor="@color/white_colour"
+                app:cardBackgroundColor="@color/pink_red"
+                app:cardCornerRadius="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Numbers"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/lato_regular"
+                    android:textColor="@color/white_colour">
+                </TextView>
+
+                <View
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/endview_background"
+                    android:layout_gravity="bottom|right">
+                </View>
+            </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_margin="10dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:focusable="true"
+            android:id="@+id/alphabet_card"
             android:clickable="true"
+            app:rippleColor="@color/white_colour"
+            app:cardBackgroundColor="@color/orange_pink"
+            app:cardCornerRadius="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alphabets"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:fontFamily="@font/lato_regular"
+                android:textColor="@color/white_colour">
+            </TextView>
+
+            <View
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/endview_background"
+                android:layout_gravity="bottom|right">
+            </View>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_margin="10dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:focusable="true"
+            android:id="@+id/animals_card"
+            android:clickable="true"
+            app:rippleColor="@color/white_colour"
+            app:cardBackgroundColor="@color/pale_yellow"
+            app:cardCornerRadius="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Animals"
+                android:layout_gravity="center"
+                android:fontFamily="@font/lato_regular"
+                android:textColor="@color/white_colour">
+            </TextView>
+
+            <View
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/endview_background"
+                android:layout_gravity="bottom|right">
+            </View>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_margin="10dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:focusable="true"
+            android:id="@+id/sentences_card"
+            android:clickable="true"
+            app:rippleColor="@color/white_colour"
+            app:cardBackgroundColor="@color/yellow_orange"
+            app:cardCornerRadius="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sentences"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:fontFamily="@font/lato_regular"
+                android:textColor="@color/white_colour">
+            </TextView>
+
+            <View
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/endview_background"
+                android:layout_gravity="bottom|right">
+            </View>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_margin="10dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
             android:focusable="true"
             android:id="@+id/colours_card"
+            android:clickable="true"
             app:rippleColor="@color/white_colour"
-            android:layout_marginRight="20dp"
-            app:cardBackgroundColor="@color/red"
-            app:cardCornerRadius="15dp"
-            app:cardElevation="10dp"
-            android:layout_width="150dp"
-            android:layout_height="140dp"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="361dp" >
+            app:cardBackgroundColor="@color/purple"
+            app:cardCornerRadius="15dp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="COLOURS"
+                android:text="Colours"
+                android:textStyle="bold"
                 android:layout_gravity="center"
                 android:fontFamily="@font/lato_regular"
                 android:textColor="@color/white_colour">
-
             </TextView>
 
             <View
-                android:layout_width="70dp"
-                android:layout_height="70dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
                 android:background="@drawable/endview_background"
                 android:layout_gravity="bottom|right">
-
             </View>
-
         </com.google.android.material.card.MaterialCardView>
 
         <com.google.android.material.card.MaterialCardView
+            android:layout_margin="10dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:focusable="true"
+            android:id="@+id/household_card"
             android:clickable="true"
             app:rippleColor="@color/white_colour"
-            app:cardBackgroundColor="@color/yellow"
-            app:cardCornerRadius="15dp"
-            app:cardElevation="10dp"
-            android:layout_width="150dp"
-            android:layout_height="140dp"
-            tools:layout_editor_absoluteX="215dp"
-            tools:layout_editor_absoluteY="361dp">
+            app:cardBackgroundColor="@color/pink_red"
+            app:cardCornerRadius="15dp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="HOUSE-HOLD"
+                android:text="House-Hold"
+                android:textStyle="bold"
                 android:layout_gravity="center"
                 android:fontFamily="@font/lato_regular"
                 android:textColor="@color/white_colour">
-
             </TextView>
 
             <View
-                android:layout_width="70dp"
-                android:layout_height="70dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
                 android:background="@drawable/endview_background"
                 android:layout_gravity="bottom|right">
-
             </View>
         </com.google.android.material.card.MaterialCardView>
 
-    </LinearLayout>
 
-    <TextView
-        android:textStyle="bold"
-        android:fontFamily="@font/lato_regular"
-        android:textSize="20dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginStart="30dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:text="Recent Activity">
-    </TextView>
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:layout_marginTop="5dp"
-        android:layout_marginStart="30dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
 
-    </androidx.recyclerview.widget.RecyclerView>
 
+
+
+
+
+
+    </GridLayout>
 
 
 
 </LinearLayout>
-
-</ScrollView>

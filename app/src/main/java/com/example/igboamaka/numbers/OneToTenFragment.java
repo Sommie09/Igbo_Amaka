@@ -33,17 +33,20 @@ public class OneToTenFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_one_to_ten, container, false);
 
         mNumbersList = new ArrayList<>();
-        mNumbersList.add(new Numbers("0", "efu", Color.parseColor("#e6c400")));
-        mNumbersList.add(new Numbers("1", "otu",Color.parseColor("#e60022")));
-        mNumbersList.add(new Numbers("2", "abụọ",Color.parseColor("#E65100")));
-        mNumbersList.add(new Numbers("3", "atọ",Color.parseColor("#e60022")));
-        mNumbersList.add(new Numbers("4", "anọ",Color.parseColor("#e6c400")));
-        mNumbersList.add(new Numbers("5", "ise",Color.parseColor("#E65100")));
-        mNumbersList.add(new Numbers("6", "isii",Color.parseColor("#e6c400")));
-        mNumbersList.add(new Numbers("7", "asaa",Color.parseColor("#e60022")));
-        mNumbersList.add(new Numbers("8", "asato",Color.parseColor("#E65100")));
-        mNumbersList.add(new Numbers("9", "itoolu",Color.parseColor("#e60022")));
-        mNumbersList.add(new Numbers("10", "iri",Color.parseColor("#E65100")));
+        mNumbersList.add(new Numbers("0", "efu", Color.parseColor("#B13254")));
+        mNumbersList.add(new Numbers("1", "otu",Color.parseColor("#FF5449")));
+        mNumbersList.add(new Numbers("2", "abụọ",Color.parseColor("#FF9249")));
+
+        mNumbersList.add(new Numbers("3", "atọ",Color.parseColor("#FF7349")));
+        mNumbersList.add(new Numbers("4", "anọ",Color.parseColor("#471437")));
+        mNumbersList.add(new Numbers("5", "ise",Color.parseColor("#B13254")));
+
+        mNumbersList.add(new Numbers("6", "isii",Color.parseColor("#B13254")));
+        mNumbersList.add(new Numbers("7", "asaa",Color.parseColor("#FF5449")));
+        mNumbersList.add(new Numbers("8", "asato",Color.parseColor("#FF9249")));
+
+        mNumbersList.add(new Numbers("9", "itoolu",Color.parseColor("#FF7349")));
+        mNumbersList.add(new Numbers("10", "iri",Color.parseColor("#471437")));
 
         RecyclerView recyclerView = view.findViewById(R.id.numbers_recycler_view);
         NumberCategoryAdapter adapter = new NumberCategoryAdapter(getContext(), mNumbersList);

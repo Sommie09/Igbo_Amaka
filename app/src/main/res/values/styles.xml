@@ -3,16 +3,28 @@
     <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@android:color/transparent</item>
-        <item name="colorPrimaryDark">#ffffff</item>
+        <item name="colorPrimaryDark">@color/purple</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
     <style name="Activities" parent="Theme.MaterialComponents.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@android:color/transparent</item>
-        <item name="colorPrimaryDark">@color/orange</item>
+        <item name="colorPrimaryDark">@color/pink_red</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
+
+    <style name="SplashScreen" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@android:color/transparent</item>
+        <item name="colorPrimaryDark">@color/white_colour</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+
+
+
 
 
 

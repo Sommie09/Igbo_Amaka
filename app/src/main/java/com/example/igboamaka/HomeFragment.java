@@ -11,13 +11,14 @@ import android.view.ViewGroup;
 
 import com.example.igboamaka.alphabets.Alphabets;
 import com.example.igboamaka.alphabets.AlphabetsActivity;
+import com.example.igboamaka.animals.AnimalActivity;
 import com.example.igboamaka.colors.ColoursActivity;
 import com.example.igboamaka.numbers.NumbersActivity;
 import com.google.android.material.card.MaterialCardView;
 
 
 public class HomeFragment extends Fragment {
-    MaterialCardView numbersCard, coloursCard, alphabetCard;
+    MaterialCardView numbersCard, coloursCard, alphabetCard, animalsCard;
 
 
     public HomeFragment() {
@@ -54,6 +55,15 @@ public class HomeFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getContext(), AlphabetsActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        animalsCard = rootView.findViewById(R.id.animals_card);
+        animalsCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getContext(), AnimalActivity.class);
                 startActivity(intent);
             }
         });

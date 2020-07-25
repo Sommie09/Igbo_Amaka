@@ -32,15 +32,18 @@ public class TensFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_one_to_ten, container, false);
 
         mNumbersList = new ArrayList<>();
-        mNumbersList.add(new Numbers("10", "iri", Color.parseColor("#E65100")));
-        mNumbersList.add(new Numbers("20", "iri abụọ",Color.parseColor("#e60022")));
-        mNumbersList.add(new Numbers("30", "iri atọ",Color.parseColor("#e6c400")));
-        mNumbersList.add(new Numbers("40", "iri anọ",Color.parseColor("#e60022")));
-        mNumbersList.add(new Numbers("50", "iri ise",Color.parseColor("#e6c400")));
-        mNumbersList.add(new Numbers("60", "iri isii", Color.parseColor("#E65100")));
-        mNumbersList.add(new Numbers("70", "iri asaa",Color.parseColor("#e6c400")));
-        mNumbersList.add(new Numbers("80", "iri asato",Color.parseColor("#E65100")));
-        mNumbersList.add(new Numbers("90", "iri itoolu", Color.parseColor("#e6c400")));
+
+        mNumbersList.add(new Numbers("10", "iri", Color.parseColor("#B13254")));
+        mNumbersList.add(new Numbers("20", "iri abụọ",Color.parseColor("#FF5449")));
+        mNumbersList.add(new Numbers("30", "iri atọ",Color.parseColor("#FF9249")));
+
+        mNumbersList.add(new Numbers("40", "iri anọ",Color.parseColor("#FF7349")));
+        mNumbersList.add(new Numbers("50", "iri ise",Color.parseColor("#471437")));
+        mNumbersList.add(new Numbers("60", "iri isii", Color.parseColor("#B13254")));
+
+        mNumbersList.add(new Numbers("70", "iri asaa",Color.parseColor("#B13254")));
+        mNumbersList.add(new Numbers("80", "iri asato",Color.parseColor("#FF5449")));
+        mNumbersList.add(new Numbers("90", "iri itoolu", Color.parseColor("#FF9249")));
 
         RecyclerView recyclerView = view.findViewById(R.id.numbers_recycler_view);
         NumberCategoryAdapter adapter = new NumberCategoryAdapter(getContext(), mNumbersList);

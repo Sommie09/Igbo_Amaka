@@ -33,53 +33,53 @@ public class AlphabetsActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         alphabets = new ArrayList<>();
-        alphabets.add(new Alphabets("A", Color.parseColor("#E65100")));
-        alphabets.add(new Alphabets("B", Color.parseColor("#daa520")));
-        alphabets.add(new Alphabets("CH", Color.parseColor("#e60022")));
+        alphabets.add(new Alphabets("A", Color.parseColor("#B13254")));
+        alphabets.add(new Alphabets("B", Color.parseColor("#FF5449")));
+        alphabets.add(new Alphabets("CH", Color.parseColor("#FF9249")));
 
-        alphabets.add(new Alphabets("D", Color.parseColor("#e60022")));
-        alphabets.add(new Alphabets("E", Color.parseColor("#E65100")));
-        alphabets.add(new Alphabets("F", Color.parseColor("#daa520")));
+        alphabets.add(new Alphabets("D", Color.parseColor("#FF7349")));
+        alphabets.add(new Alphabets("E", Color.parseColor("#471437")));
+        alphabets.add(new Alphabets("F", Color.parseColor("#B13254")));
 
-        alphabets.add(new Alphabets("G", Color.parseColor("#E65100")));
-        alphabets.add(new Alphabets("GB", Color.parseColor("#daa520")));
-        alphabets.add(new Alphabets("GH", Color.parseColor("#e60022")));
+        alphabets.add(new Alphabets("G", Color.parseColor("#B13254")));
+        alphabets.add(new Alphabets("GB", Color.parseColor("#FF5449")));
+        alphabets.add(new Alphabets("GH", Color.parseColor("#FF9249")));
 
-        alphabets.add(new Alphabets("GW", Color.parseColor("#e60022")));
-        alphabets.add(new Alphabets("H", Color.parseColor("#E65100")));
-        alphabets.add(new Alphabets("I", Color.parseColor("#daa520")));
+        alphabets.add(new Alphabets("GW", Color.parseColor("#FF7349")));
+        alphabets.add(new Alphabets("H", Color.parseColor("#471437")));
+        alphabets.add(new Alphabets("I", Color.parseColor("#B13254")));
 
-        alphabets.add(new Alphabets("Ị", Color.parseColor("#E65100")));
-        alphabets.add(new Alphabets("J", Color.parseColor("#daa520")));
-        alphabets.add(new Alphabets("K", Color.parseColor("#e60022")));
+        alphabets.add(new Alphabets("Ị", Color.parseColor("#B13254")));
+        alphabets.add(new Alphabets("J", Color.parseColor("#FF5449")));
+        alphabets.add(new Alphabets("K", Color.parseColor("#FF9249")));
 
-        alphabets.add(new Alphabets("KP", Color.parseColor("#e60022")));
-        alphabets.add(new Alphabets("KW", Color.parseColor("#E65100")));
-        alphabets.add(new Alphabets("L", Color.parseColor("#daa520")));
+        alphabets.add(new Alphabets("KP", Color.parseColor("#FF7349")));
+        alphabets.add(new Alphabets("KW", Color.parseColor("#471437")));
+        alphabets.add(new Alphabets("L", Color.parseColor("#B13254")));
 
-        alphabets.add(new Alphabets("M", Color.parseColor("#E65100")));
-        alphabets.add(new Alphabets("N", Color.parseColor("#daa520")));
-        alphabets.add(new Alphabets("Ñ", Color.parseColor("#e60022")));
+        alphabets.add(new Alphabets("M", Color.parseColor("#B13254")));
+        alphabets.add(new Alphabets("N", Color.parseColor("#FF5449")));
+        alphabets.add(new Alphabets("Ñ", Color.parseColor("#FF9249")));
 
-        alphabets.add(new Alphabets("NW", Color.parseColor("#e60022")));
-        alphabets.add(new Alphabets("NY", Color.parseColor("#E65100")));
-        alphabets.add(new Alphabets("O", Color.parseColor("#daa520")));
+        alphabets.add(new Alphabets("NW", Color.parseColor("#FF7349")));
+        alphabets.add(new Alphabets("NY", Color.parseColor("#471437")));
+        alphabets.add(new Alphabets("O", Color.parseColor("#B13254")));
 
-        alphabets.add(new Alphabets("Ọ", Color.parseColor("#E65100")));
-        alphabets.add(new Alphabets("P", Color.parseColor("#daa520")));
-        alphabets.add(new Alphabets("R", Color.parseColor("#e60022")));
+        alphabets.add(new Alphabets("Ọ", Color.parseColor("#B13254")));
+        alphabets.add(new Alphabets("P", Color.parseColor("#FF5449")));
+        alphabets.add(new Alphabets("R", Color.parseColor("#FF9249")));
 
-        alphabets.add(new Alphabets("S", Color.parseColor("#e60022")));
-        alphabets.add(new Alphabets("SH", Color.parseColor("#E65100")));
-        alphabets.add(new Alphabets("T", Color.parseColor("#daa520")));
+        alphabets.add(new Alphabets("S", Color.parseColor("#FF7349")));
+        alphabets.add(new Alphabets("SH", Color.parseColor("#471437")));
+        alphabets.add(new Alphabets("T", Color.parseColor("#B13254")));
 
-        alphabets.add(new Alphabets("U", Color.parseColor("#E65100")));
-        alphabets.add(new Alphabets("Ụ", Color.parseColor("#daa520")));
-        alphabets.add(new Alphabets("V", Color.parseColor("#e60022")));
+        alphabets.add(new Alphabets("U", Color.parseColor("#B13254")));
+        alphabets.add(new Alphabets("Ụ", Color.parseColor("#FF5449")));
+        alphabets.add(new Alphabets("V", Color.parseColor("#FF9249")));
 
-        alphabets.add(new Alphabets("W", Color.parseColor("#e60022")));
-        alphabets.add(new Alphabets("Y", Color.parseColor("#E65100")));
-        alphabets.add(new Alphabets("Z", Color.parseColor("#daa520")));
+        alphabets.add(new Alphabets("W", Color.parseColor("#FF7349")));
+        alphabets.add(new Alphabets("Y", Color.parseColor("#471437")));
+        alphabets.add(new Alphabets("Z", Color.parseColor("#B13254")));
 
 
         RecyclerView recyclerView = findViewById(R.id.alphabet_recycler_view);
