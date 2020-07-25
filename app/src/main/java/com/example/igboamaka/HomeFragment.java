@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.viewpager.widget.ViewPager;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -15,6 +16,7 @@ import com.example.igboamaka.animals.AnimalActivity;
 import com.example.igboamaka.colors.ColoursActivity;
 import com.example.igboamaka.numbers.NumbersActivity;
 import com.google.android.material.card.MaterialCardView;
+import com.google.android.material.tabs.TabLayout;
 
 
 public class HomeFragment extends Fragment {
@@ -32,41 +34,48 @@ public class HomeFragment extends Fragment {
         // Inflate the layout for this fragment
         View rootView = inflater.inflate(R.layout.fragment_home, container, false);
 
-        numbersCard = rootView.findViewById(R.id.numbers_card);
-        numbersCard.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getContext(), NumbersActivity.class);
-                startActivity(intent);
-            }
-        });
+//        numbersCard = rootView.findViewById(R.id.numbers_card);
+//        numbersCard.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent = new Intent(getContext(), NumbersActivity.class);
+//                startActivity(intent);
+//            }
+//        });
+//
+//        coloursCard = rootView.findViewById(R.id.colours_card);
+//        coloursCard.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent = new Intent(getContext(), ColoursActivity.class);
+//                startActivity(intent);
+//            }
+//        });
+//
+//        alphabetCard = rootView.findViewById(R.id.alphabet_card);
+//        alphabetCard.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent = new Intent(getContext(), AlphabetsActivity.class);
+//                startActivity(intent);
+//            }
+//        });
+//
+//        animalsCard = rootView.findViewById(R.id.animals_card);
+//        animalsCard.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent = new Intent(getContext(), AnimalActivity.class);
+//                startActivity(intent);
+//            }
+//        });
 
-        coloursCard = rootView.findViewById(R.id.colours_card);
-        coloursCard.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getContext(), ColoursActivity.class);
-                startActivity(intent);
-            }
-        });
+        DashboardPagerAdapter pagerAdapter = new DashboardPagerAdapter((getChildFragmentManager()));
+        ViewPager viewPager =  rootView.findViewById(R.id.pager);
+        viewPager.setAdapter(pagerAdapter);
 
-        alphabetCard = rootView.findViewById(R.id.alphabet_card);
-        alphabetCard.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getContext(), AlphabetsActivity.class);
-                startActivity(intent);
-            }
-        });
-
-        animalsCard = rootView.findViewById(R.id.animals_card);
-        animalsCard.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getContext(), AnimalActivity.class);
-                startActivity(intent);
-            }
-        });
+        TabLayout tabLayout = rootView.findViewById(R.id.tabLayout);
+        tabLayout.setupWithViewPager(viewPager);
 
         return rootView;
     }

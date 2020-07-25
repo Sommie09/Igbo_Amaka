@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".BasicFragment">
+
+    <GridLayout
+        android:layoutAnimation="@anim/layout_animation_slide_from_buttom"
+        android:padding="15dp"
+        android:rowCount="2"
+        android:columnCount="3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_margin="10dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:focusable="true"
+            android:id="@+id/numbers_card"
+            android:clickable="true"
+            app:rippleColor="@color/white_colour"
+            app:cardBackgroundColor="@color/pink_red"
+            app:cardCornerRadius="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Numbers"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:fontFamily="@font/lato_regular"
+                android:textColor="@color/white_colour">
+            </TextView>
+
+            <View
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/endview_background"
+                android:layout_gravity="bottom|right">
+            </View>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_margin="10dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:focusable="true"
+            android:id="@+id/alphabet_card"
+            android:clickable="true"
+            app:rippleColor="@color/white_colour"
+            app:cardBackgroundColor="@color/orange_pink"
+            app:cardCornerRadius="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alphabets"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:fontFamily="@font/lato_regular"
+                android:textColor="@color/white_colour">
+            </TextView>
+
+            <View
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/endview_background"
+                android:layout_gravity="bottom|right">
+            </View>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_margin="10dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:focusable="true"
+            android:id="@+id/animals_card"
+            android:clickable="true"
+            app:rippleColor="@color/white_colour"
+            app:cardBackgroundColor="@color/pale_yellow"
+            app:cardCornerRadius="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Animals"
+                android:layout_gravity="center"
+                android:fontFamily="@font/lato_regular"
+                android:textColor="@color/white_colour">
+            </TextView>
+
+            <View
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/endview_background"
+                android:layout_gravity="bottom|right">
+            </View>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_margin="10dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:focusable="true"
+            android:id="@+id/sentences_card"
+            android:clickable="true"
+            app:rippleColor="@color/white_colour"
+            app:cardBackgroundColor="@color/yellow_orange"
+            app:cardCornerRadius="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sentences"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:fontFamily="@font/lato_regular"
+                android:textColor="@color/white_colour">
+            </TextView>
+
+            <View
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/endview_background"
+                android:layout_gravity="bottom|right">
+            </View>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_margin="10dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:focusable="true"
+            android:id="@+id/colours_card"
+            android:clickable="true"
+            app:rippleColor="@color/white_colour"
+            app:cardBackgroundColor="@color/purple"
+            app:cardCornerRadius="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Colours"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:fontFamily="@font/lato_regular"
+                android:textColor="@color/white_colour">
+            </TextView>
+
+            <View
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/endview_background"
+                android:layout_gravity="bottom|right">
+            </View>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_margin="10dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:focusable="true"
+            android:id="@+id/household_card"
+            android:clickable="true"
+            app:rippleColor="@color/white_colour"
+            app:cardBackgroundColor="@color/pink_red"
+            app:cardCornerRadius="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="House-Hold Items"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:fontFamily="@font/lato_regular"
+                android:textColor="@color/white_colour">
+            </TextView>
+
+            <View
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/endview_background"
+                android:layout_gravity="bottom|right">
+            </View>
+        </com.google.android.material.card.MaterialCardView>
+
+
+
+
+
+
+
+
+
+
+    </GridLayout>
+</FrameLayout>

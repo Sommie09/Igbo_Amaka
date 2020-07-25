@@ -22,9 +22,6 @@ public class NumberPagerAdapter extends FragmentPagerAdapter {
     }
 
 
-    /**
-     * Return the number of views available.
-     */
     @Override
     public int getCount() {
         return 4;
