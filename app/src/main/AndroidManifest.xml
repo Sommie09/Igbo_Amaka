@@ -12,34 +12,33 @@
         <activity
             android:parentActivityName=".MainActivity"
             android:theme="@style/Activities"
-            android:name=".animals.AnimalActivity">
-
-        </activity>
+            android:name=".family.FamilyActivity"></activity>
+        <activity
+            android:name=".animals.AnimalActivity"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/Activities"></activity>
         <activity
             android:name=".alphabets.AlphabetsActivity"
             android:parentActivityName=".MainActivity"
-            android:theme="@style/Activities">
-        </activity>
+            android:theme="@style/Activities"></activity>
         <activity
             android:name=".colors.ColoursActivity"
             android:parentActivityName=".MainActivity"
-            android:theme="@style/Activities">
-        </activity>
+            android:theme="@style/Activities"></activity>
         <activity
             android:name=".numbers.NumbersActivity"
             android:parentActivityName=".MainActivity"
-            android:theme="@style/Activities">
-        </activity>
+            android:theme="@style/Activities"></activity>
         <activity
-            android:theme="@style/SplashScreen"
-            android:name=".SplashScreen">
+            android:name=".SplashScreen"
+            android:theme="@style/SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>

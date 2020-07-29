@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/purple"
@@ -11,100 +10,113 @@
 
 
     <TextView
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="25dp"
-            android:text="Welcome!"
-            android:textSize="35sp"
-            android:textColor="@color/white_colour"
-            android:fontFamily="@font/lato_regular"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:fontFamily="@font/lato_regular"
+        android:text="Welcome!"
+        android:textColor="@color/white_colour"
+        android:textSize="35sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.063"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-        </TextView>
+    </TextView>
 
-        <TextView
-            android:layout_marginTop="8dp"
-            android:layout_marginStart="20dp"
-            android:textSize="25sp"
-            android:textColor="@color/white_colour"
-            android:fontFamily="@font/lato_regular"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Kedu ka ị mere?">
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/lato_regular"
+        android:text="Kedu ka ị mere?"
+        android:textColor="@color/white_colour"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
 
-        </TextView>
+    </TextView>
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+    <EditText
+        android:id="@+id/search_edit_text"
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/bg_edit_text"
+        android:hint="Search"
+        android:paddingLeft="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
 
-        <EditText
-            android:layout_marginTop="40dp"
-            android:layout_width="260dp"
-            android:layout_height="50dp"
-            android:layout_marginLeft="20dp"
-            android:hint="Search"
-            android:id="@+id/search_edit_text"
-            android:paddingLeft="20dp"
-            android:background="@drawable/bg_edit_text">
+    </EditText>
 
-        </EditText>
-
-        <com.google.android.material.button.MaterialButton
-            app:iconSize="20dp"
-            app:icon="@drawable/ic_baseline_search_24"
-            android:layout_marginLeft="15dp"
-            app:cornerRadius="15dp"
-            android:layout_marginTop="34dp"
-           android:layout_toRightOf="@id/search_edit_text"
-            android:backgroundTint="@color/pale_yellow"
-            android:layout_width="50dp"
-            android:layout_height="60dp">
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/materialButton"
+        android:layout_width="50dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="70dp"
+        android:layout_toRightOf="@id/search_edit_text"
+        android:backgroundTint="@color/pale_yellow"
+        app:cornerRadius="15dp"
+        app:icon="@drawable/ic_baseline_search_24"
+        app:iconSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/search_edit_text"
+        app:layout_constraintTop_toTopOf="@+id/search_edit_text"
+        app:layout_constraintVertical_bias="0.48000002">
 
 
-        </com.google.android.material.button.MaterialButton>
-
-        </RelativeLayout>
-
+    </com.google.android.material.button.MaterialButton>
 
     <LinearLayout
-        android:background="@drawable/bg_menu"
-        android:layout_marginTop="20dp"
-        android:orientation="vertical"
+        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
-        android:layout_height="400dp">
+        android:layout_height="350dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/bg_menu"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search_edit_text">
 
         <com.google.android.material.tabs.TabLayout
-            android:layout_marginTop="25dp"
             android:id="@+id/tabLayout"
-            android:layout_width="172dp"
-            android:layout_gravity="center"
+            android:layout_width="wrap_content"
             android:layout_height="36dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
             android:background="@drawable/tab_layout_background"
-            app:tabMode="scrollable"
             app:tabBackground="@drawable/tab_layout_selector"
-            app:tabSelectedTextColor="@color/colorPrimaryDark"
-            app:tabPaddingStart="16dp"
-            app:tabPaddingEnd="16dp"
             app:tabIndicatorHeight="0dp"
+            app:tabMode="scrollable"
+            app:tabPaddingEnd="16dp"
+            app:tabPaddingStart="16dp"
             app:tabRippleColor="@null"
-            app:tabTextAppearance="@style/TabTextAppearance"/>
+            app:tabSelectedTextColor="@color/colorPrimaryDark"
+            app:tabTextAppearance="@style/TabTextAppearance" />
 
         <androidx.viewpager.widget.ViewPager
             android:id="@+id/pager"
-            app:layout_behavior="@string/appbar_scrolling_view_behavior"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
-        </androidx.viewpager.widget.ViewPager>
+            android:layout_height="wrap_content"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"></androidx.viewpager.widget.ViewPager>
+
 
     </LinearLayout>
 
     <View
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:background="@color/white_colour">
-    </View>
+        android:background="@color/white_colour"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout"></View>
 
 
-
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

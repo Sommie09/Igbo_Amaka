@@ -41,7 +41,7 @@ public class DashboardPagerAdapter extends FragmentPagerAdapter {
         if (position == 0) {
             title = "Basic";
         }else{
-            title = " Advanced ";
+            title = "  Advanced  ";
         }
         return title;
     }
