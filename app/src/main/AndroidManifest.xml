@@ -9,26 +9,30 @@
         android:roundIcon="@mipmap/ic_launcher_igbo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity
+        <activity android:name=".sentences.SentencesActivity"
             android:parentActivityName=".MainActivity"
-            android:theme="@style/Activities"
-            android:name=".family.FamilyActivity"></activity>
+            android:theme="@style/Activities">
+        </activity>
+        <activity
+            android:name=".family.FamilyActivity"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/Activities" />
         <activity
             android:name=".animals.AnimalActivity"
             android:parentActivityName=".MainActivity"
-            android:theme="@style/Activities"></activity>
+            android:theme="@style/Activities" />
         <activity
             android:name=".alphabets.AlphabetsActivity"
             android:parentActivityName=".MainActivity"
-            android:theme="@style/Activities"></activity>
+            android:theme="@style/Activities" />
         <activity
             android:name=".colors.ColoursActivity"
             android:parentActivityName=".MainActivity"
-            android:theme="@style/Activities"></activity>
+            android:theme="@style/Activities" />
         <activity
             android:name=".numbers.NumbersActivity"
             android:parentActivityName=".MainActivity"
-            android:theme="@style/Activities"></activity>
+            android:theme="@style/Activities" />
         <activity
             android:name=".SplashScreen"
             android:theme="@style/SplashScreen">

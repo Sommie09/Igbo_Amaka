@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="60dp">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/profile_card"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="4dp"
+        app:cardCornerRadius="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_toRightOf="@+id/profile_card"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton"
+        app:layout_constraintHorizontal_bias="0.016"
+        app:layout_constraintStart_toEndOf="@+id/profile_card"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/igbo_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lato_regular"
+            android:text="Kedu"
+            android:textColor="@color/black"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="67dp"
+            tools:layout_editor_absoluteY="101dp"></TextView>
+
+        <TextView
+            android:id="@+id/english_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lato_regular"
+            android:text="How are you?"
+            android:textColor="@color/black"
+            android:layout_marginTop="5dp"
+            android:textSize="13dp"
+            tools:layout_editor_absoluteX="144dp"
+            tools:layout_editor_absoluteY="120dp"></TextView>
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="28dp"
+        android:layout_toRightOf="@id/linearLayout"
+        android:backgroundTint="@android:color/transparent"
+        android:src="@drawable/ic_baseline_volume_up_24"
+        android:tint="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/profile_card"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/profile_card">
+
+
+
+    </ImageButton>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -34,42 +34,6 @@ public class HomeFragment extends Fragment {
         // Inflate the layout for this fragment
         View rootView = inflater.inflate(R.layout.fragment_home, container, false);
 
-//        numbersCard = rootView.findViewById(R.id.numbers_card);
-//        numbersCard.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent intent = new Intent(getContext(), NumbersActivity.class);
-//                startActivity(intent);
-//            }
-//        });
-//
-//        coloursCard = rootView.findViewById(R.id.colours_card);
-//        coloursCard.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent intent = new Intent(getContext(), ColoursActivity.class);
-//                startActivity(intent);
-//            }
-//        });
-//
-//        alphabetCard = rootView.findViewById(R.id.alphabet_card);
-//        alphabetCard.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent intent = new Intent(getContext(), AlphabetsActivity.class);
-//                startActivity(intent);
-//            }
-//        });
-//
-//        animalsCard = rootView.findViewById(R.id.animals_card);
-//        animalsCard.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent intent = new Intent(getContext(), AnimalActivity.class);
-//                startActivity(intent);
-//            }
-//        });
-
         DashboardPagerAdapter pagerAdapter = new DashboardPagerAdapter((getChildFragmentManager()));
         ViewPager viewPager =  rootView.findViewById(R.id.pager);
         viewPager.setAdapter(pagerAdapter);

@@ -14,6 +14,7 @@ import com.example.igboamaka.animals.AnimalActivity;
 import com.example.igboamaka.colors.ColoursActivity;
 import com.example.igboamaka.family.FamilyActivity;
 import com.example.igboamaka.numbers.NumbersActivity;
+import com.example.igboamaka.sentences.SentencesActivity;
 import com.google.android.material.card.MaterialCardView;
 
 
@@ -37,6 +38,15 @@ public class AdvancedFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getContext(), FamilyActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        simpleSentences = rootView.findViewById(R.id.sentences_card);
+        simpleSentences.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getContext(), SentencesActivity.class);
                 startActivity(intent);
             }
         });
