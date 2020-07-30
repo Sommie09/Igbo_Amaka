@@ -13,6 +13,7 @@ import com.example.igboamaka.alphabets.AlphabetsActivity;
 import com.example.igboamaka.animals.AnimalActivity;
 import com.example.igboamaka.colors.ColoursActivity;
 import com.example.igboamaka.family.FamilyActivity;
+import com.example.igboamaka.household.HouseHoldActivity;
 import com.example.igboamaka.numbers.NumbersActivity;
 import com.example.igboamaka.sentences.SentencesActivity;
 import com.google.android.material.card.MaterialCardView;
@@ -47,6 +48,15 @@ public class AdvancedFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getContext(), SentencesActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        houseHoldItems = rootView.findViewById(R.id.household_card);
+        houseHoldItems.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getContext(), HouseHoldActivity.class);
                 startActivity(intent);
             }
         });

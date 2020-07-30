@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".numbers.OneToTenFragment">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:clipToPadding="false"
+        android:layoutAnimation="@anim/layout_animation_slide_from_buttom"
+        android:padding="12dp"
+        android:id="@+id/house_hold_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

@@ -9,10 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_igbo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".sentences.SentencesActivity"
+        <activity android:name=".household.HouseHoldActivity"
             android:parentActivityName=".MainActivity"
-            android:theme="@style/Activities">
-        </activity>
+            android:theme="@style/Activities"/>
+        <activity
+            android:name=".sentences.SentencesActivity"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/Activities" />
         <activity
             android:name=".family.FamilyActivity"
             android:parentActivityName=".MainActivity"

@@ -40,51 +40,56 @@
 
     </TextView>
 
-    <EditText
-        android:id="@+id/search_edit_text"
-        android:layout_width="260dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="24dp"
-        android:background="@drawable/bg_edit_text"
-        android:hint="Search"
-        android:paddingLeft="20dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2">
+<!--    <LinearLayout-->
+<!--        android:layout_marginLeft="10dp"-->
+<!--        android:layout_marginRight="10dp"-->
+<!--        android:id="@+id/layout_search"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal"-->
+<!--        app:layout_constraintBottom_toTopOf="@id/linearLayout"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.16"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/textView2"-->
+<!--        app:layout_constraintVertical_bias="0.24000001">-->
 
-    </EditText>
+<!--        <SearchView-->
+<!--            android:id="@+id/search_edit_text"-->
+<!--            android:layout_width="260dp"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:background="@drawable/bg_edit_text"-->
+<!--            android:hint="Search"-->
+<!--            android:paddingLeft="20dp">-->
 
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/materialButton"
-        android:layout_width="50dp"
-        android:layout_height="60dp"
-        android:layout_marginEnd="28dp"
-        android:layout_marginBottom="70dp"
-        android:layout_toRightOf="@id/search_edit_text"
-        android:backgroundTint="@color/pale_yellow"
-        app:cornerRadius="15dp"
-        app:icon="@drawable/ic_baseline_search_24"
-        app:iconSize="20dp"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/search_edit_text"
-        app:layout_constraintTop_toTopOf="@+id/search_edit_text"
-        app:layout_constraintVertical_bias="0.48000002">
+<!--        </SearchView>-->
+
+<!--        <com.google.android.material.button.MaterialButton-->
+<!--            android:id="@+id/materialButton"-->
+<!--            android:layout_width="50dp"-->
+<!--            android:layout_height="60dp"-->
+<!--            android:layout_marginLeft="20dp"-->
+<!--            android:layout_toRightOf="@id/search_edit_text"-->
+<!--            android:backgroundTint="@color/pale_yellow"-->
+<!--            app:cornerRadius="15dp"-->
+<!--            app:icon="@drawable/ic_baseline_search_24"-->
+<!--            app:iconSize="20dp">-->
 
 
-    </com.google.android.material.button.MaterialButton>
+<!--        </com.google.android.material.button.MaterialButton>-->
+
+<!--    </LinearLayout>-->
+
 
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
-        android:layout_height="350dp"
-        android:layout_marginTop="28dp"
+        android:layout_height="400dp"
         android:background="@drawable/bg_menu"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/search_edit_text">
+        app:layout_constraintStart_toStartOf="parent">
 
         <com.google.android.material.tabs.TabLayout
             android:id="@+id/tabLayout"
@@ -116,7 +121,9 @@
         android:layout_height="40dp"
         android:background="@color/white_colour"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/linearLayout"></View>
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
