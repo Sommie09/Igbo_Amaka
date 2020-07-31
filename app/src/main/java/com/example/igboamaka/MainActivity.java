@@ -4,14 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.View;
-import android.view.WindowManager;
 
-import com.example.igboamaka.numbers.NumbersActivity;
-import com.google.android.material.card.MaterialCardView;
+import com.example.igboamaka.funfacts.FunFactsFragment;
+import com.example.igboamaka.home.HomeFragment;
 import com.ismaeldivita.chipnavigation.ChipNavigationBar;
 
 public class MainActivity extends AppCompatActivity {

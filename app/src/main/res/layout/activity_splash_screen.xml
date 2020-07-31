@@ -39,7 +39,17 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent" />
-    
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:scaleType="center"
+        android:src="@drawable/igbo_amaka_svg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </ImageView>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

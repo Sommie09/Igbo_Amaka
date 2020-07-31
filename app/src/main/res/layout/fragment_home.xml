@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/purple"
     android:orientation="vertical"
-    tools:context=".HomeFragment">
+    tools:context=".home.HomeFragment">
 
 
     <TextView
@@ -79,6 +79,7 @@
 <!--        </com.google.android.material.button.MaterialButton>-->
 
 <!--    </LinearLayout>-->
+
 
 
     <LinearLayout

@@ -9,13 +9,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.igboamaka.alphabets.AlphabetsActivity;
-import com.example.igboamaka.animals.AnimalActivity;
-import com.example.igboamaka.colors.ColoursActivity;
-import com.example.igboamaka.family.FamilyActivity;
-import com.example.igboamaka.household.HouseHoldActivity;
-import com.example.igboamaka.numbers.NumbersActivity;
-import com.example.igboamaka.sentences.SentencesActivity;
+import com.example.igboamaka.home.family.FamilyActivity;
+import com.example.igboamaka.home.household.HouseHoldActivity;
+import com.example.igboamaka.home.sentences.SentencesActivity;
 import com.google.android.material.card.MaterialCardView;
 
 

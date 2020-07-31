@@ -9,10 +9,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.igboamaka.alphabets.AlphabetsActivity;
-import com.example.igboamaka.animals.AnimalActivity;
-import com.example.igboamaka.colors.ColoursActivity;
-import com.example.igboamaka.numbers.NumbersActivity;
+import com.example.igboamaka.home.alphabets.AlphabetsActivity;
+import com.example.igboamaka.home.animals.AnimalActivity;
+import com.example.igboamaka.home.colors.ColoursActivity;
+import com.example.igboamaka.home.numbers.NumbersActivity;
 import com.google.android.material.card.MaterialCardView;
 
 

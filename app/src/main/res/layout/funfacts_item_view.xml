@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:elevation="20dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_gravity="center"
+        android:layout_width="300dp"
+        android:layout_height="300dp">
+
+        <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:backgroundTint="@color/pale_yellow"
+        app:cardCornerRadius="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.google.android.material.card.MaterialCardView
+                app:cardCornerRadius="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center"
+                android:layout_width="200dp"
+                android:layout_height="150dp">
+
+                <ImageView
+                    android:id="@+id/card_image"
+                    android:src="@drawable/igbo_dressing"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </ImageView>
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:id="@+id/card_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato_regular"
+                android:layout_gravity="center"
+                android:text="DRESSING"
+                android:textColor="@color/white_colour"
+                android:textSize="25dp"
+                android:textStyle="bold">
+            </TextView>
+
+        </LinearLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</FrameLayout>
