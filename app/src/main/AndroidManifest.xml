@@ -9,9 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_igbo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".home.household.HouseHoldActivity"
+        <activity android:name=".funfacts.food.FoodActivity"></activity>
+        <activity
+            android:name=".home.household.HouseHoldActivity"
             android:parentActivityName=".MainActivity"
-            android:theme="@style/Activities"/>
+            android:theme="@style/Activities" />
         <activity
             android:name=".home.sentences.SentencesActivity"
             android:parentActivityName=".MainActivity"

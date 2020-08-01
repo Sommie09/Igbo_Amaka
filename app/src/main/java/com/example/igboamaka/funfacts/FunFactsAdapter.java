@@ -1,63 +1,76 @@
 package com.example.igboamaka.funfacts;
 
 import android.content.Context;
+import android.content.Intent;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
-import androidx.recyclerview.widget.RecyclerView;
-import androidx.viewpager2.widget.ViewPager2;
+
+import androidx.viewpager.widget.PagerAdapter;
+
 
 import com.example.igboamaka.R;
-import com.google.android.material.card.MaterialCardView;
+import com.example.igboamaka.funfacts.food.FoodActivity;
 
 import java.util.List;
 
-public class FunFactsAdapter extends RecyclerView.Adapter<FunFactsAdapter.ViewHolder> {
+public class FunFactsAdapter extends PagerAdapter {
 
     List<FunFacts> funFacts;
-    private Context mContext;
+    Context mContext;
 
-    public FunFactsAdapter(List<FunFacts> funFacts, Context context, ViewPager2 viewPager2) {
+    public FunFactsAdapter(List<FunFacts> funFacts, Context context) {
         this.funFacts = funFacts;
         mContext = context;
     }
 
-    @NonNull
     @Override
-    public FunFactsAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        LayoutInflater layoutInflater = LayoutInflater.from(mContext);
-        View view = layoutInflater.inflate(R.layout.funfacts_item_view, parent, false);
-        return new FunFactsAdapter.ViewHolder(view);
-    }
-
-
-    @Override
-    public void onBindViewHolder(@NonNull FunFactsAdapter.ViewHolder holder, int position) {
-        holder.image.setImageResource(funFacts.get(position).getImage());
-        holder.title.setText(funFacts.get(position).getTitle());
-        holder.description.setText(funFacts.get(position).getDescription());
-    }
-
-
-    @Override
-    public int getItemCount() {
+    public int getCount() {
         return funFacts.size();
     }
 
-    public static class ViewHolder extends RecyclerView.ViewHolder {
-        ImageView image;
-        TextView title;
-        TextView description;
-        public ViewHolder(@NonNull View itemView) {
-            super(itemView);
 
-            title = itemView.findViewById(R.id.card_title);
-            image = itemView.findViewById(R.id.card_image);
-            description = itemView.findViewById(R.id.description);
-        }
+    @Override
+    public boolean isViewFromObject(@NonNull View view, @NonNull Object object) {
+        return view.equals(object);
+    }
+
+    @Override
+    public void destroyItem(@NonNull ViewGroup container, int position, @NonNull Object object) {
+        container.removeView((View) object);
+    }
+
+    @NonNull
+    @Override
+    public Object instantiateItem(@NonNull ViewGroup container, final int position) {
+        View view = LayoutInflater.from(mContext).inflate(R.layout.funfacts_item_view, container, false);
+
+        ImageView funfacts_image = view.findViewById(R.id.funfacts_image);
+        TextView funfacts_title = view.findViewById(R.id.funfacts_title);
+        TextView funfacts_description = view.findViewById(R.id.funfacts_description);
+
+        funfacts_image.setImageResource(funFacts.get(position).getImage());
+        funfacts_title.setText(funFacts.get(position).getTitle());
+        funfacts_description.setText(funFacts.get(position).getDescription());
+
+        view.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+               Intent intent = new Intent(mContext, FoodActivity.class);
+               mContext.startActivity(intent);
+
+            }
+        });
+
+        container.addView(view);
+
+        return view;
     }
 }

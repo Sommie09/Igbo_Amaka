@@ -22,18 +22,18 @@ import android.widget.TextView;
 
 import com.example.igboamaka.R;
 import com.example.igboamaka.home.colors.Colours;
+import com.gigamole.infinitecycleviewpager.HorizontalInfiniteCycleViewPager;
+import com.google.android.material.card.MaterialCardView;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class FunFactsFragment extends Fragment {
-    private RecyclerView fun_facts_view;
-    private FunFactsAdapter adapter;
-    private StaggeredGridLayoutManager manager;
 
     List<FunFacts> funFacts;
-    private ViewPager2 mViewPager2;
+    HorizontalInfiniteCycleViewPager viewPager;
     private TextView swipe_text;
+
 
 
     public FunFactsFragment() {
@@ -46,10 +46,24 @@ public class FunFactsFragment extends Fragment {
         // Inflate the layout for this fragment
         View rootView = inflater.inflate(R.layout.fragment_fun_facts, container, false);
 
-        mViewPager2 = rootView.findViewById(R.id.pager);
+        funFacts = new ArrayList<>();
+
+        initializeData();
+
+        viewPager = rootView.findViewById(R.id.view_pager);
+
+        FunFactsAdapter adapter = new FunFactsAdapter(funFacts, getContext());
+        viewPager.setAdapter(adapter);
+
         swipe_text = rootView.findViewById(R.id.swipe_text);
 
-        funFacts = new ArrayList<>();
+
+        manageBlinkEffect();
+
+        return rootView;
+    }
+
+    public void initializeData() {
         funFacts.add(new FunFacts(
                 "Cloths in the land have a significant meaning or purpose",
                 R.drawable.igbo_dressing,
@@ -74,30 +88,6 @@ public class FunFactsFragment extends Fragment {
                 "Igbo names are traditionally and historically constructed",
                 R.drawable.names22,
                 "IGBO NAMES"));
-
-
-        mViewPager2.setAdapter(new FunFactsAdapter(funFacts, getContext(), mViewPager2 ));
-        mViewPager2.setClipToPadding(false);
-        mViewPager2.setClipChildren(false);
-        mViewPager2.setOffscreenPageLimit(3);
-        mViewPager2.getChildAt(0).setOverScrollMode(RecyclerView.OVER_SCROLL_NEVER);
-
-
-        CompositePageTransformer compositePageTransformer = new CompositePageTransformer();
-        compositePageTransformer.addTransformer(new MarginPageTransformer(90));
-        compositePageTransformer.addTransformer(new ViewPager2.PageTransformer() {
-            @Override
-            public void transformPage(@NonNull View page, float position) {
-                float r = 1 - Math.abs(position);
-                page.setScaleY(0.85f + r * 0.15f);
-            }
-        });
-
-        mViewPager2.setPageTransformer(compositePageTransformer);
-
-        manageBlinkEffect();
-
-        return rootView;
     }
 
     private void manageBlinkEffect(){
