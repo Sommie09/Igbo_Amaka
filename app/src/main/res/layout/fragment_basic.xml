@@ -6,9 +6,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".BasicFragment">
 
-    android:layoutAnimation="@anim/layout_animation_slide_from_buttom"
+
 
     <GridLayout
+        android:layoutAnimation="@anim/layout_animation_slide_from_buttom"
         android:padding="15dp"
         android:rowCount="2"
         android:columnCount="2"

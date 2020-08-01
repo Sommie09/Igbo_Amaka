@@ -1,5 +1,7 @@
 package com.example.igboamaka.funfacts;
 
+import android.animation.ArgbEvaluator;
+import android.animation.ObjectAnimator;
 import android.graphics.Color;
 import android.os.Bundle;
 
@@ -15,6 +17,8 @@ import androidx.viewpager2.widget.ViewPager2;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.widget.TextView;
 
 import com.example.igboamaka.R;
 import com.example.igboamaka.home.colors.Colours;
@@ -29,6 +33,7 @@ public class FunFactsFragment extends Fragment {
 
     List<FunFacts> funFacts;
     private ViewPager2 mViewPager2;
+    private TextView swipe_text;
 
 
     public FunFactsFragment() {
@@ -42,33 +47,33 @@ public class FunFactsFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.fragment_fun_facts, container, false);
 
         mViewPager2 = rootView.findViewById(R.id.pager);
+        swipe_text = rootView.findViewById(R.id.swipe_text);
 
         funFacts = new ArrayList<>();
         funFacts.add(new FunFacts(
+                "Cloths in the land have a significant meaning or purpose",
                 R.drawable.igbo_dressing,
-                Color.parseColor("#8B4513"),
                 "DRESSING"));
 
         funFacts.add(new FunFacts(
-                R.drawable.igbo_dressing,
-                Color.parseColor("#8B4513"),
+                "Igbo proverbs are wise sayings in igbo language",
+                R.drawable.kolanut,
                 "PROVERBS"));
 
         funFacts.add(new FunFacts(
-                R.drawable.igbo_dressing,
-                Color.parseColor("#8B4513"),
+                "Igbo foods are very easy and simple to cook and eat",
+                R.drawable.abacha,
                 "FOOD"));
 
         funFacts.add(new FunFacts(
-                R.drawable.igbo_dressing,
-                Color.parseColor("#8B4513"),
+                "The Igbos are more than 25% of the population in some Nigerian States",
+                R.drawable.map,
                 "EASTERN STATES"));
 
-        funFacts.add(new FunFacts
-                (R.drawable.igbo_dressing,
-                        Color.parseColor("#8B4513"),
-                        "IGBO NAMES"));
-
+        funFacts.add(new FunFacts(
+                "Igbo names are traditionally and historically constructed",
+                R.drawable.names22,
+                "IGBO NAMES"));
 
 
         mViewPager2.setAdapter(new FunFactsAdapter(funFacts, getContext(), mViewPager2 ));
@@ -90,27 +95,19 @@ public class FunFactsFragment extends Fragment {
 
         mViewPager2.setPageTransformer(compositePageTransformer);
 
-
-
-//        fun_facts_view = (RecyclerView) rootView.findViewById(R.id.funfacts_recycler_view);
-//        manager = new StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL);
-//
-//        fun_facts_view.setLayoutManager(manager);
-//
-//        funFacts = new ArrayList<>();
-//        funFacts.add(new FunFacts(R.drawable.igbo_dressing, Color.parseColor("#8B4513"), "DRESSING"));
-//        funFacts.add(new FunFacts(R.drawable.igbo_dressing, Color.parseColor("#8B4513"), "PROVERBS"));
-//        funFacts.add(new FunFacts(R.drawable.igbo_dressing, Color.parseColor("#8B4513"), "FOOD"));
-//        funFacts.add(new FunFacts(R.drawable.igbo_dressing, Color.parseColor("#8B4513"), "EASTERN STATES"));
-//        funFacts.add(new FunFacts(R.drawable.igbo_dressing, Color.parseColor("#8B4513"), "IGBO NAMES"));
-//
-//        adapter = new FunFactsAdapter(funFacts, getContext());
-//        fun_facts_view.setAdapter(adapter);
-
-
-
-
+        manageBlinkEffect();
 
         return rootView;
+    }
+
+    private void manageBlinkEffect(){
+        ObjectAnimator anim = ObjectAnimator.ofInt(swipe_text, "textColor",Color.parseColor("#FF9249"),
+                Color.WHITE, Color.parseColor("#FF9249"));
+        anim.setDuration(1000);
+        anim.setEvaluator(new ArgbEvaluator());
+        anim.setRepeatCount(Animation.INFINITE);
+        anim.start();
+
+
     }
 }

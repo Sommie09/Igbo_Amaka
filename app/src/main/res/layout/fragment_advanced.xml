@@ -7,6 +7,7 @@
     tools:context=".AdvancedFragment">
 
     <GridLayout
+        android:layoutAnimation="@anim/layout_animation_slide_from_buttom"
         android:padding="15dp"
         android:rowCount="2"
         android:columnCount="2"

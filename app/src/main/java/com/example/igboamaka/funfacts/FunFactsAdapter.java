@@ -39,7 +39,7 @@ public class FunFactsAdapter extends RecyclerView.Adapter<FunFactsAdapter.ViewHo
     public void onBindViewHolder(@NonNull FunFactsAdapter.ViewHolder holder, int position) {
         holder.image.setImageResource(funFacts.get(position).getImage());
         holder.title.setText(funFacts.get(position).getTitle());
-        holder.cardView.setCardBackgroundColor(funFacts.get(position).getBackground());
+        holder.description.setText(funFacts.get(position).getDescription());
     }
 
 
@@ -51,13 +51,13 @@ public class FunFactsAdapter extends RecyclerView.Adapter<FunFactsAdapter.ViewHo
     public static class ViewHolder extends RecyclerView.ViewHolder {
         ImageView image;
         TextView title;
-        MaterialCardView cardView;
+        TextView description;
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
 
             title = itemView.findViewById(R.id.card_title);
             image = itemView.findViewById(R.id.card_image);
-            cardView = itemView.findViewById(R.id.card_background);
+            description = itemView.findViewById(R.id.description);
         }
     }
 }

@@ -2,12 +2,12 @@ package com.example.igboamaka.funfacts;
 
 public class FunFacts {
     private int image;
-    private int background;
+    private String description;
     private String title;
 
-    public FunFacts(int image, int background, String title) {
+    public FunFacts(String description, int image, String title) {
         this.image = image;
-        this.background = background;
+        this.description = description;
         this.title = title;
     }
 
@@ -15,8 +15,8 @@ public class FunFacts {
         return image;
     }
 
-    public int getBackground() {
-        return background;
+    public String getDescription() {
+        return description;
     }
 
     public String getTitle() {
