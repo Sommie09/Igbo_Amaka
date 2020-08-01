@@ -55,7 +55,7 @@ public class SentenceCategoryAdapter extends RecyclerView.Adapter<SentenceCatego
 
             englishSentence = itemView.findViewById(R.id.english_text);
             igboSentence = itemView.findViewById(R.id.igbo_text);
-            cardView = itemView.findViewById(R.id.profile_card);
+            cardView = itemView.findViewById(R.id.profile_card_names);
 
         }
     }

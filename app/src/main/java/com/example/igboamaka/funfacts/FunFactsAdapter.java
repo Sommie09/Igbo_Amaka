@@ -17,6 +17,7 @@ import androidx.viewpager.widget.PagerAdapter;
 
 import com.example.igboamaka.R;
 import com.example.igboamaka.funfacts.food.FoodActivity;
+import com.example.igboamaka.funfacts.names.NamesActivity;
 
 import java.util.List;
 
@@ -63,7 +64,7 @@ public class FunFactsAdapter extends PagerAdapter {
             @Override
             public void onClick(View view) {
 
-               Intent intent = new Intent(mContext, FoodActivity.class);
+               Intent intent = new Intent(mContext, NamesActivity.class);
                mContext.startActivity(intent);
 
             }

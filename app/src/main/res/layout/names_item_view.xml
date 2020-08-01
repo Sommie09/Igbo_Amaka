@@ -32,7 +32,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/igbo_text"
+            android:id="@+id/igbo_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/lato_regular"
@@ -44,7 +44,7 @@
             tools:layout_editor_absoluteY="101dp"></TextView>
 
         <TextView
-            android:id="@+id/english_text"
+            android:id="@+id/english_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/lato_regular"
@@ -56,27 +56,6 @@
             tools:layout_editor_absoluteY="120dp"></TextView>
 
     </LinearLayout>
-
-    <ImageButton
-        android:id="@+id/imageButton"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:layout_alignParentEnd="true"
-        android:layout_marginEnd="28dp"
-        android:layout_toRightOf="@id/linearLayout"
-        android:backgroundTint="@android:color/transparent"
-        android:src="@drawable/ic_baseline_volume_up_24"
-        android:tint="@color/black"
-        app:layout_constraintBottom_toBottomOf="@+id/profile_card_names"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/profile_card_names">
-
-
-
-    </ImageButton>
-
-
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

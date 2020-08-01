@@ -26,7 +26,7 @@ public class FoodActivity extends AppCompatActivity {
         setContentView(R.layout.activity_food);
 
         Toolbar toolbar = findViewById(R.id.tool_bar);
-        toolbar.setTitle("Family");
+        toolbar.setTitle("Igbo Food");
 
         toolbar.setNavigationIcon(R.drawable.ic_baseline_keyboard_backspace_24);
 
@@ -34,75 +34,46 @@ public class FoodActivity extends AppCompatActivity {
 
         foods = new ArrayList<>();
 
-        foods.add(new Food("Abacha",
+        foods.add(new Food("ABACHA",
                 R.drawable.abacha,
-                "Abacha is an Eastern Nigeria dish made using dried, shredded cassava. You can eat it as a snack or a full meal.",
                 Color.parseColor("#B13254")));
 
-        foods.add(new Food("Abacha",
-                R.drawable.abacha,
-                "Abacha is an Eastern Nigeria dish made using dried, shredded cassava. You can eat it as a snack or a full meal.",
+        foods.add(new Food("UKWA",
+                R.drawable.ukwa,
                 Color.parseColor("#B13254")));
 
-        foods.add(new Food("Abacha",
-                R.drawable.abacha,
-                "Abacha is an Eastern Nigeria dish made using dried, shredded cassava. You can eat it as a snack or a full meal.",
+        foods.add(new Food("NKWOBI",
+                R.drawable.nkwobi,
                 Color.parseColor("#B13254")));
 
-        foods.add(new Food("Abacha",
-                R.drawable.abacha,
-                "Abacha is an Eastern Nigeria dish made using dried, shredded cassava. You can eat it as a snack or a full meal.",
+        foods.add(new Food("OFE ONUGBU",
+                R.drawable.bitterleaf,
                 Color.parseColor("#B13254")));
 
-        foods.add(new Food("Abacha",
-                R.drawable.abacha,
-                "Abacha is an Eastern Nigeria dish made using dried, shredded cassava. You can eat it as a snack or a full meal.",
+        foods.add(new Food("OFE NSALA",
+                R.drawable.nsala,
                 Color.parseColor("#B13254")));
 
-        foods.add(new Food("Abacha",
-                R.drawable.abacha,
-                "Abacha is an Eastern Nigeria dish made using dried, shredded cassava. You can eat it as a snack or a full meal.",
+        foods.add(new Food("OFE OGBONO",
+                R.drawable.ogbono,
                 Color.parseColor("#B13254")));
 
-        foods.add(new Food("Abacha",
-                R.drawable.abacha,
-                "Abacha is an Eastern Nigeria dish made using dried, shredded cassava. You can eat it as a snack or a full meal.",
+        foods.add(new Food("OFE OHA",
+                R.drawable.oha,
                 Color.parseColor("#B13254")));
 
-        foods.add(new Food("Abacha",
-                R.drawable.abacha,
-                "Abacha is an Eastern Nigeria dish made using dried, shredded cassava. You can eat it as a snack or a full meal.",
+        foods.add(new Food("OKPA",
+                R.drawable.okpa,
                 Color.parseColor("#B13254")));
 
-        foods.add(new Food("Abacha",
-                R.drawable.abacha,
-                "Abacha is an Eastern Nigeria dish made using dried, shredded cassava. You can eat it as a snack or a full meal.",
+        foods.add(new Food("ACHICHA",
+                R.drawable.achicha,
                 Color.parseColor("#B13254")));
 
-        foods.add(new Food("Abacha",
-                R.drawable.abacha,
-                "Abacha is an Eastern Nigeria dish made using dried, shredded cassava. You can eat it as a snack or a full meal.",
+        foods.add(new Food("OFE EGUSI",
+                R.drawable.egusi,
                 Color.parseColor("#B13254")));
 
-        foods.add(new Food("Abacha",
-                R.drawable.abacha,
-                "Abacha is an Eastern Nigeria dish made using dried, shredded cassava. You can eat it as a snack or a full meal.",
-                Color.parseColor("#B13254")));
-
-        foods.add(new Food("Abacha",
-                R.drawable.abacha,
-                "Abacha is an Eastern Nigeria dish made using dried, shredded cassava. You can eat it as a snack or a full meal.",
-                Color.parseColor("#B13254")));
-
-        foods.add(new Food("Abacha",
-                R.drawable.abacha,
-                "Abacha is an Eastern Nigeria dish made using dried, shredded cassava. You can eat it as a snack or a full meal.",
-                Color.parseColor("#B13254")));
-
-        foods.add(new Food("Abacha",
-                R.drawable.abacha,
-                "Abacha is an Eastern Nigeria dish made using dried, shredded cassava. You can eat it as a snack or a full meal.",
-                Color.parseColor("#B13254")));
 
 
         RecyclerView recyclerView = findViewById(R.id.food_recycler_view);

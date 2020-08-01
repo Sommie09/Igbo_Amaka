@@ -48,7 +48,6 @@ public class BedroomFragment extends Fragment {
         houseHoldList.add(new HouseHold("table", "tebelu",Color.parseColor("#471437")));
 
 
-
         houseHoldList.add(new HouseHold("television", "Onyonyo", Color.parseColor("#B13254")));
         houseHoldList.add(new HouseHold("Book", "Akwukwo",Color.parseColor("#FF5449")));
         houseHoldList.add(new HouseHold("Radio", "Akpati-okwu",Color.parseColor("#FF9249")));

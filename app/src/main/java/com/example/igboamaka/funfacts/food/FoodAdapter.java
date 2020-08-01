@@ -39,7 +39,6 @@ public class FoodAdapter extends RecyclerView.Adapter<FoodAdapter.ViewHolder> {
     @Override
     public void onBindViewHolder(@NonNull FoodAdapter.ViewHolder holder, int position) {
         holder.foodName.setText(foods.get(position).getFoodName());
-        holder.foodDescription.setText(foods.get(position).getFoodDescription());
         holder.foodImage.setImageResource(foods.get(position).getFoodImage());
         holder.cardView.setCardBackgroundColor(foods.get(position).getFoodBackground());
 
@@ -53,14 +52,12 @@ public class FoodAdapter extends RecyclerView.Adapter<FoodAdapter.ViewHolder> {
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
         TextView foodName;
-        TextView foodDescription;
         ImageView foodImage;
         MaterialCardView cardView;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             foodName = itemView.findViewById(R.id.food_name);
-            foodDescription = itemView.findViewById(R.id.food_description);
             foodImage = itemView.findViewById(R.id.food_image);
             cardView = itemView.findViewById(R.id.food_card);
         }

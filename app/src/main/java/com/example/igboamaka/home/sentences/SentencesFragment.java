@@ -21,7 +21,6 @@ public class SentencesFragment extends Fragment {
     List<Sentences> sentences;
 
 
-
     public SentencesFragment() {
         // Required empty public constructor
     }

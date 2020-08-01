@@ -9,7 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_igbo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".funfacts.food.FoodActivity"></activity>
+        <activity android:name=".funfacts.names.NamesActivity"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/Activities" >
+        </activity>
+        <activity android:name=".funfacts.food.FoodActivity"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/Activities" />
         <activity
             android:name=".home.household.HouseHoldActivity"
             android:parentActivityName=".MainActivity"

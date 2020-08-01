@@ -33,7 +33,7 @@ public class KitchenFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_kitchen, container, false);
 
         houseHoldList = new ArrayList<>();
-        houseHoldList.add(new HouseHold("kitchen", "ụlọ ano esi ri", Color.parseColor("#B13254")));
+        houseHoldList.add(new HouseHold("kitchen", "ụlọ ano esi nri", Color.parseColor("#B13254")));
         houseHoldList.add(new HouseHold("dining room", "ụlọ erimeri",Color.parseColor("#FF5449")));
         houseHoldList.add(new HouseHold("Water", "Mmiri",Color.parseColor("#FF9249")));
 
