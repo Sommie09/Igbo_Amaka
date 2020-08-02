@@ -40,19 +40,19 @@ public class FoodActivity extends AppCompatActivity {
 
         foods.add(new Food("UKWA",
                 R.drawable.ukwa,
-                Color.parseColor("#B13254")));
+                Color.parseColor("#471437")));
 
         foods.add(new Food("NKWOBI",
                 R.drawable.nkwobi,
-                Color.parseColor("#B13254")));
+                Color.parseColor("#FF5449")));
 
         foods.add(new Food("OFE ONUGBU",
                 R.drawable.bitterleaf,
-                Color.parseColor("#B13254")));
+                Color.parseColor("#FF7349")));
 
         foods.add(new Food("OFE NSALA",
                 R.drawable.nsala,
-                Color.parseColor("#B13254")));
+                Color.parseColor("#FF9249")));
 
         foods.add(new Food("OFE OGBONO",
                 R.drawable.ogbono,
@@ -60,15 +60,15 @@ public class FoodActivity extends AppCompatActivity {
 
         foods.add(new Food("OFE OHA",
                 R.drawable.oha,
-                Color.parseColor("#B13254")));
+                Color.parseColor("#471437")));
 
         foods.add(new Food("OKPA",
                 R.drawable.okpa,
-                Color.parseColor("#B13254")));
+                Color.parseColor("#FF5449")));
 
         foods.add(new Food("ACHICHA",
                 R.drawable.achicha,
-                Color.parseColor("#B13254")));
+                Color.parseColor("#FF7349")));
 
         foods.add(new Food("OFE EGUSI",
                 R.drawable.egusi,

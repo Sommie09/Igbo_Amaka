@@ -63,9 +63,18 @@ public class FunFactsAdapter extends PagerAdapter {
         view.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                switch (position){
+                    case 2:
+                        Intent foodIntent = new Intent(mContext, FoodActivity.class);
+                        mContext.startActivity(foodIntent);
+                        break;
+                    case 4:
+                        Intent namesIntent = new Intent(mContext, NamesActivity.class);
+                        mContext.startActivity(namesIntent);
+                        break;
+                }
 
-               Intent intent = new Intent(mContext, NamesActivity.class);
-               mContext.startActivity(intent);
+
 
             }
         });
