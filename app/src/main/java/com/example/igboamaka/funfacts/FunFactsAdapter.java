@@ -73,9 +73,6 @@ public class FunFactsAdapter extends PagerAdapter {
                         mContext.startActivity(namesIntent);
                         break;
                 }
-
-
-
             }
         });
 

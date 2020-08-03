@@ -9,11 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_igbo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".funfacts.names.NamesActivity"
+        <activity
+            android:name=".funfacts.names.NamesActivity"
             android:parentActivityName=".MainActivity"
-            android:theme="@style/Activities" >
+            android:theme="@style/Activities">
         </activity>
-        <activity android:name=".funfacts.food.FoodActivity"
+        <activity
+            android:name=".funfacts.food.FoodActivity"
             android:parentActivityName=".MainActivity"
             android:theme="@style/Activities" />
         <activity
@@ -39,7 +41,8 @@
         <activity
             android:name=".home.colors.ColoursActivity"
             android:parentActivityName=".MainActivity"
-            android:theme="@style/Activities" />
+            android:theme="@style/Activities">
+        </activity>
         <activity
             android:name=".home.numbers.NumbersActivity"
             android:parentActivityName=".MainActivity"
@@ -47,13 +50,15 @@
         <activity
             android:name=".SplashScreen"
             android:theme="@style/SplashScreen">
+
+        </activity>
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>

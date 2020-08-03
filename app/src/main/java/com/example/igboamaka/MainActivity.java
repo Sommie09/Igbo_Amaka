@@ -9,6 +9,7 @@ import android.util.Log;
 
 import com.example.igboamaka.funfacts.FunFactsFragment;
 import com.example.igboamaka.home.HomeFragment;
+import com.example.igboamaka.quiz.QuizFragment;
 import com.ismaeldivita.chipnavigation.ChipNavigationBar;
 
 public class MainActivity extends AppCompatActivity {
