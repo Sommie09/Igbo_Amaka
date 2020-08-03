@@ -7,7 +7,6 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 public class SplashScreen extends AppCompatActivity {
@@ -27,7 +26,7 @@ public class SplashScreen extends AppCompatActivity {
         bottomAnim = AnimationUtils.loadAnimation(this, R.anim.bottom_animation);
 
         app_name = findViewById(R.id.app_name);
-        description = findViewById(R.id.description);
+        description = findViewById(R.id.igbo_description);
 
         app_name.setAnimation(topAnim);
         description.setAnimation(bottomAnim);

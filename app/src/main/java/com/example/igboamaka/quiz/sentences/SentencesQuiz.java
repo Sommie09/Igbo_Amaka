@@ -1,12 +1,13 @@
-package com.example.igboamaka.quiz.numbers;
+package com.example.igboamaka.quiz.sentences;
 
-public class NumberQuiz {
+public class SentencesQuiz {
+
     private String questionCounter;
     private String question;
     private int option1Colour, option2Colour, option3Colour, option4Colour;
     private String option1, option2, option3, option4;
 
-    public NumberQuiz(String questionCounter, String question, int option1Colour, int option2Colour, int option3Colour, int option4Colour, String option1, String option2, String option3, String option4) {
+    public SentencesQuiz(String questionCounter, String question, int option1Colour, int option2Colour, int option3Colour, int option4Colour, String option1, String option2, String option3, String option4) {
         this.questionCounter = questionCounter;
         this.question = question;
         this.option1Colour = option1Colour;
@@ -73,5 +74,4 @@ public class NumberQuiz {
     public String getOption4() {
         return option4;
     }
-
 }

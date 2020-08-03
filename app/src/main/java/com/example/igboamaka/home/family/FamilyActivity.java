@@ -22,7 +22,7 @@ public class FamilyActivity extends AppCompatActivity {
         setContentView(R.layout.activity_family);
 
         Toolbar toolbar = findViewById(R.id.tool_bar);
-        toolbar.setTitle("Animals");
+        toolbar.setTitle("Family");
 
         toolbar.setNavigationIcon(R.drawable.ic_baseline_keyboard_backspace_24);
 

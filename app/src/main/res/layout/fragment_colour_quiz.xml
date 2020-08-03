@@ -6,7 +6,7 @@
     android:layout_height="match_parent">
 
     <androidx.viewpager2.widget.ViewPager2
-        android:id="@+id/number_pager"
+        android:id="@+id/colour_pager"
         android:layout_width="match_parent"
         android:layout_height="500dp"
         android:layout_marginTop="44dp"
@@ -16,7 +16,7 @@
         app:layout_constraintTop_toTopOf="parent"></androidx.viewpager2.widget.ViewPager2>
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/next_button_number"
+        android:id="@+id/next_button_colour"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="60dp"
@@ -29,7 +29,7 @@
         app:layout_constraintVertical_bias="0.27"></com.google.android.material.button.MaterialButton>
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/prev_button_number"
+        android:id="@+id/prev_button_colour"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="60dp"

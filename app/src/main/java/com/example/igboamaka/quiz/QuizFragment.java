@@ -15,11 +15,13 @@ import android.view.ViewGroup;
 
 import com.example.igboamaka.R;
 import com.example.igboamaka.home.numbers.NumbersActivity;
+import com.example.igboamaka.quiz.colour.ColourQuizFragment;
 import com.example.igboamaka.quiz.numbers.NumberQuizFragment;
+import com.example.igboamaka.quiz.sentences.SentenceQuizFragment;
 import com.google.android.material.card.MaterialCardView;
 
 public class QuizFragment extends Fragment {
-    MaterialCardView numberQuizCard;
+    MaterialCardView numberQuizCard, sentenceQuizCard, coloursCard;
 
 
     public QuizFragment() {
@@ -37,6 +39,32 @@ public class QuizFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 Fragment fragment = new NumberQuizFragment();
+                FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
+                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                fragmentTransaction.replace(R.id.fragment_container, fragment);
+                fragmentTransaction.addToBackStack(null);
+                fragmentTransaction.commit();
+            }
+        });
+
+        sentenceQuizCard = (MaterialCardView) view.findViewById(R.id.sentences_card_quiz);
+        sentenceQuizCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Fragment fragment = new SentenceQuizFragment();
+                FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
+                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                fragmentTransaction.replace(R.id.fragment_container, fragment);
+                fragmentTransaction.addToBackStack(null);
+                fragmentTransaction.commit();
+            }
+        });
+
+        coloursCard = (MaterialCardView) view.findViewById(R.id.colours_quiz_card);
+        coloursCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Fragment fragment = new ColourQuizFragment();
                 FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
                 fragmentTransaction.replace(R.id.fragment_container, fragment);

@@ -1,7 +1,6 @@
-package com.example.igboamaka.quiz.numbers;
+package com.example.igboamaka.quiz.colour;
 
 import android.graphics.Color;
-import android.os.Build;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -13,40 +12,43 @@ import androidx.viewpager2.widget.CompositePageTransformer;
 import androidx.viewpager2.widget.MarginPageTransformer;
 import androidx.viewpager2.widget.ViewPager2;
 
-import android.os.Handler;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.WindowManager;
 
 import com.example.igboamaka.R;
 import com.example.igboamaka.quiz.QuizFragment;
+import com.example.igboamaka.quiz.numbers.NumberQuiz;
+import com.example.igboamaka.quiz.numbers.NumberQuizAdapter;
 import com.google.android.material.button.MaterialButton;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Timer;
-import java.util.TimerTask;
 
-public class NumberQuizFragment extends Fragment {
+
+public class ColourQuizFragment extends Fragment {
     private ViewPager2 mViewPager2;
     MaterialButton nextButton, prevButton;
     private NumberQuizAdapter quizAdapter;
 
-    public NumberQuizFragment() {
+
+
+    public ColourQuizFragment() {
         // Required empty public constructor
     }
+
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_number_quiz, container, false);
+        View view = inflater.inflate(R.layout.fragment_colour_quiz, container, false);
 
 
-        mViewPager2 = view.findViewById(R.id.number_pager);
-        nextButton = view.findViewById(R.id.next_button_number);
-        prevButton = view.findViewById(R.id.prev_button_number);
+        mViewPager2 = view.findViewById(R.id.colour_pager);
+        nextButton = view.findViewById(R.id.next_button_colour);
+        prevButton = view.findViewById(R.id.prev_button_colour);
 
 
         nextButton.setOnClickListener(new View.OnClickListener() {
@@ -64,132 +66,84 @@ public class NumberQuizFragment extends Fragment {
         });
 
 
-        final List<NumberQuiz> numberQuiz = new ArrayList<>();
+        final List<ColourQuiz> colourQuiz = new ArrayList<>();
 
-        numberQuiz.add(new NumberQuiz(
-                "Question 1/10",
+        colourQuiz.add(new ColourQuiz(
+                "Question 1/15",
                 "I have \"five\" fingers",
                 Color.GREEN,
                 Color.RED,
                 Color.RED,
                 Color.RED,
-                "ise",
-                "abụọ",
-                "isii",
-                "asato"));
+
+                Color.RED,
+                "ọbara ọbara",
+                "oji",
+                "oroma",
+                "Olaedo"));
 
 
-        numberQuiz.add(new NumberQuiz(
-                "Question 2/10",
+        colourQuiz.add(new ColourQuiz(
+                "Question 2/5",
                 "My neighbour just won a \"thousand\' dollars",
                 Color.RED,
                 Color.RED,
                 Color.RED,
                 Color.GREEN,
-                "nari anọ",
-                "otu puku",
-                "otu nnari",
-                "otu ijeri"));
+
+                Color.GREEN,
+                "ododo",
+                "ọcha",
+                "Olaedo",
+                "ndụ-ndụ"));
 
 
-        numberQuiz.add(new NumberQuiz(
-                "Question 3/10",
+        colourQuiz.add(new ColourQuiz(
+                "Question 3/5",
                 "I have \"four\" siblings",
                 Color.RED,
                 Color.GREEN,
                 Color.RED,
                 Color.RED,
-                "ise",
-                "anọ",
-                "ise",
-                "asato"));
 
-        numberQuiz.add(new NumberQuiz(
-                "Question 4/10",
+                Color.YELLOW,
+                "uri",
+                "edo",
+                "asato",
+                "Olaocha"));
+
+        colourQuiz.add(new ColourQuiz(
+                "Question 4/5",
                 "I bought \"fourteen\" bags of rice",
                 Color.RED,
                 Color.RED,
                 Color.RED,
                 Color.GREEN,
-                "iri na atọ",
-                "iri abụọ",
-                "iri atọ",
-                "iri na anọ"));
 
-        numberQuiz.add(new NumberQuiz(
-                "Question 5/10",
+                Color.BLUE,
+                "oji",
+                "oroma",
+                "edo",
+                "amaloji"));
+
+        colourQuiz.add(new ColourQuiz(
+                "Question 5/5",
                 "I just took \"two\" gallons \nof palm wine",
                 Color.RED,
                 Color.GREEN,
                 Color.RED,
                 Color.RED,
-                "ise",
-                "abụọ",
-                "iri na itoolu",
-                "otu puku"));
 
-        numberQuiz.add(new NumberQuiz(
-                "Question 6/10",
-                "There are \"thirty\" days in September",
-                Color.RED,
-                Color.GREEN,
-                Color.RED,
-                Color.RED,
-                "iri abụọ na otu",
-                "iri atọ",
-                "iri abụọ na itoolu",
-                "iri na otu"));
-
-        numberQuiz.add(new NumberQuiz(
-                "Question 7/10",
-                "I am \"twenty-seven\" \nyears old",
-                Color.GREEN,
-                Color.RED,
-                Color.RED,
-                Color.RED,
-                "iri abụọ na asaa",
-                "iri abụọ na atọ",
-                "nari atọ",
-                "otu puku"));
-
-        numberQuiz.add(new NumberQuiz(
-                "Question 8/10",
-                "I was able to make \"100,000\" today",
-                Color.RED,
-                Color.GREEN,
-                Color.RED,
-                Color.RED,
-                "otu nde",
-                "otu nnari",
-                "nari asato",
-                "iri abụọ na asaa"));
-
-        numberQuiz.add(new NumberQuiz(
-                "Question 9/10",
-                "My second daughter is \"9\" years old",
-                Color.RED,
-                Color.RED,
-                Color.RED,
-                Color.GREEN,
-                "otu nnari",
-                "nari  asaa",
-                "ise",
-                "itoolu"));
-
-        numberQuiz.add(new NumberQuiz(
-                "Question 10/10",
-                "I have just \"300\" \nnaira left",
-                Color.RED,
-                Color.GREEN,
-                Color.RED,
-                Color.RED,
-                "otu nnari",
-                "nari atọ",
-                "iri atọ",
-                "iri na asaa"));
+                Color.BLACK,
+                "amaloji",
+                "oji",
+                "Uhie ocha",
+                "Olaedo"));
 
 
-        mViewPager2.setAdapter(new NumberQuizAdapter(numberQuiz, getContext(), mViewPager2));
+
+
+        mViewPager2.setAdapter(new ColourQuizAdapter(colourQuiz, getContext(), mViewPager2));
         mViewPager2.setClipToPadding(false);
         mViewPager2.setClipChildren(false);
         mViewPager2.setOffscreenPageLimit(3);
@@ -211,7 +165,7 @@ public class NumberQuizFragment extends Fragment {
             @Override
             public void onPageSelected(int position) {
                 super.onPageSelected(position);
-                if (position == numberQuiz.size() - 1) {
+                if (position == colourQuiz.size() - 1) {
                     nextButton.setBackgroundColor(Color.parseColor("#FF9249"));
                     nextButton.setText("FINISH");
                     prevButton.setVisibility(View.INVISIBLE);

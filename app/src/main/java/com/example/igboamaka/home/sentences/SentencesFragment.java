@@ -35,12 +35,12 @@ public class SentencesFragment extends Fragment {
         sentences = new ArrayList<>();
 
         sentences.add(new Sentences("What is your name?", "Gịnị bu aha gị?", Color.parseColor("#B13254")));
-        sentences.add(new Sentences("My name is Chika", "My name is Chisom",Color.parseColor("#FF5449")));
+        sentences.add(new Sentences("My name is Chisom", "Aha mu bu Chisom",Color.parseColor("#FF5449")));
         sentences.add(new Sentences("How are they doing?", "Kedu ka ha melu?",Color.parseColor("#FF9249")));
 
-        sentences.add(new Sentences("They are doing fine", "Ha dị mma.",Color.parseColor("#FF7349")));
+        sentences.add(new Sentences("They are doing fine", "Ha dị mma",Color.parseColor("#FF7349")));
         sentences.add(new Sentences("Who is this?", "Kedu onye bụ nke a? ",Color.parseColor("#471437")));
-        sentences.add(new Sentences("I don’t know", "Amaghị m.", Color.parseColor("#B13254")));
+        sentences.add(new Sentences("I don’t know", "Amaghị m", Color.parseColor("#B13254")));
 
         //sentences.add(new Sentences("Do you speak Igbo", "Gịnị bu aha gị?", Color.parseColor("#B13254")));
         sentences.add(new Sentences("What is she doing?", "Kedu ka o na-eme?",Color.parseColor("#FF5449")));

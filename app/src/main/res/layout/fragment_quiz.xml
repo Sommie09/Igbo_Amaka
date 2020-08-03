@@ -62,7 +62,7 @@
         </com.google.android.material.card.MaterialCardView>
 
         <com.google.android.material.card.MaterialCardView
-            android:id="@+id/numbers_option2"
+            android:id="@+id/family_quiz_card"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_rowWeight="1"
@@ -91,7 +91,7 @@
         </com.google.android.material.card.MaterialCardView>
 
         <com.google.android.material.card.MaterialCardView
-            android:id="@+id/numbers_option3"
+            android:id="@+id/animal_quiz_card"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_rowWeight="1"
@@ -120,7 +120,7 @@
         </com.google.android.material.card.MaterialCardView>
 
         <com.google.android.material.card.MaterialCardView
-            android:id="@+id/numbers_option4"
+            android:id="@+id/colours_quiz_card"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_rowWeight="1"

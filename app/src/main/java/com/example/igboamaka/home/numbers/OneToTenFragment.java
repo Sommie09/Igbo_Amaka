@@ -46,7 +46,7 @@ public class OneToTenFragment extends Fragment {
         mNumbersList.add(new Numbers("8", "asato",Color.parseColor("#FF9249")));
 
         mNumbersList.add(new Numbers("9", "itoolu",Color.parseColor("#FF7349")));
-        mNumbersList.add(new Numbers("10", "iri",Color.parseColor("#471437")));
+        mNumbersList.add(new Numbers("10", "ise",Color.parseColor("#471437")));
 
         RecyclerView recyclerView = view.findViewById(R.id.numbers_recycler_view);
         NumberCategoryAdapter adapter = new NumberCategoryAdapter(getContext(), mNumbersList);

@@ -4,7 +4,6 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -89,8 +88,8 @@ public class NumberQuizAdapter extends RecyclerView.Adapter<NumberQuizAdapter.Vi
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
-            questionCounter = itemView.findViewById(R.id.number_question_counter);
-            question = itemView.findViewById(R.id.number_question);
+            questionCounter = itemView.findViewById(R.id.colour_question_counter);
+            question = itemView.findViewById(R.id.colour_question);
             option1 = itemView.findViewById(R.id.numbers_option1Text);
             option2 = itemView.findViewById(R.id.numbers_option2Text);
             option3 = itemView.findViewById(R.id.numbers_option3Text);
