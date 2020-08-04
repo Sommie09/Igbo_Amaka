@@ -18,7 +18,7 @@
 
 
         <TextView
-            android:id="@+id/colour_question_counter"
+            android:id="@+id/number_question_counter"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -32,7 +32,7 @@
         </TextView>
 
         <TextView
-            android:id="@+id/colour_question"
+            android:id="@+id/number_question"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -42,7 +42,7 @@
             android:textColor="@color/black"
             android:textSize="30dp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/colour_question_counter"></TextView>
+            app:layout_constraintTop_toBottomOf="@+id/number_question_counter"></TextView>
 
         <TextView
             android:id="@+id/textView4"
@@ -54,7 +54,7 @@
             android:text="Translate the word in quotes"
             android:textColor="@color/grey"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/colour_question"></TextView>
+            app:layout_constraintTop_toBottomOf="@+id/number_question"></TextView>
 
         <GridLayout
             android:layout_width="match_parent"
@@ -71,7 +71,7 @@
             app:layout_constraintVertical_bias="0.076">
 
             <com.google.android.material.card.MaterialCardView
-                android:id="@+id/numbers_option1"
+                android:id="@+id/number_option1"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:layout_rowWeight="1"

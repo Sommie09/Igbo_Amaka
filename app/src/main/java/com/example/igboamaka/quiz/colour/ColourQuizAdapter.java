@@ -11,8 +11,6 @@ import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewpager2.widget.ViewPager2;
 
 import com.example.igboamaka.R;
-import com.example.igboamaka.quiz.numbers.NumberQuiz;
-import com.example.igboamaka.quiz.numbers.NumberQuizAdapter;
 import com.google.android.material.card.MaterialCardView;
 
 import java.util.List;

@@ -16,12 +16,13 @@ import android.view.ViewGroup;
 import com.example.igboamaka.R;
 import com.example.igboamaka.home.numbers.NumbersActivity;
 import com.example.igboamaka.quiz.colour.ColourQuizFragment;
+import com.example.igboamaka.quiz.family.FamilyQuizFragment;
 import com.example.igboamaka.quiz.numbers.NumberQuizFragment;
 import com.example.igboamaka.quiz.sentences.SentenceQuizFragment;
 import com.google.android.material.card.MaterialCardView;
 
 public class QuizFragment extends Fragment {
-    MaterialCardView numberQuizCard, sentenceQuizCard, coloursCard;
+    MaterialCardView numberQuizCard, sentenceQuizCard, coloursCard, familyCard;
 
 
     public QuizFragment() {
@@ -65,6 +66,19 @@ public class QuizFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 Fragment fragment = new ColourQuizFragment();
+                FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
+                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                fragmentTransaction.replace(R.id.fragment_container, fragment);
+                fragmentTransaction.addToBackStack(null);
+                fragmentTransaction.commit();
+            }
+        });
+
+        familyCard = (MaterialCardView) view.findViewById(R.id.family_quiz_card);
+        familyCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Fragment fragment = new FamilyQuizFragment();
                 FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
                 fragmentTransaction.replace(R.id.fragment_container, fragment);

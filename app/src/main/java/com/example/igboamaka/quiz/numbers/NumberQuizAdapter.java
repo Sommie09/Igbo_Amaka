@@ -88,13 +88,13 @@ public class NumberQuizAdapter extends RecyclerView.Adapter<NumberQuizAdapter.Vi
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
-            questionCounter = itemView.findViewById(R.id.colour_question_counter);
-            question = itemView.findViewById(R.id.colour_question);
+            questionCounter = itemView.findViewById(R.id.number_question_counter);
+            question = itemView.findViewById(R.id.number_question);
             option1 = itemView.findViewById(R.id.numbers_option1Text);
             option2 = itemView.findViewById(R.id.numbers_option2Text);
             option3 = itemView.findViewById(R.id.numbers_option3Text);
             option4 = itemView.findViewById(R.id.numbers_option4Text);
-            option1Colour = itemView.findViewById(R.id.numbers_option1);
+            option1Colour = itemView.findViewById(R.id.number_option1);
             option2Colour = itemView.findViewById(R.id.numbers_option2);
             option3Colour = itemView.findViewById(R.id.numbers_option3);
             option4Colour = itemView.findViewById(R.id.numbers_option4);

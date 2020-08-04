@@ -18,7 +18,7 @@
 
 
         <TextView
-            android:id="@+id/sentence_question_counter"
+            android:id="@+id/family_question_counter"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -32,7 +32,7 @@
         </TextView>
 
         <TextView
-            android:id="@+id/sentence_question"
+            android:id="@+id/family_question"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -42,7 +42,7 @@
             android:textColor="@color/black"
             android:textSize="30dp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/sentence_question_counter"></TextView>
+            app:layout_constraintTop_toBottomOf="@+id/family_question_counter"></TextView>
 
         <TextView
             android:id="@+id/textView4"
@@ -51,17 +51,18 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
             android:fontFamily="@font/lato_regular"
-            android:text="Translate the sentence above"
+            android:text="Translate the word in quotes"
             android:textColor="@color/grey"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/sentence_question"></TextView>
+            app:layout_constraintTop_toBottomOf="@+id/family_question"></TextView>
 
-        <LinearLayout
-            android:orientation="vertical"
+        <GridLayout
             android:layout_width="match_parent"
             android:layout_height="300dp"
             android:layout_marginTop="16dp"
+            android:columnCount="2"
             android:padding="15dp"
+            android:rowCount="2"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
@@ -70,26 +71,36 @@
             app:layout_constraintVertical_bias="0.076">
 
             <com.google.android.material.card.MaterialCardView
-                android:id="@+id/sentence_option1"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:id="@+id/family_option1"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
                 android:layout_margin="10dp"
                 android:clickable="true"
                 android:focusable="true"
                 app:cardBackgroundColor="@color/pink_red"
-                app:cardCornerRadius="10dp"
+                app:cardCornerRadius="15dp"
                 app:rippleColor="@color/white_colour">
 
+                <ImageView
+                    android:id="@+id/family_image_option1"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/family_grandfather">
+                </ImageView>
+
                 <TextView
-                    android:id="@+id/sentence_option1Text"
+                    android:id="@+id/family_option1Text"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
                     android:fontFamily="@font/lato_regular"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="40dp"
                     android:text="Numbers"
                     android:textColor="@color/white_colour"
-                    android:textStyle="bold">
-                </TextView>
+                    android:textStyle="bold"></TextView>
 
                 <View
                     android:layout_width="50dp"
@@ -99,23 +110,33 @@
             </com.google.android.material.card.MaterialCardView>
 
             <com.google.android.material.card.MaterialCardView
-                android:id="@+id/sentence_option2"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:id="@+id/family_option2"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
                 android:layout_margin="10dp"
                 android:clickable="true"
                 android:focusable="true"
                 app:cardBackgroundColor="@color/orange_pink"
-                app:cardCornerRadius="10dp"
+                app:cardCornerRadius="15dp"
                 app:rippleColor="@color/white_colour">
 
+                <ImageView
+                    android:id="@+id/family_image_option2"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/family_grandfather">
+                </ImageView>
+
+
                 <TextView
-                    android:id="@+id/sentence_option2Text"
+                    android:id="@+id/family_option2Text"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
+                    android:layout_marginTop="40dp"
                     android:fontFamily="@font/lato_regular"
                     android:text="Family"
                     android:textColor="@color/white_colour"
@@ -129,23 +150,33 @@
             </com.google.android.material.card.MaterialCardView>
 
             <com.google.android.material.card.MaterialCardView
-                android:id="@+id/sentence_option3"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:id="@+id/family_option3"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
                 android:layout_margin="10dp"
                 android:clickable="true"
                 android:focusable="true"
                 app:cardBackgroundColor="@color/pale_yellow"
-                app:cardCornerRadius="10dp"
+                app:cardCornerRadius="15dp"
                 app:rippleColor="@color/white_colour">
 
+                <ImageView
+                    android:id="@+id/family_image_option3"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/family_grandfather">
+                </ImageView>
+
+
                 <TextView
-                    android:id="@+id/sentence_option3Text"
+                    android:id="@+id/family_option3Text"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
+                    android:layout_marginTop="40dp"
                     android:fontFamily="@font/lato_regular"
                     android:text="Animals"
                     android:textColor="@color/white_colour"
@@ -159,23 +190,33 @@
             </com.google.android.material.card.MaterialCardView>
 
             <com.google.android.material.card.MaterialCardView
-                android:id="@+id/sentence_option4"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:id="@+id/family_option4"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
                 android:layout_margin="10dp"
                 android:clickable="true"
                 android:focusable="true"
                 app:cardBackgroundColor="@color/purple"
-                app:cardCornerRadius="10dp"
+                app:cardCornerRadius="15dp"
                 app:rippleColor="@color/white_colour">
 
+                <ImageView
+                    android:id="@+id/family_image_option4"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/family_grandfather">
+                </ImageView>
+
+
                 <TextView
-                    android:id="@+id/sentence_option4Text"
+                    android:id="@+id/family_option4Text"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
+                    android:layout_marginTop="40dp"
                     android:fontFamily="@font/lato_regular"
                     android:text="Colours"
                     android:textColor="@color/white_colour"
@@ -189,7 +230,7 @@
             </com.google.android.material.card.MaterialCardView>
 
 
-        </LinearLayout>
+        </GridLayout>
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
