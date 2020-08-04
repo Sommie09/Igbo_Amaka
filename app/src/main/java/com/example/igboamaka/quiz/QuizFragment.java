@@ -15,6 +15,8 @@ import android.view.ViewGroup;
 
 import com.example.igboamaka.R;
 import com.example.igboamaka.home.numbers.NumbersActivity;
+import com.example.igboamaka.quiz.animals.AnimalQuizFragment;
+import com.example.igboamaka.quiz.bodyparts.BodyPartsQuizFragment;
 import com.example.igboamaka.quiz.colour.ColourQuizFragment;
 import com.example.igboamaka.quiz.family.FamilyQuizFragment;
 import com.example.igboamaka.quiz.numbers.NumberQuizFragment;
@@ -22,7 +24,7 @@ import com.example.igboamaka.quiz.sentences.SentenceQuizFragment;
 import com.google.android.material.card.MaterialCardView;
 
 public class QuizFragment extends Fragment {
-    MaterialCardView numberQuizCard, sentenceQuizCard, coloursCard, familyCard;
+    MaterialCardView numberQuizCard, sentenceQuizCard, coloursCard, familyCard, animalCard, bodyPartsCard;
 
 
     public QuizFragment() {
@@ -35,7 +37,7 @@ public class QuizFragment extends Fragment {
                              Bundle savedInstanceState) {
        View view = getLayoutInflater().inflate(R.layout.fragment_quiz, container, false);
 
-        numberQuizCard = (MaterialCardView) view.findViewById(R.id.numbers_quiz_card);
+        numberQuizCard =  view.findViewById(R.id.numbers_quiz_card);
         numberQuizCard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -48,7 +50,7 @@ public class QuizFragment extends Fragment {
             }
         });
 
-        sentenceQuizCard = (MaterialCardView) view.findViewById(R.id.sentences_card_quiz);
+        sentenceQuizCard =  view.findViewById(R.id.sentences_card_quiz);
         sentenceQuizCard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -61,7 +63,7 @@ public class QuizFragment extends Fragment {
             }
         });
 
-        coloursCard = (MaterialCardView) view.findViewById(R.id.colours_quiz_card);
+        coloursCard =  view.findViewById(R.id.colours_quiz_card);
         coloursCard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -74,7 +76,7 @@ public class QuizFragment extends Fragment {
             }
         });
 
-        familyCard = (MaterialCardView) view.findViewById(R.id.family_quiz_card);
+        familyCard =  view.findViewById(R.id.family_quiz_card);
         familyCard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -86,6 +88,34 @@ public class QuizFragment extends Fragment {
                 fragmentTransaction.commit();
             }
         });
+
+        animalCard =  view.findViewById(R.id.animal_quiz_card);
+        animalCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Fragment fragment = new AnimalQuizFragment();
+                FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
+                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                fragmentTransaction.replace(R.id.fragment_container, fragment);
+                fragmentTransaction.addToBackStack(null);
+                fragmentTransaction.commit();
+            }
+        });
+
+        bodyPartsCard =  view.findViewById(R.id.bodyparts_card_quiz);
+        bodyPartsCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Fragment fragment = new BodyPartsQuizFragment();
+                FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
+                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                fragmentTransaction.replace(R.id.fragment_container, fragment);
+                fragmentTransaction.addToBackStack(null);
+                fragmentTransaction.commit();
+            }
+        });
+
+
 
 
 
