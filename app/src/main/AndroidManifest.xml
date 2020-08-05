@@ -4,16 +4,27 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher_igbo"
+        android:icon="@mipmap/ic_launcher_igbo_amaka"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_igbo"
+        android:roundIcon="@mipmap/ic_launcher_igbo_amaka"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".funfacts.states.StateActivity"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/Activities"
+            ></activity>
+        <activity android:name=".funfacts.proverbs.ProverbsActivity"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/Activities"
+            />
+        <activity android:name=".funfacts.dressing.DressingActivity"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/Activities"
+            />
         <activity
             android:name=".funfacts.names.NamesActivity"
             android:parentActivityName=".MainActivity"
-            android:theme="@style/Activities">
-        </activity>
+            android:theme="@style/Activities" />
         <activity
             android:name=".funfacts.food.FoodActivity"
             android:parentActivityName=".MainActivity"
@@ -41,17 +52,14 @@
         <activity
             android:name=".home.colors.ColoursActivity"
             android:parentActivityName=".MainActivity"
-            android:theme="@style/Activities">
-        </activity>
+            android:theme="@style/Activities" />
         <activity
             android:name=".home.numbers.NumbersActivity"
             android:parentActivityName=".MainActivity"
             android:theme="@style/Activities" />
         <activity
             android:name=".SplashScreen"
-            android:theme="@style/SplashScreen">
-
-        </activity>
+            android:theme="@style/SplashScreen" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

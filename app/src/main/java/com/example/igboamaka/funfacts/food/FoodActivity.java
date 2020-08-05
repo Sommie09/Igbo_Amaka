@@ -28,7 +28,6 @@ public class FoodActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.tool_bar);
         toolbar.setTitle("Igbo Food");
 
-        toolbar.setNavigationIcon(R.drawable.ic_baseline_keyboard_backspace_24);
 
         setSupportActionBar(toolbar);
 

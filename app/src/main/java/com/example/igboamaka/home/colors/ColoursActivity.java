@@ -37,7 +37,6 @@ public class ColoursActivity extends AppCompatActivity {
         colours.add(new Colours("Grey", " ntụ-ntụ", Color.GRAY,Color.WHITE));
         colours.add(new Colours("Black", "oji", Color.BLACK,Color.WHITE));
         colours.add(new Colours("White", "ọcha", Color.WHITE, Color.BLACK));
-        colours.add(new Colours("Violet", "ododo", Color.parseColor("#EE82EE"),Color.WHITE));
         colours.add(new Colours("Orange", "oroma", Color.parseColor("#E65100"),Color.WHITE));
         colours.add(new Colours("Purple", "ododo", Color.parseColor("#800080"),Color.WHITE));
         colours.add(new Colours("Gold", "Olaedo", Color.parseColor("#FFD700"),Color.WHITE));

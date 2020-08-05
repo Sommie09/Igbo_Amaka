@@ -102,7 +102,7 @@ public class FamilyQuizFragment extends Fragment {
 
         familyQuiz.add(new FamilyQuiz(
                 "Question 3/7",
-                "I need to see my \"grandmother\" in the village",
+                "I need to see my \"grandmother\".",
                 Color.RED,
                 Color.GREEN,
                 Color.RED,

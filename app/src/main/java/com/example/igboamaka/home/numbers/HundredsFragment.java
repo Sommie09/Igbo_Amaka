@@ -49,7 +49,6 @@ public class HundredsFragment extends Fragment {
         mNumbersList.add(new Numbers("100,000", "puku nari",Color.parseColor("#471437")));
         mNumbersList.add(new Numbers("100,000,000", "otu nde",Color.parseColor("#B13254")));
 
-        mNumbersList.add(new Numbers("100,000,000,000", "otu ijeri",Color.parseColor("#FF9249")));
 
         RecyclerView recyclerView = view.findViewById(R.id.numbers_recycler_view);
         NumberCategoryAdapter adapter = new NumberCategoryAdapter(getContext(), mNumbersList);

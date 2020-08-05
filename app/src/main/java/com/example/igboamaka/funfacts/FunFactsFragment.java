@@ -66,7 +66,7 @@ public class FunFactsFragment extends Fragment {
     public void initializeData() {
         funFacts.add(new FunFacts(
                 "Cloths in the land have a significant meaning or purpose",
-                R.drawable.igbo_dressing,
+                R.drawable.igbo_women,
                 "DRESSING"));
 
         funFacts.add(new FunFacts(

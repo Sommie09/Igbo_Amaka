@@ -173,7 +173,7 @@ public class BodyPartsQuizFragment extends Fragment {
                         nextButton.setOnClickListener(new View.OnClickListener() {
                             @Override
                             public void onClick(View view) {
-                                Fragment fragment = new BodyPartsQuizFragment();
+                                Fragment fragment = new QuizFragment();
                                 FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
                                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
                                 fragmentTransaction.replace(R.id.fragment_container, fragment);

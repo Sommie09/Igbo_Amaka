@@ -88,8 +88,8 @@ public class SentenceQuizAdapter extends RecyclerView.Adapter<SentenceQuizAdapte
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
-            questionCounter = itemView.findViewById(R.id.family_question_counter);
-            question = itemView.findViewById(R.id.family_question);
+            questionCounter = itemView.findViewById(R.id.sentence_question_counter);
+            question = itemView.findViewById(R.id.sentence_question);
             option1 = itemView.findViewById(R.id.sentence_option1Text);
             option2 = itemView.findViewById(R.id.sentence_option2Text);
             option3 = itemView.findViewById(R.id.sentence_option3Text);

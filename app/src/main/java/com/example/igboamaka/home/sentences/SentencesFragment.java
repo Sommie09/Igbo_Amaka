@@ -42,7 +42,7 @@ public class SentencesFragment extends Fragment {
         sentences.add(new Sentences("Who is this?", "Kedu onye bụ nke a? ",Color.parseColor("#471437")));
         sentences.add(new Sentences("I don’t know", "Amaghị m", Color.parseColor("#B13254")));
 
-        //sentences.add(new Sentences("Do you speak Igbo", "Gịnị bu aha gị?", Color.parseColor("#B13254")));
+        sentences.add(new Sentences("Do you speak Igbo", "I na-asu Igbo", Color.parseColor("#B13254")));
         sentences.add(new Sentences("What is she doing?", "Kedu ka o na-eme?",Color.parseColor("#FF5449")));
         sentences.add(new Sentences("Where are you from?", "Ị bu onye ebe?",Color.parseColor("#FF9249")));
 
@@ -53,6 +53,7 @@ public class SentencesFragment extends Fragment {
         sentences.add(new Sentences("I remember", "Echetara m",Color.parseColor("#B13254")));
         sentences.add(new Sentences("He/She is a nice person", "Ọ bụ ezigbo mmadụ",Color.parseColor("#FF5449")));
         sentences.add(new Sentences("You are pretty", "Ị mara mma nwanyị", Color.parseColor("#FF9249")));
+        sentences.add(new Sentences("My strength is finished", "ike gwuru",Color.parseColor("#FF5449")));
 
 
         RecyclerView recyclerView = view.findViewById(R.id.sentence_recycler_view);

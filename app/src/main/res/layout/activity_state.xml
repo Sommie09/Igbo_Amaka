@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".funfacts.states.StateActivity">
+
+    <include
+        layout="@layout/toolbar_layout"
+        android:id="@+id/tool_bar">
+    </include>
+
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:columnCount="2"
+        android:padding="5dp"
+        android:rowCount="2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tool_bar">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/numbers_card"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            app:cardBackgroundColor="@color/pink_red"
+            app:cardCornerRadius="15dp"
+            app:rippleColor="@color/white_colour">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|center"
+                android:layout_marginTop="60dp"
+                android:fontFamily="@font/lato_regular"
+                android:text="Anambra"
+                android:textSize="18dp"
+                android:textColor="@color/white_colour"
+                android:textStyle="bold">
+            </TextView>
+
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center"
+            android:layout_marginTop="85dp"
+            android:fontFamily="@font/lato_regular"
+            android:text="Awka"
+            android:textColor="@color/white_colour">
+        </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|center"
+                android:layout_marginTop="110dp"
+                android:fontFamily="@font/meriendaone_regular"
+                android:text="-Light of the Nation-"
+                android:textColor="@color/white_colour">
+            </TextView>
+
+            <View
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="bottom|right"
+                android:background="@drawable/endview_background">
+            </View>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/alphabet_card"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            app:cardBackgroundColor="@color/orange_pink"
+            app:cardCornerRadius="15dp"
+            app:rippleColor="@color/white_colour">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|center"
+                android:layout_marginTop="60dp"
+                android:fontFamily="@font/lato_regular"
+                android:text="Abia"
+                android:textSize="18dp"
+                android:textColor="@color/white_colour"
+                android:textStyle="bold">
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|center"
+                android:layout_marginTop="85dp"
+                android:fontFamily="@font/lato_regular"
+                android:text="Umuahia"
+                android:textColor="@color/white_colour">
+            </TextView>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|center"
+                android:layout_marginTop="110dp"
+                android:fontFamily="@font/meriendaone_regular"
+                android:text="-God's Own State-"
+                android:textColor="@color/white_colour">
+            </TextView>
+
+            <View
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="bottom|right"
+                android:background="@drawable/endview_background">
+            </View>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/animals_card"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            app:cardBackgroundColor="@color/pale_yellow"
+            app:cardCornerRadius="15dp"
+            app:rippleColor="@color/white_colour">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|center"
+                android:layout_marginTop="60dp"
+                android:fontFamily="@font/lato_regular"
+                android:text="Ebonyi"
+                android:textSize="18dp"
+                android:textColor="@color/white_colour"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|center"
+                android:layout_marginTop="85dp"
+                android:fontFamily="@font/lato_regular"
+                android:text="Abakaliki"
+                android:textColor="@color/white_colour">
+            </TextView>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|center"
+                android:layout_marginTop="110dp"
+                android:fontFamily="@font/meriendaone_regular"
+                android:text="-Salt of the Nation-"
+                android:textColor="@color/white_colour">
+            </TextView>
+
+            <View
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="bottom|right"
+                android:background="@drawable/endview_background"></View>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            app:cardBackgroundColor="@color/purple"
+            app:cardCornerRadius="15dp"
+            app:rippleColor="@color/white_colour">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|center"
+                android:layout_marginTop="60dp"
+                android:fontFamily="@font/lato_regular"
+                android:text="Enugu"
+                android:textSize="18dp"
+                android:textColor="@color/white_colour"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|center"
+                android:layout_marginTop="85dp"
+                android:fontFamily="@font/lato_regular"
+                android:text="Enugu"
+                android:textColor="@color/white_colour">
+            </TextView>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|center"
+                android:layout_marginTop="110dp"
+                android:fontFamily="@font/meriendaone_regular"
+                android:text="-Coal City State-"
+                android:textColor="@color/white_colour">
+            </TextView>
+
+            <View
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="bottom|right"
+                android:background="@drawable/endview_background"></View>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/colours_card"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            app:cardBackgroundColor="@color/orange_pink"
+            app:cardCornerRadius="15dp"
+            app:rippleColor="@color/white_colour">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|center"
+                android:layout_marginTop="60dp"
+                android:fontFamily="@font/lato_regular"
+                android:text="Imo"
+                android:textSize="18dp"
+                android:textColor="@color/white_colour"
+                android:textStyle="bold">
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|center"
+                android:layout_marginTop="85dp"
+                android:fontFamily="@font/lato_regular"
+                android:text="Owerri"
+                android:textColor="@color/white_colour">
+            </TextView>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|center"
+                android:layout_marginTop="110dp"
+                android:fontFamily="@font/meriendaone_regular"
+                android:text="-Eastern Heartland -"
+                android:textColor="@color/white_colour">
+            </TextView>
+
+            <View
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="bottom|right"
+                android:background="@drawable/endview_background">
+            </View>
+        </com.google.android.material.card.MaterialCardView>
+    </GridLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

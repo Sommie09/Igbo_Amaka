@@ -16,8 +16,11 @@ import androidx.viewpager.widget.PagerAdapter;
 
 
 import com.example.igboamaka.R;
+import com.example.igboamaka.funfacts.dressing.DressingActivity;
 import com.example.igboamaka.funfacts.food.FoodActivity;
 import com.example.igboamaka.funfacts.names.NamesActivity;
+import com.example.igboamaka.funfacts.proverbs.ProverbsActivity;
+import com.example.igboamaka.funfacts.states.StateActivity;
 
 import java.util.List;
 
@@ -64,14 +67,28 @@ public class FunFactsAdapter extends PagerAdapter {
             @Override
             public void onClick(View view) {
                 switch (position){
+                    case 0:
+                        Intent dressingIntent = new Intent(mContext, DressingActivity.class);
+                        mContext.startActivity(dressingIntent);
+                        break;
+                    case 1:
+                        Intent proverbsIntent = new Intent(mContext, ProverbsActivity.class);
+                        mContext.startActivity(proverbsIntent);
+                        break;
                     case 2:
                         Intent foodIntent = new Intent(mContext, FoodActivity.class);
                         mContext.startActivity(foodIntent);
+                        break;
+
+                        case 3:
+                        Intent statesIntent = new Intent(mContext, StateActivity.class);
+                        mContext.startActivity(statesIntent);
                         break;
                     case 4:
                         Intent namesIntent = new Intent(mContext, NamesActivity.class);
                         mContext.startActivity(namesIntent);
                         break;
+
                 }
             }
         });
