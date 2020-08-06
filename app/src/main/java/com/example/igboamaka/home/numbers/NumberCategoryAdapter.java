@@ -10,6 +10,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.igboamaka.R;
+import com.example.igboamaka.home.sentences.SentenceCategoryAdapter;
 import com.google.android.material.card.MaterialCardView;
 
 import java.util.List;
@@ -18,6 +19,14 @@ public class NumberCategoryAdapter extends RecyclerView.Adapter<NumberCategoryAd
 
     private Context mContext;
     private List<Numbers> numbers;
+    private static RecyclerViewClickListener listener;
+
+
+    public NumberCategoryAdapter(Context context, List<Numbers> numbers, RecyclerViewClickListener listener) {
+        mContext = context;
+        this.numbers = numbers;
+        this.listener = listener;
+    }
 
     public NumberCategoryAdapter(Context context, List<Numbers> numbers) {
         mContext = context;
@@ -47,7 +56,7 @@ public class NumberCategoryAdapter extends RecyclerView.Adapter<NumberCategoryAd
         return numbers.size();
     }
 
-    public static class ViewHolder extends RecyclerView.ViewHolder {
+    public static class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
         TextView englishDigit;
         TextView igboTranslation;
         MaterialCardView cardView;
@@ -57,8 +66,18 @@ public class NumberCategoryAdapter extends RecyclerView.Adapter<NumberCategoryAd
             englishDigit = itemView.findViewById(R.id.english_digit);
             igboTranslation = itemView.findViewById(R.id.igbo_translation);
             cardView = itemView.findViewById(R.id.card_view_number);
+            itemView.setOnClickListener(this);
 
         }
+
+        @Override
+        public void onClick(View view) {
+            listener.onClick(view, getAdapterPosition());
+        }
+    }
+
+    public interface RecyclerViewClickListener{
+        void onClick(View view, int position);
     }
 }
 

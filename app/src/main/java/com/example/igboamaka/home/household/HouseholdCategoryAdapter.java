@@ -18,10 +18,12 @@ public class HouseholdCategoryAdapter extends RecyclerView.Adapter<HouseholdCate
 
     private Context mContext;
     private List<HouseHold> houseHold;
+    private static RecyclerViewClickListener listener;
 
-    public HouseholdCategoryAdapter(Context context, List<HouseHold> houseHold) {
+    public HouseholdCategoryAdapter(Context context, List<HouseHold> houseHold,RecyclerViewClickListener listener) {
         mContext = context;
         this.houseHold = houseHold;
+        this.listener = listener;
     }
 
     @NonNull
@@ -45,7 +47,7 @@ public class HouseholdCategoryAdapter extends RecyclerView.Adapter<HouseholdCate
         return houseHold.size();
     }
 
-    public static class ViewHolder extends RecyclerView.ViewHolder {
+    public static class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
         TextView englishItem;
         TextView igboItem;
         MaterialCardView cardView;
@@ -55,8 +57,18 @@ public class HouseholdCategoryAdapter extends RecyclerView.Adapter<HouseholdCate
             englishItem = itemView.findViewById(R.id.english_household);
             igboItem = itemView.findViewById(R.id.igbo_household);
             cardView = itemView.findViewById(R.id.card_view_household);
+            itemView.setOnClickListener(this);
 
         }
+
+        @Override
+        public void onClick(View view) {
+            listener.onClick(view, getAdapterPosition());
+        }
+    }
+
+    public interface RecyclerViewClickListener{
+        void onClick(View view, int position);
     }
 
 

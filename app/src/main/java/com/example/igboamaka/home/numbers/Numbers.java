@@ -4,16 +4,21 @@ public class Numbers {
     private String englishDigit;
     private String igboTranslation;
     private int backGroundColour;
-    private int audioResource;
+    private int audio;
 
+
+    public Numbers(String englishDigit, String igboTranslation, int backGroundColour, int audio) {
+        this.englishDigit = englishDigit;
+        this.igboTranslation = igboTranslation;
+        this.backGroundColour = backGroundColour;
+        this.audio = audio;
+    }
 
     public Numbers(String englishDigit, String igboTranslation, int backGroundColour) {
         this.englishDigit = englishDigit;
         this.igboTranslation = igboTranslation;
         this.backGroundColour = backGroundColour;
     }
-
-    public Numbers(){}
 
     public String getEnglishDigit() {
         return englishDigit;
@@ -27,7 +32,7 @@ public class Numbers {
         return backGroundColour;
     }
 
-    public int getAudioResource() {
-        return audioResource;
+    public int getAudio() {
+        return audio;
     }
 }

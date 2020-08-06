@@ -18,10 +18,12 @@ public class ColoursAdapter extends RecyclerView.Adapter<ColoursAdapter.ViewHold
 
     private Context mContext;
     private List<Colours> colours;
+    private static RecyclerViewClickListener listener;
 
-    public ColoursAdapter(Context context, List<Colours> colours) {
+    public ColoursAdapter(Context context, List<Colours> colours, RecyclerViewClickListener listener) {
         mContext = context;
         this.colours = colours;
+        this.listener = listener;
     }
 
     @NonNull
@@ -48,7 +50,7 @@ public class ColoursAdapter extends RecyclerView.Adapter<ColoursAdapter.ViewHold
         return colours.size();
     }
 
-    public static class ViewHolder extends RecyclerView.ViewHolder {
+    public static class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
         TextView englishColour;
         TextView igboColour;
         MaterialCardView cardView;
@@ -58,7 +60,17 @@ public class ColoursAdapter extends RecyclerView.Adapter<ColoursAdapter.ViewHold
             englishColour = itemView.findViewById(R.id.englishColour);
             igboColour = itemView.findViewById(R.id.igboColour);
             cardView = itemView.findViewById(R.id.colour_card_view_item);
+            itemView.setOnClickListener(this);
         }
+
+        @Override
+        public void onClick(View view) {
+            listener.onClick(view, getAdapterPosition());
+        }
+    }
+
+    public interface RecyclerViewClickListener{
+        void onClick(View view, int position);
     }
 
 }

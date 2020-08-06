@@ -1,6 +1,7 @@
 package com.example.igboamaka.home.household;
 
 import android.graphics.Color;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -12,6 +13,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.igboamaka.R;
+import com.example.igboamaka.home.sentences.SentenceCategoryAdapter;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -19,6 +21,7 @@ import java.util.List;
 
 public class BedroomFragment extends Fragment {
     List<HouseHold> houseHoldList;
+    private HouseholdCategoryAdapter.RecyclerViewClickListener listener;
 
 
     public BedroomFragment() {
@@ -32,38 +35,47 @@ public class BedroomFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_bedroom, container, false);
 
         houseHoldList = new ArrayList<>();
-        houseHoldList.add(new HouseHold("door", "ụzọ", Color.parseColor("#B13254")));
-        houseHoldList.add(new HouseHold("window", "ụzọ oyi",Color.parseColor("#FF5449")));
-        houseHoldList.add(new HouseHold("bag", "akpa",Color.parseColor("#FF9249")));
+        houseHoldList.add(new HouseHold("door", "ụzọ", Color.parseColor("#B13254"), R.raw.number_two));
+        houseHoldList.add(new HouseHold("window", "ụzọ oyi",Color.parseColor("#FF5449"), R.raw.number_two));
+        houseHoldList.add(new HouseHold("bag", "akpa",Color.parseColor("#FF9249"), R.raw.number_two));
 
-        houseHoldList.add(new HouseHold("basket", "nkata",Color.parseColor("#FF7349")));
-        houseHoldList.add(new HouseHold("bed", "akwa",Color.parseColor("#471437")));
-        houseHoldList.add(new HouseHold("box", "igbe",Color.parseColor("#B13254")));
+        houseHoldList.add(new HouseHold("basket", "nkata",Color.parseColor("#FF7349"), R.raw.number_two));
+        houseHoldList.add(new HouseHold("bed", "akwa",Color.parseColor("#471437"), R.raw.number_two));
+        houseHoldList.add(new HouseHold("box", "igbe",Color.parseColor("#B13254"), R.raw.number_two));
 
-        houseHoldList.add(new HouseHold("chair", "oche",Color.parseColor("#B13254")));
-        houseHoldList.add(new HouseHold("key", "otugwa",Color.parseColor("#FF5449")));
-        houseHoldList.add(new HouseHold("mirror", "enyo",Color.parseColor("#FF9249")));
+        houseHoldList.add(new HouseHold("chair", "oche",Color.parseColor("#B13254"), R.raw.number_two));
+        houseHoldList.add(new HouseHold("key", "otugwa",Color.parseColor("#FF5449"), R.raw.number_two));
+        houseHoldList.add(new HouseHold("mirror", "enyo",Color.parseColor("#FF9249"), R.raw.number_two));
 
-        houseHoldList.add(new HouseHold("pillow", "mpalisi",Color.parseColor("#FF7349")));
-        houseHoldList.add(new HouseHold("table", "tebelu",Color.parseColor("#471437")));
+        houseHoldList.add(new HouseHold("pillow", "mpalisi",Color.parseColor("#FF7349"), R.raw.number_two));
+        houseHoldList.add(new HouseHold("table", "tebelu",Color.parseColor("#471437"), R.raw.number_two));
 
 
-        houseHoldList.add(new HouseHold("television", "Onyonyo", Color.parseColor("#B13254")));
-        houseHoldList.add(new HouseHold("Book", "Akwukwo",Color.parseColor("#FF5449")));
-        houseHoldList.add(new HouseHold("Radio", "Akpati-okwu",Color.parseColor("#FF9249")));
+        houseHoldList.add(new HouseHold("television", "Onyonyo", Color.parseColor("#B13254"), R.raw.number_two));
+        houseHoldList.add(new HouseHold("Book", "Akwukwo",Color.parseColor("#FF5449"), R.raw.number_two));
+        houseHoldList.add(new HouseHold("Radio", "Akpati-okwu",Color.parseColor("#FF9249"), R.raw.number_two));
 
-        houseHoldList.add(new HouseHold("Clothes", "Uwe",Color.parseColor("#FF7349")));
-        houseHoldList.add(new HouseHold("Photographs", "Onyonyo/foto",Color.parseColor("#471437")));
-        houseHoldList.add(new HouseHold("Towel", "Akwa-mmiri",Color.parseColor("#B13254")));
+        houseHoldList.add(new HouseHold("Clothes", "Uwe",Color.parseColor("#FF7349"), R.raw.number_two));
+        houseHoldList.add(new HouseHold("Photographs", "Onyonyo/foto",Color.parseColor("#471437"), R.raw.number_two));
+        houseHoldList.add(new HouseHold("Towel", "Akwa-mmiri",Color.parseColor("#B13254"), R.raw.number_two));
 
-        houseHoldList.add(new HouseHold("Air Conditioning", "Ntuoyi",Color.parseColor("#B13254")));
-        houseHoldList.add(new HouseHold("Broom", "Azịza",Color.parseColor("#FF5449")));
-        houseHoldList.add(new HouseHold("Shoe", "Akpukpo-ukwu",Color.parseColor("#FF9249")));
+        houseHoldList.add(new HouseHold("Air Conditioning", "Ntuoyi",Color.parseColor("#B13254"), R.raw.number_two));
+        houseHoldList.add(new HouseHold("Broom", "Azịza",Color.parseColor("#FF5449"), R.raw.number_two));
+        houseHoldList.add(new HouseHold("Shoe", "Akpukpo-ukwu",Color.parseColor("#FF9249"), R.raw.number_two));
 
-        houseHoldList.add(new HouseHold("Electric Fan", "Igwe-ikuku",Color.parseColor("#FF7349")));
+        houseHoldList.add(new HouseHold("Electric Fan", "Igwe-ikuku",Color.parseColor("#FF7349"), R.raw.number_two));
+
+        listener = new HouseholdCategoryAdapter.RecyclerViewClickListener() {
+            @Override
+            public void onClick(View view, int position) {
+                MediaPlayer mediaPlayer = MediaPlayer.create(view.getContext(), houseHoldList.get(position).getAudio());
+                mediaPlayer.start();
+            }
+        };
+
 
         RecyclerView recyclerView = view.findViewById(R.id.house_hold_recycler_view);
-        HouseholdCategoryAdapter adapter = new HouseholdCategoryAdapter(getContext(), houseHoldList);
+        HouseholdCategoryAdapter adapter = new HouseholdCategoryAdapter(getContext(), houseHoldList,listener);
 
         recyclerView.setLayoutManager(new GridLayoutManager(getContext(), 2));
         recyclerView.setAdapter(adapter);

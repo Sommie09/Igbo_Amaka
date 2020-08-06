@@ -18,10 +18,12 @@ public class AlphabetAdapter extends RecyclerView.Adapter<AlphabetAdapter.ViewHo
 
     private Context mContext;
     private List<Alphabets> alphabet;
+    private static RecyclerViewClickListener listener;
 
-    public AlphabetAdapter(Context context, List<Alphabets> alphabet) {
+    public AlphabetAdapter(Context context, List<Alphabets> alphabet,RecyclerViewClickListener listener) {
         mContext = context;
         this.alphabet = alphabet;
+        this.listener = listener;
     }
 
 
@@ -48,7 +50,7 @@ public class AlphabetAdapter extends RecyclerView.Adapter<AlphabetAdapter.ViewHo
         return alphabet.size();
     }
 
-    public static class ViewHolder extends RecyclerView.ViewHolder {
+    public static class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
         TextView igboTranslation;
         MaterialCardView cardView;
         public ViewHolder(@NonNull View itemView) {
@@ -56,7 +58,17 @@ public class AlphabetAdapter extends RecyclerView.Adapter<AlphabetAdapter.ViewHo
 
             igboTranslation = itemView.findViewById(R.id.igbo_alphabet);
             cardView = itemView.findViewById(R.id.card_view_alphabet);
+            itemView.setOnClickListener(this);
 
         }
+
+        @Override
+        public void onClick(View view) {
+            listener.onClick(view, getAdapterPosition());
+        }
+    }
+
+    public interface RecyclerViewClickListener{
+        void onClick(View view, int position);
     }
 }

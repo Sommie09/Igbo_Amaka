@@ -5,14 +5,15 @@ public class Colours {
     private String igboTranslation;
     private int backGroundColour;
     private int textColour;
-    private int audioResource;
+    private int audio;
 
 
-    public Colours(String englishTranslation, String igboTranslation, int backGroundColour, int textColour) {
+    public Colours(String englishTranslation, String igboTranslation, int backGroundColour, int textColour, int audio) {
         this.englishTranslation = englishTranslation;
         this.igboTranslation = igboTranslation;
         this.backGroundColour = backGroundColour;
         this.textColour = textColour;
+        this.audio = audio;
     }
 
     public int getTextColour() {
@@ -30,4 +31,6 @@ public class Colours {
     public int getBackGroundColour() {
         return backGroundColour;
     }
+
+    public int getAudio() { return audio; }
 }

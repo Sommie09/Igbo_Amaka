@@ -6,12 +6,14 @@ public class Family {
     private String familyEnglish;
     private int familyImage;
     private int backGroundColour;
+    private int audio;
 
-    public Family(String familyIgbo, String familyEnglish, int familyImage, int backGroundColour) {
+    public Family(String familyIgbo, String familyEnglish, int familyImage, int backGroundColour, int audio) {
         this.familyIgbo = familyIgbo;
         this.familyEnglish = familyEnglish;
         this.familyImage = familyImage;
         this.backGroundColour = backGroundColour;
+        this.audio = audio;
     }
 
     public String getFamilyIgbo() {
@@ -28,6 +30,10 @@ public class Family {
 
     public int getBackGroundColour() {
         return backGroundColour;
+    }
+
+    public int getAudio() {
+        return audio;
     }
 }
 

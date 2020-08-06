@@ -18,10 +18,12 @@ import java.util.List;
 public class FamilyAdapter extends RecyclerView.Adapter<FamilyAdapter.ViewHolder> {
     private Context mContext;
     private List<Family> family;
+    private static RecyclerViewClickListener listener;
 
-    public FamilyAdapter(Context context, List<Family> family) {
+    public FamilyAdapter(Context context, List<Family> family, RecyclerViewClickListener listener) {
         mContext = context;
         this.family = family;
+        this.listener = listener;
     }
 
     @NonNull
@@ -48,7 +50,7 @@ public class FamilyAdapter extends RecyclerView.Adapter<FamilyAdapter.ViewHolder
         return family.size();
     }
 
-    public static class ViewHolder extends RecyclerView.ViewHolder {
+    public static class ViewHolder extends RecyclerView.ViewHolder  implements View.OnClickListener {
         TextView familyIgbo;
         TextView familyEnglish;
         ImageView familyImage;
@@ -60,6 +62,16 @@ public class FamilyAdapter extends RecyclerView.Adapter<FamilyAdapter.ViewHolder
             familyEnglish = itemView.findViewById(R.id.family_english);
             familyImage = itemView.findViewById(R.id.family_image);
             cardView = itemView.findViewById(R.id.family_item_card_view);
+            itemView.setOnClickListener(this);
         }
+
+        @Override
+        public void onClick(View view) {
+            listener.onClick(view, getAdapterPosition());
+        }
+    }
+
+    public interface RecyclerViewClickListener{
+        void onClick(View view, int position);
     }
 }

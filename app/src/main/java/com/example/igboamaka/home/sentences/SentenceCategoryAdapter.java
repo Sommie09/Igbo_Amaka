@@ -1,9 +1,12 @@
 package com.example.igboamaka.home.sentences;
 
 import android.content.Context;
+import android.media.AudioManager;
+import android.media.MediaPlayer;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -14,14 +17,19 @@ import com.google.android.material.card.MaterialCardView;
 
 import java.util.List;
 
+import static android.media.AudioManager.AUDIOFOCUS_GAIN;
+
 public class SentenceCategoryAdapter extends RecyclerView.Adapter<SentenceCategoryAdapter.ViewHolder> {
 
-    private Context mContext;
-    private List<Sentences> sentences;
+    private  Context mContext;
+    private  List<Sentences> sentences;
+    private static RecyclerViewClickListener listener;
 
-    public SentenceCategoryAdapter(Context context, List<Sentences> sentences) {
+
+    public SentenceCategoryAdapter(Context context, List<Sentences> sentences, RecyclerViewClickListener listener) {
         mContext = context;
         this.sentences = sentences;
+        SentenceCategoryAdapter.listener = listener;
     }
 
 
@@ -46,17 +54,29 @@ public class SentenceCategoryAdapter extends RecyclerView.Adapter<SentenceCatego
         return sentences.size();
     }
 
-    public static class ViewHolder extends RecyclerView.ViewHolder {
+    public static class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
         TextView englishSentence;
         TextView igboSentence;
         MaterialCardView cardView;
-        public ViewHolder(@NonNull View itemView) {
+        public ViewHolder(@NonNull final View itemView) {
             super(itemView);
 
             englishSentence = itemView.findViewById(R.id.english_text);
             igboSentence = itemView.findViewById(R.id.igbo_text);
             cardView = itemView.findViewById(R.id.profile_card_names);
+            itemView.setOnClickListener(this);
+        }
 
+        @Override
+        public void onClick(View view) {
+            listener.onClick(view, getAdapterPosition());
         }
     }
+
+    public interface RecyclerViewClickListener{
+        void onClick(View view, int position);
+    }
+
 }
+
+

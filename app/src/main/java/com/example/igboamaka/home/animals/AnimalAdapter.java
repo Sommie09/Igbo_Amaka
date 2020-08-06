@@ -18,10 +18,12 @@ import java.util.List;
 public class AnimalAdapter extends RecyclerView.Adapter<AnimalAdapter.ViewHolder> {
     private Context mContext;
     private List<Animals> animal;
+    private static RecyclerViewClickListener listener;
 
-    public AnimalAdapter(Context context, List<Animals> animal) {
+    public AnimalAdapter(Context context, List<Animals> animal,RecyclerViewClickListener listener) {
         mContext = context;
         this.animal = animal;
+        this.listener = listener;
     }
 
     @NonNull
@@ -49,7 +51,7 @@ public class AnimalAdapter extends RecyclerView.Adapter<AnimalAdapter.ViewHolder
         return animal.size();
     }
 
-    public static class ViewHolder extends RecyclerView.ViewHolder {
+    public static class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
         TextView englishAnimal;
         TextView igboAnimal;
         ImageView animalImage;
@@ -61,6 +63,15 @@ public class AnimalAdapter extends RecyclerView.Adapter<AnimalAdapter.ViewHolder
             igboAnimal = itemView.findViewById(R.id.animal_igbo);
             animalImage = itemView.findViewById(R.id.animal_image);
             cardView = itemView.findViewById(R.id.animal_item_card_view);
+            itemView.setOnClickListener(this);
         }
+
+        @Override
+        public void onClick(View view) {
+            listener.onClick(view, getAdapterPosition());
+        }
+    }
+    public interface RecyclerViewClickListener{
+        void onClick(View view, int position);
     }
 }

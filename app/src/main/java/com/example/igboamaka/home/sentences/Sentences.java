@@ -1,14 +1,16 @@
 package com.example.igboamaka.home.sentences;
 
 public class Sentences {
-    public String igboSentence;
-    public String englishSentence;
-    public int profileBackgroundColour;
+    private String igboSentence;
+    private String englishSentence;
+    private int profileBackgroundColour;
+    private int audio;
 
-    public Sentences(String englishSentence, String igboSentence, int profileBackgroundColour) {
+    public Sentences(String igboSentence, String englishSentence, int profileBackgroundColour, int audio) {
         this.igboSentence = igboSentence;
         this.englishSentence = englishSentence;
         this.profileBackgroundColour = profileBackgroundColour;
+        this.audio = audio;
     }
 
     public String getIgboSentence() {
@@ -21,5 +23,9 @@ public class Sentences {
 
     public int getProfileBackgroundColour() {
         return profileBackgroundColour;
+    }
+
+    public int getAudio() {
+        return audio;
     }
 }
