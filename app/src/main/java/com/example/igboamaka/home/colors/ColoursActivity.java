@@ -42,7 +42,7 @@ public class ColoursActivity extends AppCompatActivity {
         colours.add(new Colours("Black", "oji", Color.BLACK,Color.WHITE, R.raw.number_two));
         colours.add(new Colours("White", "ọcha", Color.WHITE, Color.BLACK, R.raw.number_two));
         colours.add(new Colours("Orange", "oroma", Color.parseColor("#E65100"),Color.WHITE, R.raw.number_two));
-        colours.add(new Colours("Purple", "ododo", Color.parseColor("#800080"),Color.WHITE, R.raw.number_two));
+        colours.add(new Colours("Purple", "edo edo", Color.parseColor("#800080"),Color.WHITE, R.raw.number_two));
         colours.add(new Colours("Gold", "Olaedo", Color.parseColor("#FFD700"),Color.WHITE, R.raw.number_two));
         colours.add(new Colours("Pink", "Uhie ocha", Color.parseColor("#FFC0CB"),Color.WHITE, R.raw.number_two));
         colours.add(new Colours("Silver", "Olaocha", Color.parseColor("#C0C0C0"),Color.WHITE, R.raw.number_two));

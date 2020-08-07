@@ -79,7 +79,7 @@ public class FamilyQuizFragment extends Fragment {
                 "nneochie",
                 R.drawable.family_daughter,
                 R.drawable.family_grandfather,
-                R.drawable.family_older_sister,
+                R.drawable.family_younger_sister,
                 R.drawable.family_grandmother));
 
 
@@ -175,9 +175,9 @@ public class FamilyQuizFragment extends Fragment {
                 "new nwanyi",
                 "nwanne nwanyị nke okenye",
                 "nnaochie",
-                R.drawable.family_older_brother,
+                R.drawable.family_younger_brother,
                 R.drawable.family_daughter,
-                R.drawable.family_older_sister,
+                R.drawable.family_younger_sister,
                 R.drawable.family_grandfather));
 
 

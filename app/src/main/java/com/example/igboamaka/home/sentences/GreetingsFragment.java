@@ -66,7 +66,7 @@ public class GreetingsFragment extends Fragment {
 
         sentences.add(new Sentences("Father, I greet you", " Nna, ekene m gi",Color.parseColor("#FF7349"), R.raw.number_two));
         sentences.add(new Sentences("Mother, I greet you", "Nne, ekene m gi",Color.parseColor("#471437"), R.raw.number_two));
-        sentences.add(new Sentences("Are you well now?", "Nso-gbụ gi, ọna go kita?", Color.parseColor("#B13254"), R.raw.number_two));
+        sentences.add(new Sentences("Are you well now?", "Nsogbu gi, o na-ebelakwa?", Color.parseColor("#B13254"), R.raw.number_two));
 
         sentences.add(new Sentences("I love you", "a hụrụ m gị n'anya",Color.parseColor("#FF9249"), R.raw.number_two));
 

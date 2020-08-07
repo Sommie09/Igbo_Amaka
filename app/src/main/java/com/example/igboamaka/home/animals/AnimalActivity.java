@@ -34,17 +34,17 @@ public class AnimalActivity extends AppCompatActivity {
 
         animals = new ArrayList<>();
 
-        animals.add(new Animals("Dog", "nkịta", R.drawable.dog_image,Color.parseColor("#B13254"), R.raw.number_two));
-        animals.add(new Animals("Cat", "pusi", R.drawable.cat_image,Color.parseColor("#FF5449"), R.raw.number_two));
-        animals.add(new Animals("Monkey", "enwe", R.drawable.monkey_image,Color.parseColor("#FF9249"), R.raw.number_two));
+        animals.add(new Animals("Dog", "nkịta", R.drawable.dog_image,Color.parseColor("#B13254"), R.raw.dog));
+        animals.add(new Animals("Cat", "pusi/ nwologbo", R.drawable.cat_image,Color.parseColor("#FF5449"), R.raw.cat));
+        animals.add(new Animals("Monkey", "enwe", R.drawable.monkey_image,Color.parseColor("#FF9249"), R.raw.monkey));
 
-        animals.add(new Animals("Goat", "mkpi", R.drawable.goat_image,Color.parseColor("#FF7349"), R.raw.number_two));
-        animals.add(new Animals("Chicken", "ọkụkọ", R.drawable.chicken_image,Color.parseColor("#471437"), R.raw.number_two));
-        animals.add(new Animals("Squirrel", "Osa", R.drawable.squirrel,Color.parseColor("#B13254"), R.raw.number_two));
+        animals.add(new Animals("Goat", "mkpi", R.drawable.goat_image,Color.parseColor("#FF7349"), R.raw.goat));
+        animals.add(new Animals("Chicken", "ọkụkọ", R.drawable.chicken_image,Color.parseColor("#471437"), R.raw.chicken));
+        animals.add(new Animals("Squirrel", "Osa", R.drawable.squirrel,Color.parseColor("#B13254"), R.raw.squirrel));
 
-        animals.add(new Animals("Cow", "Ehi", R.drawable.cow_image,Color.parseColor("#FF9249"), R.raw.number_two));
-        animals.add(new Animals("Bird", "Nnụnụ", R.drawable.bird_image,Color.parseColor("#FF5449"), R.raw.number_two));
-        animals.add(new Animals("Snake", "Agwo", R.drawable.snake_image,Color.parseColor("#FF9249"), R.raw.number_two));
+        animals.add(new Animals("Cow", "Ehi", R.drawable.cow_image,Color.parseColor("#FF9249"), R.raw.cow));
+        animals.add(new Animals("Bird", "Nnụnụ", R.drawable.bird_image,Color.parseColor("#FF5449"), R.raw.bird));
+        animals.add(new Animals("Snake", "Agwo", R.drawable.snake_image,Color.parseColor("#FF9249"), R.raw.snake));
 
         listener = new AnimalAdapter.RecyclerViewClickListener() {
             @Override

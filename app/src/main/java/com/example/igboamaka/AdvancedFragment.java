@@ -9,6 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.igboamaka.home.bodyparts.BodyPartsActivity;
 import com.example.igboamaka.home.family.FamilyActivity;
 import com.example.igboamaka.home.household.HouseHoldActivity;
 import com.example.igboamaka.home.sentences.SentencesActivity;
@@ -53,6 +54,15 @@ public class AdvancedFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getContext(), HouseHoldActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        bodyPartsCard = rootView.findViewById(R.id.body_parts_card);
+        bodyPartsCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getContext(), BodyPartsActivity.class);
                 startActivity(intent);
             }
         });

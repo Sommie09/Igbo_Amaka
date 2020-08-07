@@ -37,25 +37,45 @@ public class SentencesFragment extends Fragment {
         sentences = new ArrayList<>();
 
         sentences.add(new Sentences("What is your name?", "Gịnị bu aha gị?", Color.parseColor("#B13254"),R.raw.number_one));
-        sentences.add(new Sentences("My name is Chisom", "Aha mu bu Chisom",Color.parseColor("#FF5449"),R.raw.number_two));
+        sentences.add(new Sentences("My name is Chisom", "Aha m bụ Chisom",Color.parseColor("#FF5449"),R.raw.number_two));
         sentences.add(new Sentences("How are they doing?", "Kedu ka ha melu?",Color.parseColor("#FF9249"),R.raw.number_one));
 
         sentences.add(new Sentences("They are doing fine", "Ha dị mma",Color.parseColor("#FF7349"),R.raw.number_one));
+
+
+
         sentences.add(new Sentences("Who is this?", "Kedu onye bụ nke a? ",Color.parseColor("#471437"),R.raw.number_one));
         sentences.add(new Sentences("I don’t know", "Amaghị m", Color.parseColor("#B13254"),R.raw.number_one));
 
-        sentences.add(new Sentences("Do you speak Igbo", "I na-asu Igbo", Color.parseColor("#B13254"),R.raw.number_one));
-        sentences.add(new Sentences("What is she doing?", "Kedu ka o na-eme?",Color.parseColor("#FF5449"),R.raw.number_one));
-        sentences.add(new Sentences("Where are you from?", "Ị bu onye ebe?",Color.parseColor("#FF9249"),R.raw.number_one));
+        sentences.add(new Sentences("Do you speak Igbo", "I na-asu Igbo?", Color.parseColor("#B13254"),R.raw.number_one));
+        sentences.add(new Sentences("What is she doing?", "Kedu ihe o na-eme?",Color.parseColor("#FF5449"),R.raw.number_one));
+        sentences.add(new Sentences("Where are you from?", "Ị bu onye ebee?",Color.parseColor("#FF9249"),R.raw.number_one));
 
-        sentences.add(new Sentences("I am from Anambra", "A bu m onye Anambra",Color.parseColor("#FF7349"),R.raw.number_one));
-        sentences.add(new Sentences("Who is this?", "Kedu onye bụ nke a? ",Color.parseColor("#471437"),R.raw.number_one));
-        sentences.add(new Sentences("I don’t know", "Amaghị m", Color.parseColor("#B13254"),R.raw.number_one));
+        sentences.add(new Sentences("I am from Anambra", "Abu m onye Anambra",Color.parseColor("#FF7349"),R.raw.number_one));
 
         sentences.add(new Sentences("I remember", "Echetara m",Color.parseColor("#B13254"),R.raw.number_one));
         sentences.add(new Sentences("He/She is a nice person", "Ọ bụ ezigbo mmadụ",Color.parseColor("#FF5449"),R.raw.number_one));
         sentences.add(new Sentences("You are pretty", "Ị mara mma nwanyị", Color.parseColor("#FF9249"),R.raw.number_one));
         sentences.add(new Sentences("My strength is finished", "ike gwuru",Color.parseColor("#FF5449"),R.raw.number_one));
+
+        sentences.add(new Sentences("She is cooking breakfast", "O na-esi nri ụtụtụ", Color.parseColor("#B13254"),R.raw.number_one));
+        sentences.add(new Sentences("We are going home", "Anyị na-aga ụlọ",Color.parseColor("#FF5449"),R.raw.number_one));
+        sentences.add(new Sentences("Where we are going?", "Ebee ka anyị na-aga?",Color.parseColor("#FF9249"),R.raw.number_one));
+
+
+        sentences.add(new Sentences("What do you mean?", "gịnị ka ị chere?",Color.parseColor("#FF7349"),R.raw.number_one));
+        sentences.add(new Sentences("You are a nice person", "Ị bụ ezigbo mmadụ",Color.parseColor("#471437"),R.raw.number_one));
+        sentences.add(new Sentences("You are tall", "Ị toro ogologo", Color.parseColor("#B13254"),R.raw.number_one));
+
+        sentences.add(new Sentences("Go straight", "gaba n'iru",Color.parseColor("#FF7349"),R.raw.number_one));
+        sentences.add(new Sentences("Turn left", "ba na aka-nri",Color.parseColor("#471437"),R.raw.number_one));
+        sentences.add(new Sentences("Turn right", "ba na aka-ekpe", Color.parseColor("#B13254"),R.raw.number_one));
+
+        sentences.add(new Sentences("I need a doctor", "a chọrọ m dibia oyibo", Color.parseColor("#B13254"),R.raw.number_one));
+        sentences.add(new Sentences("It was nice talking to you", "ọ maka ikpara gị nkata",Color.parseColor("#FF5449"),R.raw.number_one));
+
+
+
 
         listener = new SentenceCategoryAdapter.RecyclerViewClickListener() {
             @Override

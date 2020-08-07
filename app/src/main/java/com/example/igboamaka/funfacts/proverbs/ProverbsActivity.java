@@ -63,7 +63,7 @@ public class ProverbsActivity extends AppCompatActivity {
         proverbs.add(new Proverbs("O ji ngaji eri chetakwa ndi ji aka", "He who eats with spoon should remember \nthose who uses hand to eat",Color.parseColor("#471437")));
         proverbs.add(new Proverbs("Ara ga gba ndi ara", "Lunatics shall soon run mad", Color.parseColor("#B13254")));
 
-        proverbs.add(new Proverbs("Ewere otutu cho ewu ojiio tupu \nabali aru", "Look for a black goat during the day before \nthe night comes.",Color.parseColor("#FF9249")));
+        proverbs.add(new Proverbs("Ewere otutu cho ewu ojii tupu \nabali eruo", "Look for a black goat during the day before \nthe night comes.",Color.parseColor("#FF9249")));
 
 
         RecyclerView recyclerView = findViewById(R.id.proverbs_recycler_view);
