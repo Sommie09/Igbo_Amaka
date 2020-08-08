@@ -4,8 +4,13 @@ android {
     compileSdkVersion 30
     buildToolsVersion "30.0.0"
 
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
     defaultConfig {
-        applicationId "com.example.igboamaka"
+        applicationId "com.chisom.igboamaka"
         minSdkVersion 21
         targetSdkVersion 30
         versionCode 1
@@ -28,11 +33,11 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.1.0'
     implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
-    testImplementation 'junit:junit:4.12'
+    testImplementation 'junit:junit:4.13'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
 
-    implementation 'com.google.android.material:material:1.1.0'
+    implementation 'com.google.android.material:material:1.2.0'
 
     //ViewPager 2
     implementation 'androidx.viewpager2:viewpager2:1.0.0'
@@ -44,6 +49,7 @@ dependencies {
     implementation 'com.google.android.material:material:1.3.0-alpha02'
 
     //Bottom Navigation
+    //noinspection GradleDependency
     implementation 'com.ismaeldivita.chipnavigation:chip-navigation-bar:1.2.0'
 
     //Kotlin plugin

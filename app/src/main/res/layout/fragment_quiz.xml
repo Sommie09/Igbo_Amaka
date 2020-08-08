@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/purple"
+    tools:ignore="Overdraw"
     tools:context=".quiz.QuizFragment">
 
     <TextView
@@ -13,10 +14,10 @@
         android:layout_marginTop="5dp"
         android:textColor="@color/white_colour"
         android:fontFamily="@font/lato_regular"
-        android:textSize="20dp"
+        android:textSize="20sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Test your knowledge">
+        android:text="@string/test_your_knowledge">
     </TextView>
 
 
@@ -50,14 +51,14 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:fontFamily="@font/lato_regular"
-                android:text="Numbers"
+                android:text="@string/numbers"
                 android:textColor="@color/white_colour"
                 android:textStyle="bold" />
 
             <View
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:layout_gravity="bottom|right"
+                android:layout_gravity="bottom|end"
                 android:background="@drawable/endview_background" />
         </com.google.android.material.card.MaterialCardView>
 
@@ -79,7 +80,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:fontFamily="@font/lato_regular"
-                android:text="Family"
+                android:text="@string/family"
                 android:textColor="@color/white_colour"
                 android:textStyle="bold" />
 
@@ -87,7 +88,8 @@
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_gravity="bottom|right"
-                android:background="@drawable/endview_background" />
+                android:background="@drawable/endview_background"
+                tools:ignore="RtlHardcoded" />
         </com.google.android.material.card.MaterialCardView>
 
         <com.google.android.material.card.MaterialCardView
@@ -108,14 +110,14 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:fontFamily="@font/lato_regular"
-                android:text="Animals"
+                android:text="@string/animals"
                 android:textColor="@color/white_colour"
                 android:textStyle="bold" />
 
             <View
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:layout_gravity="bottom|right"
+                android:layout_gravity="bottom|end"
                 android:background="@drawable/endview_background" />
         </com.google.android.material.card.MaterialCardView>
 
@@ -137,14 +139,14 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:fontFamily="@font/lato_regular"
-                android:text="Colours"
+                android:text="@string/colours"
                 android:textColor="@color/white_colour"
                 android:textStyle="bold" />
 
             <View
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:layout_gravity="bottom|right"
+                android:layout_gravity="bottom|end"
                 android:background="@drawable/endview_background" />
         </com.google.android.material.card.MaterialCardView>
 
@@ -166,14 +168,14 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:fontFamily="@font/lato_regular"
-                android:text="Body Parts"
+                android:text="@string/body_parts"
                 android:textColor="@color/white_colour"
                 android:textStyle="bold" />
 
             <View
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:layout_gravity="bottom|right"
+                android:layout_gravity="bottom|end"
                 android:background="@drawable/endview_background" />
         </com.google.android.material.card.MaterialCardView>
 
@@ -195,14 +197,14 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:fontFamily="@font/lato_regular"
-                android:text="Sentences"
+                android:text="@string/sentences"
                 android:textColor="@color/white_colour"
                 android:textStyle="bold" />
 
             <View
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:layout_gravity="bottom|right"
+                android:layout_gravity="bottom|end"
                 android:background="@drawable/endview_background" />
         </com.google.android.material.card.MaterialCardView>
 

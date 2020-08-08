@@ -7,6 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/purple"
+    tools:ignore="Overdraw"
     tools:context=".funfacts.FunFactsFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -24,14 +25,14 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            android:contentDescription="TODO" />
+            android:contentDescription="@string/todo"
+            tools:ignore="ContentDescription" />
 
         <TextView
-            android:id="@+id/textView3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/lato_regular"
-            android:text="THE IGBO CULTURE"
+            android:text="@string/the_igbo_culture"
             android:textColor="@color/white_colour"
             android:textSize="25sp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -49,7 +50,8 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            android:contentDescription="TODO" />
+            android:contentDescription="@string/todo"
+            tools:ignore="ContentDescription" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -65,10 +67,7 @@
         android:textAlignment="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="The Igbo people are descendants from Eri,
-        a divine figure who, according to Igbo folklore,
-         was sent from heaven to begin civilization. \nIgbo culture (Ọmenala ndị Igbo) are the customs,
-         practices and traditions of the Igbo people of southeastern Nigeria.">
+        android:text="@string/the_igbo_people_are_descendants_from_eri_a_divine_figure_who_according_to_igbo_folklore_was_sent_from_heaven_to_begin_civilization_nigbo_culture_menala_nd_igbo_are_the_customs_practices_and_traditions_of_the_igbo_people_of_southeastern_nigeria">
     </TextView>
 
     <TextView
@@ -81,7 +80,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="5dp"
-        android:text="SWIPE > > >">
+        android:text="@string/swipe">
     </TextView>
 
     <com.gigamole.infinitecycleviewpager.HorizontalInfiniteCycleViewPager

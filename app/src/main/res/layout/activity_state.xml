@@ -13,7 +13,6 @@
 
 
     <GridLayout
-        android:id="@+id/gridLayout"
         android:layout_width="match_parent"
         android:layout_height="600dp"
         android:columnCount="2"
@@ -43,8 +42,8 @@
                 android:layout_gravity="top|center"
                 android:layout_marginTop="60dp"
                 android:fontFamily="@font/lato_regular"
-                android:text="Anambra"
-                android:textSize="18dp"
+                android:text="@string/anambra"
+                android:textSize="18sp"
                 android:textColor="@color/white_colour"
                 android:textStyle="bold">
             </TextView>
@@ -55,7 +54,7 @@
             android:layout_gravity="top|center"
             android:layout_marginTop="85dp"
             android:fontFamily="@font/lato_regular"
-            android:text="Awka"
+            android:text="@string/awka"
             android:textColor="@color/white_colour">
         </TextView>
 
@@ -65,14 +64,14 @@
                 android:layout_gravity="top|center"
                 android:layout_marginTop="110dp"
                 android:fontFamily="@font/meriendaone_regular"
-                android:text="-Light of the Nation-"
+                android:text="@string/light_of_the_nation"
                 android:textColor="@color/white_colour">
             </TextView>
 
             <View
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:layout_gravity="bottom|right"
+                android:layout_gravity="bottom|end"
                 android:background="@drawable/endview_background">
             </View>
         </com.google.android.material.card.MaterialCardView>
@@ -96,8 +95,8 @@
                 android:layout_gravity="top|center"
                 android:layout_marginTop="60dp"
                 android:fontFamily="@font/lato_regular"
-                android:text="Abia"
-                android:textSize="18dp"
+                android:text="@string/abia"
+                android:textSize="18sp"
                 android:textColor="@color/white_colour"
                 android:textStyle="bold">
             </TextView>
@@ -108,7 +107,7 @@
                 android:layout_gravity="top|center"
                 android:layout_marginTop="85dp"
                 android:fontFamily="@font/lato_regular"
-                android:text="Umuahia"
+                android:text="@string/umuahia"
                 android:textColor="@color/white_colour">
             </TextView>
 
@@ -119,14 +118,14 @@
                 android:layout_gravity="top|center"
                 android:layout_marginTop="110dp"
                 android:fontFamily="@font/meriendaone_regular"
-                android:text="-God's Own State-"
+                android:text="@string/god_s_own_state"
                 android:textColor="@color/white_colour">
             </TextView>
 
             <View
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:layout_gravity="bottom|right"
+                android:layout_gravity="bottom|end"
                 android:background="@drawable/endview_background">
             </View>
         </com.google.android.material.card.MaterialCardView>
@@ -150,8 +149,8 @@
                 android:layout_gravity="top|center"
                 android:layout_marginTop="60dp"
                 android:fontFamily="@font/lato_regular"
-                android:text="Ebonyi"
-                android:textSize="18dp"
+                android:text="@string/ebonyi"
+                android:textSize="18sp"
                 android:textColor="@color/white_colour"
                 android:textStyle="bold" />
 
@@ -161,7 +160,7 @@
                 android:layout_gravity="top|center"
                 android:layout_marginTop="85dp"
                 android:fontFamily="@font/lato_regular"
-                android:text="Abakaliki"
+                android:text="@string/abakaliki"
                 android:textColor="@color/white_colour">
             </TextView>
 
@@ -172,14 +171,14 @@
                 android:layout_gravity="top|center"
                 android:layout_marginTop="110dp"
                 android:fontFamily="@font/meriendaone_regular"
-                android:text="-Salt of the Nation-"
+                android:text="@string/salt_of_the_nation"
                 android:textColor="@color/white_colour">
             </TextView>
 
             <View
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:layout_gravity="bottom|right"
+                android:layout_gravity="bottom|end"
                 android:background="@drawable/endview_background" />
         </com.google.android.material.card.MaterialCardView>
 
@@ -201,8 +200,8 @@
                 android:layout_gravity="top|center"
                 android:layout_marginTop="60dp"
                 android:fontFamily="@font/lato_regular"
-                android:text="Enugu"
-                android:textSize="18dp"
+                android:text="@string/enugu"
+                android:textSize="18sp"
                 android:textColor="@color/white_colour"
                 android:textStyle="bold">
 
@@ -214,7 +213,7 @@
                 android:layout_gravity="top|center"
                 android:layout_marginTop="85dp"
                 android:fontFamily="@font/lato_regular"
-                android:text="Enugu"
+                android:text="@string/enugu"
                 android:textColor="@color/white_colour">
             </TextView>
 
@@ -225,14 +224,14 @@
                 android:layout_gravity="top|center"
                 android:layout_marginTop="110dp"
                 android:fontFamily="@font/meriendaone_regular"
-                android:text="-Coal City State-"
+                android:text="@string/coal_city_state"
                 android:textColor="@color/white_colour">
             </TextView>
 
             <View
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:layout_gravity="bottom|right"
+                android:layout_gravity="bottom|end"
                 android:background="@drawable/endview_background" />
         </com.google.android.material.card.MaterialCardView>
 
@@ -255,8 +254,8 @@
                 android:layout_gravity="top|center"
                 android:layout_marginTop="60dp"
                 android:fontFamily="@font/lato_regular"
-                android:text="Imo"
-                android:textSize="18dp"
+                android:text="@string/imo"
+                android:textSize="18sp"
                 android:textColor="@color/white_colour"
                 android:textStyle="bold">
             </TextView>
@@ -267,7 +266,7 @@
                 android:layout_gravity="top|center"
                 android:layout_marginTop="85dp"
                 android:fontFamily="@font/lato_regular"
-                android:text="Owerri"
+                android:text="@string/owerri"
                 android:textColor="@color/white_colour">
             </TextView>
 
@@ -278,14 +277,14 @@
                 android:layout_gravity="top|center"
                 android:layout_marginTop="110dp"
                 android:fontFamily="@font/meriendaone_regular"
-                android:text="-Eastern Heartland -"
+                android:text="@string/eastern_heartland"
                 android:textColor="@color/white_colour">
             </TextView>
 
             <View
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:layout_gravity="bottom|right"
+                android:layout_gravity="bottom|end"
                 android:background="@drawable/endview_background">
             </View>
         </com.google.android.material.card.MaterialCardView>

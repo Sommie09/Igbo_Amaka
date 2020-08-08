@@ -2,6 +2,7 @@
 <com.google.android.material.card.MaterialCardView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     app:cardCornerRadius="8dp"
     android:id="@+id/card_view_kitchen"
     app:cardElevation="5dp"
@@ -24,8 +25,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="1"
-            android:textSize="20dp">
+            android:text="@string/_1"
+            android:textSize="20sp">
         </TextView>
 
         <TextView
@@ -38,7 +39,8 @@
             android:gravity="center"
             android:textStyle="bold"
             android:text="ótù"
-            android:textSize="20dp">
+            android:textSize="20sp"
+            tools:ignore="HardcodedText">
         </TextView>
 
 
@@ -47,18 +49,19 @@
     <View
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_gravity="bottom|right"
+        android:layout_gravity="bottom|end"
         android:background="@drawable/endview_background">
 
     </View>
 
     <ImageView
-        android:layout_gravity="bottom|right"
+        android:layout_gravity="bottom|end"
         android:layout_margin="5dp"
         android:src="@drawable/ic_baseline_volume_up_24"
         android:layout_width="20dp"
         android:layout_height="20dp"
-        android:contentDescription="TODO">
+        android:contentDescription="@string/todo"
+        tools:ignore="ContentDescription">
     </ImageView>
 
 </com.google.android.material.card.MaterialCardView>

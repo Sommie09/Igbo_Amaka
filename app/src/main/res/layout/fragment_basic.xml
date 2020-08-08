@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".BasicFragment">
+
 
 
 
     <GridLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        tools:context=".BasicFragment"
         android:layoutAnimation="@anim/layout_animation_slide_from_buttom"
         android:padding="15dp"
         android:rowCount="2"
@@ -32,7 +31,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Numbers"
+                android:text="@string/numbers"
                 android:textStyle="bold"
                 android:layout_gravity="center"
                 android:fontFamily="@font/lato_regular"
@@ -43,7 +42,7 @@
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:background="@drawable/endview_background"
-                android:layout_gravity="bottom|right">
+                android:layout_gravity="bottom|end">
             </View>
         </com.google.android.material.card.MaterialCardView>
 
@@ -63,7 +62,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Alphabets"
+                android:text="@string/alphabets"
                 android:textStyle="bold"
                 android:layout_gravity="center"
                 android:fontFamily="@font/lato_regular"
@@ -74,7 +73,7 @@
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:background="@drawable/endview_background"
-                android:layout_gravity="bottom|right">
+                android:layout_gravity="bottom|end">
             </View>
         </com.google.android.material.card.MaterialCardView>
 
@@ -95,7 +94,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
-                android:text="Animals"
+                android:text="@string/animals"
                 android:layout_gravity="center"
                 android:fontFamily="@font/lato_regular"
                 android:textColor="@color/white_colour">
@@ -105,7 +104,7 @@
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:background="@drawable/endview_background"
-                android:layout_gravity="bottom|right">
+                android:layout_gravity="bottom|end">
             </View>
         </com.google.android.material.card.MaterialCardView>
 
@@ -125,7 +124,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Colours"
+                android:text="@string/colours"
                 android:textStyle="bold"
                 android:layout_gravity="center"
                 android:fontFamily="@font/lato_regular"
@@ -136,7 +135,7 @@
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:background="@drawable/endview_background"
-                android:layout_gravity="bottom|right">
+                android:layout_gravity="bottom|end">
             </View>
         </com.google.android.material.card.MaterialCardView>
 
@@ -151,4 +150,3 @@
 
 
     </GridLayout>
-</FrameLayout>

@@ -23,7 +23,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
-        android:layout_toRightOf="@+id/profile_card_names"
+        android:layout_toEndOf="@+id/profile_card_names"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/imageButton"
@@ -36,9 +36,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/lato_regular"
-            android:text="Kedu"
+            android:text="@string/kedu"
             android:textColor="@color/black"
-            android:textSize="17dp"
+            android:textSize="17sp"
             android:textStyle="bold"
             tools:layout_editor_absoluteX="67dp"
             tools:layout_editor_absoluteY="101dp" />
@@ -48,10 +48,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/lato_regular"
-            android:text="How are you?"
+            android:text="@string/how_are_you"
             android:textColor="@color/black"
             android:layout_marginTop="5dp"
-            android:textSize="13dp"
+            android:textSize="13sp"
             tools:layout_editor_absoluteX="144dp"
             tools:layout_editor_absoluteY="120dp" />
 

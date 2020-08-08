@@ -5,7 +5,7 @@
     android:orientation="vertical"
     android:layout_margin="10dp"
     android:layout_width="match_parent"
-    android:layout_height="60dp">
+    android:layout_height="80dp">
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/profile_card_proverbs"
@@ -22,7 +22,8 @@
             android:layout_gravity="center"
             android:layout_width="10dp"
             android:layout_height="10dp"
-            android:contentDescription="TODO">
+            android:contentDescription="@string/todo"
+            tools:ignore="ContentDescription">
 
         </ImageView>
 
@@ -33,22 +34,23 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
-        android:layout_toRightOf="@+id/profile_card_names"
+        android:layout_toEndOf="@+id/profile_card_names"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/imageButton"
         app:layout_constraintHorizontal_bias="0.016"
         app:layout_constraintStart_toEndOf="@+id/profile_card_proverbs"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="UnknownIdInLayout">
 
         <TextView
             android:id="@+id/igbo_proverb"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/lato_regular"
-            android:text="Kedu"
+            android:text="@string/kedu"
             android:textColor="@color/black"
-            android:textSize="17dp"
+            android:textSize="17sp"
             android:textStyle="bold"
             tools:layout_editor_absoluteX="67dp"
             tools:layout_editor_absoluteY="101dp" />
@@ -58,10 +60,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/lato_regular"
-            android:text="How are you?"
+            android:text="@string/how_are_you"
             android:textColor="@color/black"
             android:layout_marginTop="5dp"
-            android:textSize="13dp"
+            android:textSize="13sp"
             tools:layout_editor_absoluteX="144dp"
             tools:layout_editor_absoluteY="120dp" />
 

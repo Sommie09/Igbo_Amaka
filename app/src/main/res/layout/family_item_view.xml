@@ -2,6 +2,7 @@
 <com.google.android.material.card.MaterialCardView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/family_item_card_view"
     app:cardCornerRadius="8dp"
     app:cardElevation="5dp"
@@ -28,7 +29,8 @@
                 android:id="@+id/family_image"
                 android:src="@drawable/family_father"
                 android:scaleType="fitCenter"
-                android:contentDescription="TODO">
+                android:contentDescription="@string/todo"
+                tools:ignore="ContentDescription">
             </ImageView>
 
 
@@ -43,7 +45,8 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="Father"
-            android:textSize="25sp">
+            android:textSize="25sp"
+            tools:ignore="HardcodedText">
         </TextView>
 
         <TextView
@@ -56,8 +59,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="nna"
-            android:textSize="20dp">
+            android:text="@string/nna"
+            android:textSize="20sp">
         </TextView>
 
 
@@ -66,18 +69,19 @@
     <View
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_gravity="bottom|right"
+        android:layout_gravity="bottom|end"
         android:background="@drawable/endview_background">
 
     </View>
 
     <ImageView
-        android:layout_gravity="bottom|right"
+        android:layout_gravity="bottom|end"
         android:layout_margin="5dp"
         android:src="@drawable/ic_baseline_volume_up_24"
         android:layout_width="20dp"
         android:layout_height="20dp"
-        android:contentDescription="TODO">
+        android:contentDescription="@string/todo"
+        tools:ignore="ContentDescription">
     </ImageView>
 
 </com.google.android.material.card.MaterialCardView>

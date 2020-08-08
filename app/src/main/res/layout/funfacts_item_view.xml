@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
@@ -14,7 +15,6 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <com.google.android.material.card.MaterialCardView
-            android:id="@+id/fun_facts_card"
             android:layout_width="match_parent"
             android:layout_height="350dp"
             android:layout_margin="20dp"
@@ -44,7 +44,8 @@
                         android:layout_height="match_parent"
                         android:scaleType="centerCrop"
                         android:src="@drawable/igbo_women"
-                        android:contentDescription="TODO">
+                        android:contentDescription="TODO"
+                        tools:ignore="ContentDescription,HardcodedText">
 
                     </ImageView>
 
@@ -58,9 +59,9 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="20dp"
                     android:fontFamily="@font/lato_regular"
-                    android:text="DRESSING"
+                    android:text="@string/dressing"
                     android:textColor="@color/white_colour"
-                    android:textSize="20dp"
+                    android:textSize="20sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -70,7 +71,7 @@
                     android:layout_marginTop="8dp"
                     android:paddingLeft="10dp"
                     android:paddingRight="10dp"
-                    android:text="Cloths in the land have a significant meaning or purpose"
+                    android:text="@string/cloths_in_the_land_have_a_significant_meaning_or_purpose"
                     android:textAlignment="center"
                     android:textColor="@color/white_colour" />
 

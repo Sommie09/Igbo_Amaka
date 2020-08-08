@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:tools="http://schemas.android.com/tools"
     android:layout_margin="10dp"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
@@ -7,7 +7,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <com.google.android.material.card.MaterialCardView
-        android:id="@+id/dressing_card"
         android:backgroundTint="@color/colorPrimaryDark"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -28,7 +27,8 @@
                 android:layout_height="450dp"
                 android:scaleType="centerCrop"
                 android:src="@drawable/igbo_women"
-                android:contentDescription="TODO">
+                android:contentDescription="@string/todo"
+                tools:ignore="ContentDescription">
             </ImageView>
 
 
@@ -37,9 +37,9 @@
                 android:layout_marginTop="15dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="ABACHA"
+                android:text="@string/abacha"
                 android:textColor="@android:color/white"
-                android:textSize="20dp"
+                android:textSize="20sp"
                 android:gravity="center">
             </TextView>
 
@@ -48,9 +48,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textAlignment="center"
-                android:text="Abacha is an Eastern Nigeria dish made using dried, shredded cassava. You can eat it as a snack or a full meal."
+                android:text="@string/abacha_is_an_eastern_nigeria_dish_made_using_dried_shredded_cassava_you_can_eat_it_as_a_snack_or_a_full_meal"
                 android:textColor="@android:color/white"
-                android:textSize="15dp"
+                android:textSize="15sp"
                 android:padding="10dp">
             </TextView>
 

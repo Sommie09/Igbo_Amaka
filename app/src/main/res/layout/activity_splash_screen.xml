@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginBottom="8dp"
-        android:text="Igbò Amáká"
+        android:text="@string/IgboAmaka"
         android:textColor="@color/orange"
         android:textSize="40sp"
         app:fontFamily="@font/meriendaone_regular"
@@ -39,7 +39,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="HardcodedText" />
 
     <ImageView
         android:layout_width="match_parent"
@@ -49,7 +50,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:contentDescription="TODO">
+        android:contentDescription="TODO"
+        tools:ignore="ContentDescription,HardcodedText">
 
     </ImageView>
 

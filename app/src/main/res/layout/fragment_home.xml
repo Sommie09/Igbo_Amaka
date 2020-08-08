@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/purple"
-    tools:context=".home.HomeFragment">
+    tools:context=".home.HomeFragment"
+    tools:ignore="Overdraw">
 
 
     <TextView
@@ -15,7 +16,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="68dp"
         android:fontFamily="@font/lato_regular"
-        android:text="Welcome!"
+        android:text="@string/welcome"
         android:textColor="@color/white_colour"
         android:textSize="35sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -26,12 +27,11 @@
     </TextView>
 
     <TextView
-        android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:fontFamily="@font/lato_regular"
-        android:text="Kedu ka ị mere?"
+        android:text="@string/kedu_ka_mere"
         android:textColor="@color/white_colour"
         android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -87,7 +87,6 @@
     </View>
 
     <ImageView
-        android:id="@+id/imageView"
         android:layout_width="201dp"
         android:layout_height="191dp"
         android:layout_marginTop="16dp"
@@ -98,7 +97,8 @@
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:contentDescription="TODO" />
+        android:contentDescription="@string/todo"
+        tools:ignore="ContentDescription" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

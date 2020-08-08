@@ -7,11 +7,11 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:weightSum="10"
-    tools:context="com.example.igboamaka.MainActivity">
+    tools:context="com.chisom.igboamaka.MainActivity">
 
         <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="0dp"
             android:layout_weight="10"
             android:id="@+id/fragment_container">
 

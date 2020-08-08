@@ -6,7 +6,7 @@
     <item
         android:id="@+id/home"
         android:icon="@drawable/ic_baseline_home_24"
-        android:title="Home"
+        android:title="@string/home"
         app:cnb_iconColor = "@color/pink_red">
 
     </item>
@@ -14,14 +14,14 @@
     <item
         android:id="@+id/quiz"
         android:icon="@drawable/ic_baseline_extension_24"
-        android:title="Quiz"
+        android:title="@string/quiz"
         app:cnb_iconColor = "@color/pink_red">
     </item>
 
     <item
         android:id="@+id/fun_facts"
         android:icon="@drawable/ic_baseline_live_tv_24"
-        android:title="Fun Facts"
+        android:title="@string/fun_facts"
         app:cnb_iconColor = "@color/pink_red">
     </item>
 

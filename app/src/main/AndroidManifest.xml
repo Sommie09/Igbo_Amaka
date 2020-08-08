@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.igboamaka">
+    package="com.chisom.igboamaka">
 
     <application
         android:allowBackup="true"
@@ -8,75 +8,76 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_igbo_amaka_icon"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        android:fullBackupContent="@xml/backup_descriptor">
         <activity
-            android:name=".home.family.FamilyActivity"
-            android:parentActivityName=".MainActivity"
+            android:name="com.chisom.igboamaka.home.family.FamilyActivity"
+            android:parentActivityName="com.chisom.igboamaka.MainActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Activities">
         </activity>
         <activity
-            android:name=".home.bodyparts.BodyPartsActivity"
-            android:parentActivityName=".MainActivity"
+            android:name="com.chisom.igboamaka.home.bodyparts.BodyPartsActivity"
+            android:parentActivityName="com.chisom.igboamaka.MainActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Activities" />
         <activity
-            android:name=".funfacts.states.StateActivity"
-            android:parentActivityName=".MainActivity"
+            android:name="com.chisom.igboamaka.funfacts.states.StateActivity"
+            android:parentActivityName="com.chisom.igboamaka.MainActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Activities" />
         <activity
-            android:name=".funfacts.proverbs.ProverbsActivity"
-            android:parentActivityName=".MainActivity"
+            android:name="com.chisom.igboamaka.funfacts.proverbs.ProverbsActivity"
+            android:parentActivityName="com.chisom.igboamaka.MainActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Activities" />
         <activity
-            android:name=".funfacts.dressing.DressingActivity"
-            android:parentActivityName=".MainActivity"
+            android:name="com.chisom.igboamaka.funfacts.dressing.DressingActivity"
+            android:parentActivityName="com.chisom.igboamaka.MainActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Activities" />
         <activity
-            android:name=".funfacts.names.NamesActivity"
-            android:parentActivityName=".MainActivity"
+            android:name="com.chisom.igboamaka.funfacts.names.NamesActivity"
+            android:parentActivityName="com.chisom.igboamaka.MainActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Activities" />
         <activity
-            android:name=".funfacts.food.FoodActivity"
-            android:parentActivityName=".MainActivity"
+            android:name="com.chisom.igboamaka.funfacts.food.FoodActivity"
+            android:parentActivityName="com.chisom.igboamaka.MainActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Activities" />
         <activity
-            android:name=".home.household.HouseHoldActivity"
-            android:parentActivityName=".MainActivity"
+            android:name="com.chisom.igboamaka.home.household.HouseHoldActivity"
+            android:parentActivityName="com.chisom.igboamaka.MainActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Activities" />
         <activity
-            android:name=".home.sentences.SentencesActivity"
-            android:parentActivityName=".MainActivity"
+            android:name="com.chisom.igboamaka.home.sentences.SentencesActivity"
+            android:parentActivityName="com.chisom.igboamaka.MainActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Activities" />
         <activity
-            android:name=".home.animals.AnimalActivity"
-            android:parentActivityName=".MainActivity"
+            android:name="com.chisom.igboamaka.home.animals.AnimalActivity"
+            android:parentActivityName="com.chisom.igboamaka.MainActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Activities" />
         <activity
-            android:name=".home.alphabets.AlphabetsActivity"
-            android:parentActivityName=".MainActivity"
+            android:name="com.chisom.igboamaka.home.alphabets.AlphabetsActivity"
+            android:parentActivityName="com.chisom.igboamaka.MainActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Activities" />
         <activity
-            android:name=".home.colors.ColoursActivity"
-            android:parentActivityName=".MainActivity"
+            android:name="com.chisom.igboamaka.home.colors.ColoursActivity"
+            android:parentActivityName="com.chisom.igboamaka.MainActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Activities" />
         <activity
-            android:name=".home.numbers.NumbersActivity"
-            android:parentActivityName=".MainActivity"
+            android:name="com.chisom.igboamaka.home.numbers.NumbersActivity"
+            android:parentActivityName="com.chisom.igboamaka.MainActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Activities" />
         <activity
-            android:name=".SplashScreen"
+            android:name="com.chisom.igboamaka.SplashScreen"
             android:screenOrientation="portrait"
             android:theme="@style/SplashScreen">
             <intent-filter>
@@ -85,7 +86,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity" />
+        <activity android:name="com.chisom.igboamaka.MainActivity" />
     </application>
 
 </manifest>
