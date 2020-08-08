@@ -81,7 +81,7 @@ public class NumberQuizFragment extends Fragment {
 
         numberQuiz.add(new NumberQuiz(
                 "Question 2/10",
-                "My neighbour just won a \"thousand\' dollars",
+                "My neighbour just won a \"thousand\" dollars",
                 Color.RED,
                 Color.RED,
                 Color.RED,

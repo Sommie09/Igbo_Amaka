@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view_hundreds"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="5dp"
+    app:cardBackgroundColor="@color/orange"
+    app:cardPreventCornerOverlap="true"
+    app:cardUseCompatPadding="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:padding="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textColor="@color/white_colour"
+            android:fontFamily="@font/lato_regular"
+            android:id="@+id/hundreds_english_digit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="1"
+            android:textSize="25sp">
+        </TextView>
+
+        <TextView
+            android:textColor="@color/white_colour"
+            android:fontFamily="@font/lato_regular"
+            android:layout_below="@id/hundreds_english_digit"
+            android:id="@+id/hundreds_igbo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="ótù"
+            android:textSize="20dp">
+        </TextView>
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom|right"
+        android:background="@drawable/endview_background">
+
+    </View>
+
+</com.google.android.material.card.MaterialCardView>

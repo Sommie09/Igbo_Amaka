@@ -13,7 +13,6 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.igboamaka.R;
-import com.example.igboamaka.home.sentences.SentenceCategoryAdapter;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -21,7 +20,7 @@ import java.util.List;
 
 public class OneToTenFragment extends Fragment {
     List<Numbers> mNumbersList;
-    private NumberCategoryAdapter.RecyclerViewClickListener listener;
+    private OneToTenAdapter.RecyclerViewClickListener listener;
 
 
     public OneToTenFragment() {
@@ -52,7 +51,7 @@ public class OneToTenFragment extends Fragment {
         mNumbersList.add(new Numbers("10", "iri",Color.parseColor("#471437"),R.raw.number_two));
 
 
-        listener = new NumberCategoryAdapter.RecyclerViewClickListener() {
+        listener = new OneToTenAdapter.RecyclerViewClickListener() {
             @Override
             public void onClick(View view, int position) {
                 MediaPlayer mediaPlayer = MediaPlayer.create(view.getContext(), mNumbersList.get(position).getAudio());
@@ -60,8 +59,8 @@ public class OneToTenFragment extends Fragment {
             }
         };
 
-        RecyclerView recyclerView = view.findViewById(R.id.numbers_recycler_view);
-        NumberCategoryAdapter adapter = new NumberCategoryAdapter(getContext(), mNumbersList,listener);
+        RecyclerView recyclerView = view.findViewById(R.id.numbers_one_to_ten_recycler_view);
+        OneToTenAdapter adapter = new OneToTenAdapter(getContext(), mNumbersList,listener);
 
         recyclerView.setLayoutManager(new GridLayoutManager(getContext(), 3));
         recyclerView.setAdapter(adapter);

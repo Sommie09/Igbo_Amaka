@@ -19,7 +19,7 @@ import java.util.List;
 
 public class ElevenToTwentyFragment extends Fragment {
     List<Numbers> mNumbersList;
-    private NumberCategoryAdapter.RecyclerViewClickListener listener;
+    private ElevenToTwentyAdapter.RecyclerViewClickListener listener;
 
 
     public ElevenToTwentyFragment() {
@@ -31,7 +31,7 @@ public class ElevenToTwentyFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_one_to_ten, container, false);
+        View view = inflater.inflate(R.layout.fragment_eleven_twenty, container, false);
 
         mNumbersList = new ArrayList<>();
 
@@ -62,7 +62,7 @@ public class ElevenToTwentyFragment extends Fragment {
         mNumbersList.add(new Numbers("29", "iri abụọ na itoolu",Color.parseColor("#FF9249"),R.raw.number_two));
         mNumbersList.add(new Numbers("30", "iri atọ",Color.parseColor("#FF5449"),R.raw.number_two));
 
-        listener = new NumberCategoryAdapter.RecyclerViewClickListener() {
+        listener = new ElevenToTwentyAdapter.RecyclerViewClickListener() {
             @Override
             public void onClick(View view, int position) {
                 MediaPlayer mediaPlayer = MediaPlayer.create(view.getContext(), mNumbersList.get(position).getAudio());
@@ -72,8 +72,8 @@ public class ElevenToTwentyFragment extends Fragment {
 
 
 
-        RecyclerView recyclerView = view.findViewById(R.id.numbers_recycler_view);
-        NumberCategoryAdapter adapter = new NumberCategoryAdapter(getContext(), mNumbersList, listener);
+        RecyclerView recyclerView = view.findViewById(R.id.eleven_recycler_view);
+        ElevenToTwentyAdapter adapter = new ElevenToTwentyAdapter(getContext(), mNumbersList, listener);
 
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         recyclerView.setAdapter(adapter);

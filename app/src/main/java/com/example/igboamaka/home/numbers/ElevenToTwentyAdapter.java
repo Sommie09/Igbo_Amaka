@@ -10,25 +10,24 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.igboamaka.R;
-import com.example.igboamaka.home.sentences.SentenceCategoryAdapter;
 import com.google.android.material.card.MaterialCardView;
 
 import java.util.List;
 
-public class NumberCategoryAdapter extends RecyclerView.Adapter<NumberCategoryAdapter.ViewHolder> {
+public class ElevenToTwentyAdapter extends RecyclerView.Adapter<ElevenToTwentyAdapter.ViewHolder> {
 
     private Context mContext;
     private List<Numbers> numbers;
     private static RecyclerViewClickListener listener;
 
 
-    public NumberCategoryAdapter(Context context, List<Numbers> numbers, RecyclerViewClickListener listener) {
+    public ElevenToTwentyAdapter(Context context, List<Numbers> numbers, RecyclerViewClickListener listener) {
         mContext = context;
         this.numbers = numbers;
         this.listener = listener;
     }
 
-    public NumberCategoryAdapter(Context context, List<Numbers> numbers) {
+    public ElevenToTwentyAdapter(Context context, List<Numbers> numbers) {
         mContext = context;
         this.numbers = numbers;
     }
@@ -39,7 +38,7 @@ public class NumberCategoryAdapter extends RecyclerView.Adapter<NumberCategoryAd
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         LayoutInflater layoutInflater = LayoutInflater.from(mContext);
-        View view = layoutInflater.inflate(R.layout.numbers_item_view, parent, false);
+        View view = layoutInflater.inflate(R.layout.numbers_eleven_to_twenty_item_view, parent, false);
         return new ViewHolder(view);
     }
 
@@ -63,9 +62,9 @@ public class NumberCategoryAdapter extends RecyclerView.Adapter<NumberCategoryAd
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
 
-            englishDigit = itemView.findViewById(R.id.english_digit);
-            igboTranslation = itemView.findViewById(R.id.igbo_translation);
-            cardView = itemView.findViewById(R.id.card_view_number);
+            englishDigit = itemView.findViewById(R.id.eleven_to_twenty_digit);
+            igboTranslation = itemView.findViewById(R.id.eleven_to_twenty_igbo);
+            cardView = itemView.findViewById(R.id.card_view_eleven_to_twenty);
             itemView.setOnClickListener(this);
 
         }

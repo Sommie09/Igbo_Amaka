@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
         <!-- Customize your theme here. -->
@@ -40,6 +40,7 @@
         <item name="android:textColor">@color/white_colour</item>
         <item name="android:textStyle">bold</item>
     </style>
+
 
 
 

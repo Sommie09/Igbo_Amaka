@@ -53,12 +53,6 @@ public class DressingAdapter extends PagerAdapter {
         dressing_name.setText(dressing.get(position).getDressing_type());
         dressing_description.setText(dressing.get(position).getDressing_description());
 
-        view.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(mContext, "Its working", Toast.LENGTH_SHORT).show();
-            }
-        });
 
         container.addView(view);
 

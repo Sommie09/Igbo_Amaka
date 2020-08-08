@@ -19,7 +19,7 @@ import java.util.List;
 
 public class TensFragment extends Fragment {
     List<Numbers> mNumbersList;
-    private NumberCategoryAdapter.RecyclerViewClickListener listener;
+    private TensAdapter.RecyclerViewClickListener listener;
 
 
     public TensFragment() {
@@ -31,23 +31,23 @@ public class TensFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_one_to_ten, container, false);
+        View view = inflater.inflate(R.layout.fragment_tens, container, false);
 
         mNumbersList = new ArrayList<>();
 
         mNumbersList.add(new Numbers("10", "iri", Color.parseColor("#B13254"),R.raw.number_two));
         mNumbersList.add(new Numbers("20", "iri abụọ",Color.parseColor("#FF5449"),R.raw.number_two));
-        mNumbersList.add(new Numbers("30", "iri atọ",Color.parseColor("#FF9249"),R.raw.number_two));
+        mNumbersList.add(new Numbers("30", "iri atọ",Color.parseColor("#FF9249"),R.raw.thirty));
 
-        mNumbersList.add(new Numbers("40", "iri anọ",Color.parseColor("#FF7349"),R.raw.number_two));
-        mNumbersList.add(new Numbers("50", "iri ise",Color.parseColor("#471437"),R.raw.number_two));
-        mNumbersList.add(new Numbers("60", "iri isii", Color.parseColor("#B13254"),R.raw.number_two));
+        mNumbersList.add(new Numbers("40", "iri anọ",Color.parseColor("#FF7349"),R.raw.forty));
+        mNumbersList.add(new Numbers("50", "iri ise",Color.parseColor("#471437"),R.raw.fifty));
+        mNumbersList.add(new Numbers("60", "iri isii", Color.parseColor("#B13254"),R.raw.sixty));
 
-        mNumbersList.add(new Numbers("70", "iri asaa",Color.parseColor("#B13254"),R.raw.number_two));
+        mNumbersList.add(new Numbers("70", "iri asaa",Color.parseColor("#B13254"),R.raw.seventy));
         mNumbersList.add(new Numbers("80", "iri asato",Color.parseColor("#FF5449"),R.raw.number_two));
         mNumbersList.add(new Numbers("90", "iri itoolu", Color.parseColor("#FF9249"),R.raw.number_two));
 
-        listener = new NumberCategoryAdapter.RecyclerViewClickListener() {
+        listener = new TensAdapter.RecyclerViewClickListener() {
             @Override
             public void onClick(View view, int position) {
                 MediaPlayer mediaPlayer = MediaPlayer.create(view.getContext(), mNumbersList.get(position).getAudio());
@@ -55,8 +55,8 @@ public class TensFragment extends Fragment {
             }
         };
 
-        RecyclerView recyclerView = view.findViewById(R.id.numbers_recycler_view);
-        NumberCategoryAdapter adapter = new NumberCategoryAdapter(getContext(), mNumbersList, listener);
+        RecyclerView recyclerView = view.findViewById(R.id.tens_recycler_view);
+        TensAdapter adapter = new TensAdapter(getContext(), mNumbersList, listener);
 
         recyclerView.setLayoutManager(new GridLayoutManager(getContext(), 3));
         recyclerView.setAdapter(adapter);

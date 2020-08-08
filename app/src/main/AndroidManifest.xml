@@ -9,74 +9,75 @@
         android:roundIcon="@mipmap/ic_launcher_igbo_amaka_icon"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".home.bodyparts.BodyPartsActivity"
-            android:screenOrientation="portrait"
-            android:parentActivityName=".MainActivity"
-            android:theme="@style/Activities"
-            ></activity>
         <activity
-            android:screenOrientation="portrait"
-            android:name=".funfacts.states.StateActivity"
-            android:parentActivityName=".MainActivity"
-            android:theme="@style/Activities" />
-        <activity
-            android:screenOrientation="portrait"
-            android:name=".funfacts.proverbs.ProverbsActivity"
-            android:parentActivityName=".MainActivity"
-            android:theme="@style/Activities" />
-        <activity
-            android:screenOrientation="portrait"
-            android:name=".funfacts.dressing.DressingActivity"
-            android:parentActivityName=".MainActivity"
-            android:theme="@style/Activities" />
-        <activity
-            android:screenOrientation="portrait"
-            android:name=".funfacts.names.NamesActivity"
-            android:parentActivityName=".MainActivity"
-            android:theme="@style/Activities" />
-        <activity
-            android:screenOrientation="portrait"
-            android:name=".funfacts.food.FoodActivity"
-            android:parentActivityName=".MainActivity"
-            android:theme="@style/Activities" />
-        <activity
-            android:screenOrientation="portrait"
-            android:name=".home.household.HouseHoldActivity"
-            android:parentActivityName=".MainActivity"
-            android:theme="@style/Activities" />
-        <activity
-            android:screenOrientation="portrait"
-            android:name=".home.sentences.SentencesActivity"
-            android:parentActivityName=".MainActivity"
-            android:theme="@style/Activities" />
-        <activity
-            android:screenOrientation="portrait"
             android:name=".home.family.FamilyActivity"
             android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Activities">
+        </activity>
+        <activity
+            android:name=".home.bodyparts.BodyPartsActivity"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
             android:theme="@style/Activities" />
         <activity
+            android:name=".funfacts.states.StateActivity"
+            android:parentActivityName=".MainActivity"
             android:screenOrientation="portrait"
+            android:theme="@style/Activities" />
+        <activity
+            android:name=".funfacts.proverbs.ProverbsActivity"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Activities" />
+        <activity
+            android:name=".funfacts.dressing.DressingActivity"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Activities" />
+        <activity
+            android:name=".funfacts.names.NamesActivity"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Activities" />
+        <activity
+            android:name=".funfacts.food.FoodActivity"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Activities" />
+        <activity
+            android:name=".home.household.HouseHoldActivity"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Activities" />
+        <activity
+            android:name=".home.sentences.SentencesActivity"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Activities" />
+        <activity
             android:name=".home.animals.AnimalActivity"
             android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
             android:theme="@style/Activities" />
         <activity
-            android:screenOrientation="portrait"
             android:name=".home.alphabets.AlphabetsActivity"
             android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
             android:theme="@style/Activities" />
         <activity
-            android:screenOrientation="portrait"
             android:name=".home.colors.ColoursActivity"
             android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
             android:theme="@style/Activities" />
         <activity
-            android:screenOrientation="portrait"
             android:name=".home.numbers.NumbersActivity"
             android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
             android:theme="@style/Activities" />
         <activity
-            android:screenOrientation="portrait"
             android:name=".SplashScreen"
+            android:screenOrientation="portrait"
             android:theme="@style/SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -84,7 +85,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>
