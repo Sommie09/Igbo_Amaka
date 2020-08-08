@@ -10,19 +10,19 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.igboamaka.R;
-import com.example.igboamaka.home.sentences.SentenceCategoryAdapter;
-import com.example.igboamaka.home.sentences.Sentences;
 import com.google.android.material.card.MaterialCardView;
 
 import java.util.List;
 
 public class ProverbsAdapter extends RecyclerView.Adapter<ProverbsAdapter.ViewHolder> {
-    private Context mContext;
-    private List<Proverbs> proverbs;
+    private final Context mContext;
+    private final List<Proverbs> proverbs;
+    private static RecyclerViewClickListener listener;
 
-    public ProverbsAdapter(Context context, List<Proverbs> proverbs) {
+    public ProverbsAdapter(Context context, List<Proverbs> proverbs, RecyclerViewClickListener listener) {
         mContext = context;
         this.proverbs = proverbs;
+        ProverbsAdapter.listener = listener;
     }
 
 
@@ -47,18 +47,29 @@ public class ProverbsAdapter extends RecyclerView.Adapter<ProverbsAdapter.ViewHo
         return proverbs.size();
     }
 
-    public static class ViewHolder extends RecyclerView.ViewHolder {
-        TextView igboProverb;
-        TextView englishProverb;
-        MaterialCardView cardView;
+    public static class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
+        final TextView igboProverb;
+        final TextView englishProverb;
+        final MaterialCardView cardView;
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
 
             igboProverb = itemView.findViewById(R.id.igbo_proverb);
             englishProverb = itemView.findViewById(R.id.english_proverb);
             cardView = itemView.findViewById(R.id.profile_card_proverbs);
-
+            itemView.setOnClickListener(this);
         }
+
+        @Override
+        public void onClick(View view) {
+            listener.onClick(view, getAdapterPosition());
+        }
+
+
+    }
+
+    public interface RecyclerViewClickListener{
+        void onClick(View view, int position);
     }
 
 }

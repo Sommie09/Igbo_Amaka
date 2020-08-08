@@ -9,6 +9,7 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
 
+@SuppressWarnings("ALL")
 public class NumberPagerAdapter extends FragmentPagerAdapter {
 
     public NumberPagerAdapter(@NonNull FragmentManager fm) {

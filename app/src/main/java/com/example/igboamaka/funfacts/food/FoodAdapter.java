@@ -11,16 +11,14 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.igboamaka.R;
-import com.example.igboamaka.home.family.Family;
-import com.example.igboamaka.home.family.FamilyAdapter;
 import com.google.android.material.card.MaterialCardView;
 
 import java.util.List;
 
 public class FoodAdapter extends RecyclerView.Adapter<FoodAdapter.ViewHolder> {
 
-    private Context mContext;
-    private List<Food> foods;
+    private final Context mContext;
+    private final List<Food> foods;
 
     public FoodAdapter(Context context, List<Food> foods) {
         mContext = context;
@@ -51,9 +49,9 @@ public class FoodAdapter extends RecyclerView.Adapter<FoodAdapter.ViewHolder> {
     }
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
-        TextView foodName;
-        ImageView foodImage;
-        MaterialCardView cardView;
+        final TextView foodName;
+        final ImageView foodImage;
+        final MaterialCardView cardView;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);

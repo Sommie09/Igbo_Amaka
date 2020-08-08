@@ -16,14 +16,12 @@ import com.google.android.material.card.MaterialCardView;
 import java.util.List;
 
 public class NumberQuizAdapter extends RecyclerView.Adapter<NumberQuizAdapter.ViewHolder> {
-    List<NumberQuiz> numberQuiz;
-    private Context context;
-    private ViewPager2 mViewPager2;
+    final List<NumberQuiz> numberQuiz;
+    private final Context context;
 
     public NumberQuizAdapter(List<NumberQuiz> numberQuiz, Context context, ViewPager2 viewPager2) {
         this.numberQuiz = numberQuiz;
         this.context = context;
-        mViewPager2 = viewPager2;
     }
 
     @NonNull
@@ -80,10 +78,16 @@ public class NumberQuizAdapter extends RecyclerView.Adapter<NumberQuizAdapter.Vi
     }
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
-        TextView questionCounter;
-        TextView question;
-        TextView option1, option2, option3, option4;
-        MaterialCardView option1Colour, option2Colour, option3Colour, option4Colour;
+        final TextView questionCounter;
+        final TextView question;
+        final TextView option1;
+        final TextView option2;
+        final TextView option3;
+        final TextView option4;
+        final MaterialCardView option1Colour;
+        final MaterialCardView option2Colour;
+        final MaterialCardView option3Colour;
+        final MaterialCardView option4Colour;
 
 
         public ViewHolder(@NonNull View itemView) {

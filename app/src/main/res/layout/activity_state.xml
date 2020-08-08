@@ -153,7 +153,7 @@
                 android:text="Ebonyi"
                 android:textSize="18dp"
                 android:textColor="@color/white_colour"
-                android:textStyle="bold"></TextView>
+                android:textStyle="bold" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -180,7 +180,7 @@
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_gravity="bottom|right"
-                android:background="@drawable/endview_background"></View>
+                android:background="@drawable/endview_background" />
         </com.google.android.material.card.MaterialCardView>
 
         <com.google.android.material.card.MaterialCardView
@@ -233,7 +233,7 @@
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_gravity="bottom|right"
-                android:background="@drawable/endview_background"></View>
+                android:background="@drawable/endview_background" />
         </com.google.android.material.card.MaterialCardView>
 
         <com.google.android.material.card.MaterialCardView

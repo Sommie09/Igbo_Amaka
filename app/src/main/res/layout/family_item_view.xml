@@ -27,7 +27,8 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/family_image"
                 android:src="@drawable/family_father"
-                android:scaleType="fitCenter">
+                android:scaleType="fitCenter"
+                android:contentDescription="TODO">
             </ImageView>
 
 
@@ -69,5 +70,14 @@
         android:background="@drawable/endview_background">
 
     </View>
+
+    <ImageView
+        android:layout_gravity="bottom|right"
+        android:layout_margin="5dp"
+        android:src="@drawable/ic_baseline_volume_up_24"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:contentDescription="TODO">
+    </ImageView>
 
 </com.google.android.material.card.MaterialCardView>

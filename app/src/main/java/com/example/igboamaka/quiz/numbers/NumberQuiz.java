@@ -1,10 +1,16 @@
 package com.example.igboamaka.quiz.numbers;
 
 public class NumberQuiz {
-    private String questionCounter;
-    private String question;
-    private int option1Colour, option2Colour, option3Colour, option4Colour;
-    private String option1, option2, option3, option4;
+    private final String questionCounter;
+    private final String question;
+    private final int option1Colour;
+    private final int option2Colour;
+    private final int option3Colour;
+    private final int option4Colour;
+    private final String option1;
+    private final String option2;
+    private final String option3;
+    private final String option4;
 
     public NumberQuiz(String questionCounter, String question, int option1Colour, int option2Colour, int option3Colour, int option4Colour, String option1, String option2, String option3, String option4) {
         this.questionCounter = questionCounter;

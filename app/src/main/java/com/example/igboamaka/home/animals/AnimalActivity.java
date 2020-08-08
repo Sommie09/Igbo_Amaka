@@ -11,14 +11,12 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.example.igboamaka.R;
-import com.example.igboamaka.home.sentences.SentenceCategoryAdapter;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class AnimalActivity extends AppCompatActivity {
     List<Animals> animals;
-    private AnimalAdapter.RecyclerViewClickListener listener;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,7 +44,7 @@ public class AnimalActivity extends AppCompatActivity {
         animals.add(new Animals("Bird", "Nnụnụ", R.drawable.bird_image,Color.parseColor("#FF5449"), R.raw.bird));
         animals.add(new Animals("Snake", "Agwo", R.drawable.snake_image,Color.parseColor("#FF9249"), R.raw.snake));
 
-        listener = new AnimalAdapter.RecyclerViewClickListener() {
+        AnimalAdapter.RecyclerViewClickListener listener = new AnimalAdapter.RecyclerViewClickListener() {
             @Override
             public void onClick(View view, int position) {
                 MediaPlayer mediaPlayer = MediaPlayer.create(view.getContext(), animals.get(position).getAudio());
@@ -57,7 +55,7 @@ public class AnimalActivity extends AppCompatActivity {
 
 
         RecyclerView recyclerView = findViewById(R.id.animal_recycler_view);
-        AnimalAdapter adapter = new AnimalAdapter(AnimalActivity.this, animals,listener);
+        AnimalAdapter adapter = new AnimalAdapter(AnimalActivity.this, animals, listener);
 
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setAdapter(adapter);

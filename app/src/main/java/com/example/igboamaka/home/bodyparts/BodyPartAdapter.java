@@ -10,21 +10,19 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.igboamaka.R;
-import com.example.igboamaka.home.household.HouseHold;
-import com.example.igboamaka.home.household.HouseholdCategoryAdapter;
 import com.google.android.material.card.MaterialCardView;
 
 import java.util.List;
 
 public class BodyPartAdapter extends RecyclerView.Adapter<BodyPartAdapter.ViewHolder> {
-    private Context mContext;
-    private List<BodyParts> bodyparts;
+    private final Context mContext;
+    private final List<BodyParts> bodyparts;
     private static BodyPartAdapter.RecyclerViewClickListener listener;
 
     public BodyPartAdapter(Context context, List<BodyParts> bodyParts, BodyPartAdapter.RecyclerViewClickListener listener) {
         mContext = context;
         this.bodyparts = bodyParts;
-        this.listener = listener;
+        BodyPartAdapter.listener = listener;
     }
 
     @NonNull
@@ -49,9 +47,9 @@ public class BodyPartAdapter extends RecyclerView.Adapter<BodyPartAdapter.ViewHo
     }
 
     public static class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
-        TextView englishItem;
-        TextView igboItem;
-        MaterialCardView cardView;
+        final TextView englishItem;
+        final TextView igboItem;
+        final MaterialCardView cardView;
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
 

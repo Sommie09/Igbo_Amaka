@@ -11,16 +11,12 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.example.igboamaka.R;
-import com.example.igboamaka.home.animals.AnimalActivity;
-import com.example.igboamaka.home.animals.AnimalAdapter;
-import com.example.igboamaka.home.animals.Animals;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class FamilyActivity extends AppCompatActivity {
     List<Family> family;
-    private FamilyAdapter.RecyclerViewClickListener listener;
 
 
     @Override
@@ -48,7 +44,7 @@ public class FamilyActivity extends AppCompatActivity {
         family.add(new Family("Brother", "nwanne nwoke", R.drawable.family_younger_brother,Color.parseColor("#FF9249"), R.raw.brother));
         family.add(new Family("Sister", "nwanne nwanyi", R.drawable.family_younger_sister,Color.parseColor("#FF5449"), R.raw.sister));
 
-        listener = new FamilyAdapter.RecyclerViewClickListener() {
+        FamilyAdapter.RecyclerViewClickListener listener = new FamilyAdapter.RecyclerViewClickListener() {
             @Override
             public void onClick(View view, int position) {
                 MediaPlayer mediaPlayer = MediaPlayer.create(view.getContext(), family.get(position).getAudio());
@@ -59,7 +55,7 @@ public class FamilyActivity extends AppCompatActivity {
 
 
         RecyclerView recyclerView = findViewById(R.id.family_recycler_view);
-        FamilyAdapter adapter = new FamilyAdapter(FamilyActivity.this, family,listener);
+        FamilyAdapter adapter = new FamilyAdapter(FamilyActivity.this, family, listener);
 
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setAdapter(adapter);

@@ -11,8 +11,6 @@ import android.widget.TextView;
 
 public class SplashScreen extends AppCompatActivity {
 
-    private static int SPLASH_SCREEN = 3000;
-
     Animation topAnim, bottomAnim;
     TextView app_name, description;
 
@@ -31,6 +29,7 @@ public class SplashScreen extends AppCompatActivity {
         app_name.setAnimation(topAnim);
         description.setAnimation(bottomAnim);
 
+        int SPLASH_SCREEN = 3000;
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {

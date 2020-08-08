@@ -2,8 +2,8 @@
 <com.google.android.material.card.MaterialCardView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/card_view_number_long"
     app:cardCornerRadius="8dp"
+    android:id="@+id/card_view_bedroom"
     app:cardElevation="5dp"
     app:cardBackgroundColor="@color/orange"
     app:cardPreventCornerOverlap="true"
@@ -16,25 +16,27 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
+
         <TextView
             android:textColor="@color/white_colour"
             android:fontFamily="@font/lato_regular"
-            android:id="@+id/english_digit"
+            android:id="@+id/english_bedroom"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="1"
-            android:textSize="25sp">
+            android:textSize="20dp">
         </TextView>
 
         <TextView
             android:textColor="@color/white_colour"
             android:fontFamily="@font/lato_regular"
-            android:layout_below="@id/english_digit"
-            android:id="@+id/igbo_translation"
+            android:layout_below="@id/english_bedroom"
+            android:id="@+id/igbo_bedroom"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
+            android:textStyle="bold"
             android:text="ótù"
             android:textSize="20dp">
         </TextView>
@@ -49,5 +51,14 @@
         android:background="@drawable/endview_background">
 
     </View>
+
+    <ImageView
+        android:layout_gravity="bottom|right"
+        android:layout_margin="5dp"
+        android:src="@drawable/ic_baseline_volume_up_24"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:contentDescription="TODO">
+    </ImageView>
 
 </com.google.android.material.card.MaterialCardView>

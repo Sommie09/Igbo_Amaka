@@ -7,7 +7,6 @@ import androidx.viewpager.widget.ViewPager;
 import android.os.Bundle;
 
 import com.example.igboamaka.R;
-import com.example.igboamaka.home.sentences.SentencesPagerAdapter;
 import com.google.android.material.tabs.TabLayout;
 
 public class NamesActivity extends AppCompatActivity {

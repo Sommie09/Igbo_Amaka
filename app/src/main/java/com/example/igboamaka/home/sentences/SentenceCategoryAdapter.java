@@ -1,12 +1,9 @@
 package com.example.igboamaka.home.sentences;
 
 import android.content.Context;
-import android.media.AudioManager;
-import android.media.MediaPlayer;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -17,12 +14,10 @@ import com.google.android.material.card.MaterialCardView;
 
 import java.util.List;
 
-import static android.media.AudioManager.AUDIOFOCUS_GAIN;
-
 public class SentenceCategoryAdapter extends RecyclerView.Adapter<SentenceCategoryAdapter.ViewHolder> {
 
-    private  Context mContext;
-    private  List<Sentences> sentences;
+    private final Context mContext;
+    private final List<Sentences> sentences;
     private static RecyclerViewClickListener listener;
 
 
@@ -55,9 +50,9 @@ public class SentenceCategoryAdapter extends RecyclerView.Adapter<SentenceCatego
     }
 
     public static class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
-        TextView englishSentence;
-        TextView igboSentence;
-        MaterialCardView cardView;
+        final TextView englishSentence;
+        final TextView igboSentence;
+        final MaterialCardView cardView;
         public ViewHolder(@NonNull final View itemView) {
             super(itemView);
 

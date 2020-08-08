@@ -1,7 +1,6 @@
 package com.example.igboamaka.quiz.numbers;
 
 import android.graphics.Color;
-import android.os.Build;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -13,11 +12,9 @@ import androidx.viewpager2.widget.CompositePageTransformer;
 import androidx.viewpager2.widget.MarginPageTransformer;
 import androidx.viewpager2.widget.ViewPager2;
 
-import android.os.Handler;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.WindowManager;
 
 import com.example.igboamaka.R;
 import com.example.igboamaka.quiz.QuizFragment;
@@ -25,8 +22,7 @@ import com.google.android.material.button.MaterialButton;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Timer;
-import java.util.TimerTask;
+import java.util.Objects;
 
 public class NumberQuizFragment extends Fragment {
     private ViewPager2 mViewPager2;
@@ -219,7 +215,7 @@ public class NumberQuizFragment extends Fragment {
                         @Override
                         public void onClick(View view) {
                             Fragment fragment = new QuizFragment();
-                            FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
+                            FragmentManager fragmentManager = Objects.requireNonNull(getActivity()).getSupportFragmentManager();
                             FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
                             fragmentTransaction.replace(R.id.fragment_container, fragment);
                             fragmentTransaction.addToBackStack(null);

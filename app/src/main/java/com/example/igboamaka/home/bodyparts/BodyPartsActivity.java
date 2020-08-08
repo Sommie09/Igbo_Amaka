@@ -12,8 +12,6 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.example.igboamaka.R;
-import com.example.igboamaka.home.household.HouseHold;
-import com.example.igboamaka.home.household.HouseholdCategoryAdapter;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -21,7 +19,6 @@ import java.util.List;
 public class BodyPartsActivity extends AppCompatActivity {
 
     List<BodyParts> bodyParts;
-    private BodyPartAdapter.RecyclerViewClickListener listener;
 
 
     @Override
@@ -38,7 +35,7 @@ public class BodyPartsActivity extends AppCompatActivity {
 
 
         bodyParts = new ArrayList<>();
-        bodyParts.add(new BodyParts("Ear", "Ntị", Color.parseColor("#B13254"), R.raw.number_two));
+        bodyParts.add(new BodyParts("Ear", "Ntị", Color.parseColor("#B13254"), R.raw.ear));
         bodyParts.add(new BodyParts("Eye", "Anya",Color.parseColor("#FF5449"), R.raw.eye));
         bodyParts.add(new BodyParts("Face", "Ihu",Color.parseColor("#FF9249"), R.raw.face));
 
@@ -69,19 +66,15 @@ public class BodyPartsActivity extends AppCompatActivity {
 
         bodyParts.add(new BodyParts("Buttocks", "Ike",Color.parseColor("#B13254"), R.raw.number_two));
 
-        bodyParts.add(new BodyParts("Elbow", "Ikpere aka",Color.parseColor("#B13254"), R.raw.number_two));
-        bodyParts.add(new BodyParts("Heel", "Ọba ụkwụ",Color.parseColor("#FF5449"), R.raw.number_two));
-        bodyParts.add(new BodyParts("Nail", "Mbọ",Color.parseColor("#FF9249"), R.raw.number_two));
+        bodyParts.add(new BodyParts("Elbow", "Ikpere aka",Color.parseColor("#B13254"), R.raw.elbow));
+        bodyParts.add(new BodyParts("Heel", "Ọba ụkwụ",Color.parseColor("#FF5449"), R.raw.heel));
+        bodyParts.add(new BodyParts("Nail", "Mbọ",Color.parseColor("#FF9249"), R.raw.nail));
 
-        bodyParts.add(new BodyParts("EyeBrows", "Iku anya",Color.parseColor("#FF7349"), R.raw.number_two));
-        bodyParts.add(new BodyParts("EyeLids", "Igbirigbe anya",Color.parseColor("#471437"), R.raw.number_two));
-
-
+        bodyParts.add(new BodyParts("EyeBrows", "Iku anya",Color.parseColor("#FF7349"), R.raw.eyebrows));
+        bodyParts.add(new BodyParts("EyeLids", "Igbirigbe anya",Color.parseColor("#471437"), R.raw.eyelids));
 
 
-
-
-        listener = new BodyPartAdapter.RecyclerViewClickListener() {
+        BodyPartAdapter.RecyclerViewClickListener listener = new BodyPartAdapter.RecyclerViewClickListener() {
             @Override
             public void onClick(View view, int position) {
                 MediaPlayer mediaPlayer = MediaPlayer.create(view.getContext(), bodyParts.get(position).getAudio());
@@ -90,7 +83,7 @@ public class BodyPartsActivity extends AppCompatActivity {
         };
 
         RecyclerView recyclerView = findViewById(R.id.bodyparts_recycler_view);
-        BodyPartAdapter adapter = new BodyPartAdapter(BodyPartsActivity.this, bodyParts,listener);
+        BodyPartAdapter adapter = new BodyPartAdapter(BodyPartsActivity.this, bodyParts, listener);
 
         recyclerView.setLayoutManager(new GridLayoutManager(BodyPartsActivity.this, 2));
         recyclerView.setAdapter(adapter);

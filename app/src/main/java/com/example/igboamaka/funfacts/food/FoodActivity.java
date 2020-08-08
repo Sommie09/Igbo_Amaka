@@ -3,16 +3,12 @@ package com.example.igboamaka.funfacts.food;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.GridLayoutManager;
-import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.graphics.Color;
 import android.os.Bundle;
 
 import com.example.igboamaka.R;
-import com.example.igboamaka.home.family.Family;
-import com.example.igboamaka.home.family.FamilyActivity;
-import com.example.igboamaka.home.family.FamilyAdapter;
 
 import java.util.ArrayList;
 import java.util.List;

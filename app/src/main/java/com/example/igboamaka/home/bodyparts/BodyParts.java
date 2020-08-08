@@ -1,10 +1,10 @@
 package com.example.igboamaka.home.bodyparts;
 
 public class BodyParts {
-    private String englishPart;
-    private String igboPart;
-    private int colour;
-    private int audio;
+    private final String englishPart;
+    private final String igboPart;
+    private final int colour;
+    private final int audio;
 
     public BodyParts(String englishPart, String igboPart, int colour, int audio) {
         this.englishPart = englishPart;

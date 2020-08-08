@@ -1,10 +1,10 @@
 package com.example.igboamaka.home.sentences;
 
 public class Sentences {
-    private String igboSentence;
-    private String englishSentence;
-    private int profileBackgroundColour;
-    private int audio;
+    private final String igboSentence;
+    private final String englishSentence;
+    private final int profileBackgroundColour;
+    private final int audio;
 
     public Sentences(String igboSentence, String englishSentence, int profileBackgroundColour, int audio) {
         this.igboSentence = igboSentence;

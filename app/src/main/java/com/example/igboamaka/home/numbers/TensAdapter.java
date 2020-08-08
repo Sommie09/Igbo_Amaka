@@ -16,15 +16,15 @@ import java.util.List;
 
 public class TensAdapter extends RecyclerView.Adapter<TensAdapter.ViewHolder> {
 
-    private Context mContext;
-    private List<Numbers> numbers;
+    private final Context mContext;
+    private final List<Numbers> numbers;
     private static RecyclerViewClickListener listener;
 
 
     public TensAdapter(Context context, List<Numbers> numbers, RecyclerViewClickListener listener) {
         mContext = context;
         this.numbers = numbers;
-        this.listener = listener;
+        TensAdapter.listener = listener;
     }
 
     public TensAdapter(Context context, List<Numbers> numbers) {
@@ -56,9 +56,9 @@ public class TensAdapter extends RecyclerView.Adapter<TensAdapter.ViewHolder> {
     }
 
     public static class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
-        TextView englishDigit;
-        TextView igboTranslation;
-        MaterialCardView cardView;
+        final TextView englishDigit;
+        final TextView igboTranslation;
+        final MaterialCardView cardView;
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
 

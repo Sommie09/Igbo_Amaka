@@ -14,7 +14,7 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:clipToPadding="false"
-        android:padding="12dp"
+        android:padding="5dp"
         android:id="@+id/proverbs_recycler_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />

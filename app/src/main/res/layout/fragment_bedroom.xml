@@ -11,7 +11,7 @@
         android:clipToPadding="false"
         android:layoutAnimation="@anim/layout_animation_slide_from_buttom"
         android:padding="12dp"
-        android:id="@+id/house_hold_recycler_view"
+        android:id="@+id/bedroom_recycler_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 </LinearLayout>

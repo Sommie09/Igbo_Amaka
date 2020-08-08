@@ -12,20 +12,17 @@ import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewpager2.widget.ViewPager2;
 
 import com.example.igboamaka.R;
-import com.example.igboamaka.quiz.numbers.NumberQuizAdapter;
 import com.google.android.material.card.MaterialCardView;
 
 import java.util.List;
 
 public class AnimalQuizAdapter extends RecyclerView.Adapter<AnimalQuizAdapter.ViewHolder> {
-    List<AnimalsQuiz> animalQuiz;
-    private Context context;
-    private ViewPager2 mViewPager2;
+    final List<AnimalsQuiz> animalQuiz;
+    private final Context context;
 
     public AnimalQuizAdapter(List<AnimalsQuiz> animalQuiz, Context context, ViewPager2 viewPager2) {
         this.animalQuiz = animalQuiz;
         this.context = context;
-        mViewPager2 = viewPager2;
     }
 
     @NonNull
@@ -82,10 +79,16 @@ public class AnimalQuizAdapter extends RecyclerView.Adapter<AnimalQuizAdapter.Vi
     }
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
-        TextView questionCounter;
-        ImageView question;
-        TextView option1, option2, option3, option4;
-        MaterialCardView option1Colour, option2Colour, option3Colour, option4Colour;
+        final TextView questionCounter;
+        final ImageView question;
+        final TextView option1;
+        final TextView option2;
+        final TextView option3;
+        final TextView option4;
+        final MaterialCardView option1Colour;
+        final MaterialCardView option2Colour;
+        final MaterialCardView option3Colour;
+        final MaterialCardView option4Colour;
 
 
         public ViewHolder(@NonNull View itemView) {

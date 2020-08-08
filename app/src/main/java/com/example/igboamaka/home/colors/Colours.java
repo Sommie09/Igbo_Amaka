@@ -1,11 +1,11 @@
 package com.example.igboamaka.home.colors;
 
 public class Colours {
-    private String englishTranslation;
-    private String igboTranslation;
-    private int backGroundColour;
-    private int textColour;
-    private int audio;
+    private final String englishTranslation;
+    private final String igboTranslation;
+    private final int backGroundColour;
+    private final int textColour;
+    private final int audio;
 
 
     public Colours(String englishTranslation, String igboTranslation, int backGroundColour, int textColour, int audio) {

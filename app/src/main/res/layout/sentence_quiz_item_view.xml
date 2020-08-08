@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -42,7 +40,7 @@
             android:textColor="@color/black"
             android:textSize="30dp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/sentence_question_counter"></TextView>
+            app:layout_constraintTop_toBottomOf="@+id/sentence_question_counter" />
 
         <TextView
             android:id="@+id/textView4"
@@ -54,7 +52,7 @@
             android:text="Translate the sentence above"
             android:textColor="@color/grey"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/sentence_question"></TextView>
+            app:layout_constraintTop_toBottomOf="@+id/sentence_question" />
 
         <LinearLayout
             android:orientation="vertical"
@@ -95,7 +93,7 @@
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:layout_gravity="bottom|right"
-                    android:background="@drawable/endview_background"></View>
+                    android:background="@drawable/endview_background" />
             </com.google.android.material.card.MaterialCardView>
 
             <com.google.android.material.card.MaterialCardView
@@ -119,13 +117,13 @@
                     android:fontFamily="@font/lato_regular"
                     android:text="Family"
                     android:textColor="@color/white_colour"
-                    android:textStyle="bold"></TextView>
+                    android:textStyle="bold" />
 
                 <View
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:layout_gravity="bottom|right"
-                    android:background="@drawable/endview_background"></View>
+                    android:background="@drawable/endview_background" />
             </com.google.android.material.card.MaterialCardView>
 
             <com.google.android.material.card.MaterialCardView
@@ -149,13 +147,13 @@
                     android:fontFamily="@font/lato_regular"
                     android:text="Animals"
                     android:textColor="@color/white_colour"
-                    android:textStyle="bold"></TextView>
+                    android:textStyle="bold" />
 
                 <View
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:layout_gravity="bottom|right"
-                    android:background="@drawable/endview_background"></View>
+                    android:background="@drawable/endview_background" />
             </com.google.android.material.card.MaterialCardView>
 
             <com.google.android.material.card.MaterialCardView
@@ -179,13 +177,13 @@
                     android:fontFamily="@font/lato_regular"
                     android:text="Colours"
                     android:textColor="@color/white_colour"
-                    android:textStyle="bold"></TextView>
+                    android:textStyle="bold" />
 
                 <View
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:layout_gravity="bottom|right"
-                    android:background="@drawable/endview_background"></View>
+                    android:background="@drawable/endview_background" />
             </com.google.android.material.card.MaterialCardView>
 
 

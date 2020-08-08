@@ -16,14 +16,14 @@ import com.google.android.material.card.MaterialCardView;
 import java.util.List;
 
 public class AnimalAdapter extends RecyclerView.Adapter<AnimalAdapter.ViewHolder> {
-    private Context mContext;
-    private List<Animals> animal;
+    private final Context mContext;
+    private final List<Animals> animal;
     private static RecyclerViewClickListener listener;
 
     public AnimalAdapter(Context context, List<Animals> animal,RecyclerViewClickListener listener) {
         mContext = context;
         this.animal = animal;
-        this.listener = listener;
+        AnimalAdapter.listener = listener;
     }
 
     @NonNull
@@ -52,10 +52,10 @@ public class AnimalAdapter extends RecyclerView.Adapter<AnimalAdapter.ViewHolder
     }
 
     public static class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
-        TextView englishAnimal;
-        TextView igboAnimal;
-        ImageView animalImage;
-        MaterialCardView cardView;
+        final TextView englishAnimal;
+        final TextView igboAnimal;
+        final ImageView animalImage;
+        final MaterialCardView cardView;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);

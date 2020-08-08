@@ -16,14 +16,14 @@ import java.util.List;
 
 public class ColoursAdapter extends RecyclerView.Adapter<ColoursAdapter.ViewHolder> {
 
-    private Context mContext;
-    private List<Colours> colours;
+    private final Context mContext;
+    private final List<Colours> colours;
     private static RecyclerViewClickListener listener;
 
     public ColoursAdapter(Context context, List<Colours> colours, RecyclerViewClickListener listener) {
         mContext = context;
         this.colours = colours;
-        this.listener = listener;
+        ColoursAdapter.listener = listener;
     }
 
     @NonNull
@@ -51,9 +51,9 @@ public class ColoursAdapter extends RecyclerView.Adapter<ColoursAdapter.ViewHold
     }
 
     public static class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
-        TextView englishColour;
-        TextView igboColour;
-        MaterialCardView cardView;
+        final TextView englishColour;
+        final TextView igboColour;
+        final MaterialCardView cardView;
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
 

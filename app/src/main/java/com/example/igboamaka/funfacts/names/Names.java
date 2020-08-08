@@ -1,9 +1,9 @@
 package com.example.igboamaka.funfacts.names;
 
 public class Names {
-    private String igboName;
-    private String igboMeaning;
-    private int tagColour;
+    private final String igboName;
+    private final String igboMeaning;
+    private final int tagColour;
 
     public String getIgboName() {
         return igboName;

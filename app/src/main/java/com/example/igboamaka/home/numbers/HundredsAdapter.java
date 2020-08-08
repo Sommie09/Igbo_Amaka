@@ -16,15 +16,15 @@ import java.util.List;
 
 public class HundredsAdapter extends RecyclerView.Adapter<HundredsAdapter.ViewHolder> {
 
-    private Context mContext;
-    private List<Numbers> numbers;
+    private final Context mContext;
+    private final List<Numbers> numbers;
     private static RecyclerViewClickListener listener;
 
 
     public HundredsAdapter(Context context, List<Numbers> numbers, RecyclerViewClickListener listener) {
         mContext = context;
         this.numbers = numbers;
-        this.listener = listener;
+        HundredsAdapter.listener = listener;
     }
 
     public HundredsAdapter(Context context, List<Numbers> numbers) {
@@ -56,9 +56,9 @@ public class HundredsAdapter extends RecyclerView.Adapter<HundredsAdapter.ViewHo
     }
 
     public static class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
-        TextView englishDigit;
-        TextView igboTranslation;
-        MaterialCardView cardView;
+        final TextView englishDigit;
+        final TextView igboTranslation;
+        final MaterialCardView cardView;
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
 

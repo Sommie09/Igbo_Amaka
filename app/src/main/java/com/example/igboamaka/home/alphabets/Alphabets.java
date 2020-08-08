@@ -1,9 +1,9 @@
 package com.example.igboamaka.home.alphabets;
 
 public class Alphabets {
-    private String igboTranslation;
-    private int backGroundColour;
-    private int audio;
+    private final String igboTranslation;
+    private final int backGroundColour;
+    private final int audio;
 
     public Alphabets(String igboTranslation, int backGroundColour, int audio) {
         this.igboTranslation = igboTranslation;

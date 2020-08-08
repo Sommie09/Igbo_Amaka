@@ -12,7 +12,6 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.igboamaka.R;
-import com.example.igboamaka.home.sentences.Sentences;
 
 import java.util.ArrayList;
 import java.util.List;

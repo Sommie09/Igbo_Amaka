@@ -1,10 +1,10 @@
 package com.example.igboamaka.home.household;
 
 public class HouseHold {
-    private String englishItem;
-    private String igboItem;
-    private int colour;
-    private int audio;
+    private final String englishItem;
+    private final String igboItem;
+    private final int colour;
+    private final int audio;
 
     public HouseHold(String englishItem, String igboItem, int colour, int audio) {
         this.englishItem = englishItem;

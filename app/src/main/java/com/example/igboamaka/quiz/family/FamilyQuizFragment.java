@@ -18,12 +18,12 @@ import android.view.ViewGroup;
 
 import com.example.igboamaka.R;
 import com.example.igboamaka.quiz.QuizFragment;
-import com.example.igboamaka.quiz.numbers.NumberQuiz;
 import com.example.igboamaka.quiz.numbers.NumberQuizAdapter;
 import com.google.android.material.button.MaterialButton;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 
 public class FamilyQuizFragment extends Fragment {
@@ -214,7 +214,7 @@ public class FamilyQuizFragment extends Fragment {
                         @Override
                         public void onClick(View view) {
                             Fragment fragment = new QuizFragment();
-                            FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
+                            FragmentManager fragmentManager = Objects.requireNonNull(getActivity()).getSupportFragmentManager();
                             FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
                             fragmentTransaction.replace(R.id.fragment_container, fragment);
                             fragmentTransaction.addToBackStack(null);

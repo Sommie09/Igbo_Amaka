@@ -1,9 +1,9 @@
 package com.example.igboamaka.funfacts;
 
 public class FunFacts {
-    private int image;
-    private String description;
-    private String title;
+    private final int image;
+    private final String description;
+    private final String title;
 
     public FunFacts(String description, int image, String title) {
         this.image = image;

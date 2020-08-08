@@ -16,14 +16,14 @@ import java.util.List;
 
 public class AlphabetAdapter extends RecyclerView.Adapter<AlphabetAdapter.ViewHolder>{
 
-    private Context mContext;
-    private List<Alphabets> alphabet;
+    private final Context mContext;
+    private final List<Alphabets> alphabet;
     private static RecyclerViewClickListener listener;
 
     public AlphabetAdapter(Context context, List<Alphabets> alphabet,RecyclerViewClickListener listener) {
         mContext = context;
         this.alphabet = alphabet;
-        this.listener = listener;
+        AlphabetAdapter.listener = listener;
     }
 
 
@@ -51,8 +51,8 @@ public class AlphabetAdapter extends RecyclerView.Adapter<AlphabetAdapter.ViewHo
     }
 
     public static class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
-        TextView igboTranslation;
-        MaterialCardView cardView;
+        final TextView igboTranslation;
+        final MaterialCardView cardView;
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
 

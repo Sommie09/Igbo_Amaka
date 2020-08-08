@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
+@SuppressWarnings({"ALL", "ConstantConditions"})
 public class HouseholdPagerAdapter extends FragmentPagerAdapter {
 
     public HouseholdPagerAdapter(@NonNull FragmentManager fm) {

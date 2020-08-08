@@ -1,9 +1,9 @@
 package com.example.igboamaka.home.numbers;
 
 public class Numbers {
-    private String englishDigit;
-    private String igboTranslation;
-    private int backGroundColour;
+    private final String englishDigit;
+    private final String igboTranslation;
+    private final int backGroundColour;
     private int audio;
 
 

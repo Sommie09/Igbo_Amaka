@@ -19,7 +19,6 @@ import java.util.List;
 
 public class ElevenToTwentyFragment extends Fragment {
     List<Numbers> mNumbersList;
-    private ElevenToTwentyAdapter.RecyclerViewClickListener listener;
 
 
     public ElevenToTwentyFragment() {
@@ -35,34 +34,34 @@ public class ElevenToTwentyFragment extends Fragment {
 
         mNumbersList = new ArrayList<>();
 
-        mNumbersList.add(new Numbers("11", "iri na otu", Color.parseColor("#B13254"),R.raw.number_two));
-        mNumbersList.add(new Numbers("12", "iri na abụọ",Color.parseColor("#FF5449"),R.raw.number_two));
-        mNumbersList.add(new Numbers("13", "iri na atọ",Color.parseColor("#FF9249"),R.raw.number_two));
+        mNumbersList.add(new Numbers("11", "iri na otu", Color.parseColor("#B13254"),R.raw.eleven));
+        mNumbersList.add(new Numbers("12", "iri na abụọ",Color.parseColor("#FF5449"),R.raw.twelve));
+        mNumbersList.add(new Numbers("13", "iri na atọ",Color.parseColor("#FF9249"),R.raw.thirteen));
 
-        mNumbersList.add(new Numbers("14", "iri na anọ",Color.parseColor("#FF7349"),R.raw.number_two));
-        mNumbersList.add(new Numbers("15", "iri na ise",Color.parseColor("#471437"),R.raw.number_two));
-        mNumbersList.add(new Numbers("16", "iri na isii",Color.parseColor("#B13254"),R.raw.number_two));
+        mNumbersList.add(new Numbers("14", "iri na anọ",Color.parseColor("#FF7349"),R.raw.fourteen));
+        mNumbersList.add(new Numbers("15", "iri na ise",Color.parseColor("#471437"),R.raw.fifteen));
+        mNumbersList.add(new Numbers("16", "iri na isii",Color.parseColor("#B13254"),R.raw.sixteen));
 
-        mNumbersList.add(new Numbers("17", "iri na asaa",Color.parseColor("#FF9249"),R.raw.number_two));
-        mNumbersList.add(new Numbers("18", "iri na asato",Color.parseColor("#FF5449"),R.raw.number_two));
-        mNumbersList.add(new Numbers("19", "iri na itoolu",Color.parseColor("#FF9249"),R.raw.number_two));
+        mNumbersList.add(new Numbers("17", "iri na asaa",Color.parseColor("#FF9249"),R.raw.seventeen));
+        mNumbersList.add(new Numbers("18", "iri na asato",Color.parseColor("#FF5449"),R.raw.eighteen));
+        mNumbersList.add(new Numbers("19", "iri na itoolu",Color.parseColor("#FF9249"),R.raw.nineteen));
 
-        mNumbersList.add(new Numbers("20", "iri abụọ",Color.parseColor("#FF7349"),R.raw.number_two));
-        mNumbersList.add(new Numbers("21", "iri abụọ na otu",Color.parseColor("#471437"),R.raw.number_two));
-        mNumbersList.add(new Numbers("22", "iri abụọ na abụọ",Color.parseColor("#B13254"),R.raw.number_two));
+        mNumbersList.add(new Numbers("20", "iri abụọ",Color.parseColor("#FF7349"),R.raw.twenty));
+        mNumbersList.add(new Numbers("21", "iri abụọ na otu",Color.parseColor("#471437"),R.raw.twentyone));
+        mNumbersList.add(new Numbers("22", "iri abụọ na abụọ",Color.parseColor("#B13254"),R.raw.twentytwo));
 
-        mNumbersList.add(new Numbers("23", "iri abụọ na atọ",Color.parseColor("#FF9249"),R.raw.number_two));
-        mNumbersList.add(new Numbers("24", "iri abụọ na anọ",Color.parseColor("#FF5449"),R.raw.number_two));
-        mNumbersList.add(new Numbers("25", "iri abụọ na ise",Color.parseColor("#FF9249"),R.raw.number_two));
+        mNumbersList.add(new Numbers("23", "iri abụọ na atọ",Color.parseColor("#FF9249"),R.raw.twentythree));
+        mNumbersList.add(new Numbers("24", "iri abụọ na anọ",Color.parseColor("#FF5449"),R.raw.twentyfour));
+        mNumbersList.add(new Numbers("25", "iri abụọ na ise",Color.parseColor("#FF9249"),R.raw.twentyfive));
 
-        mNumbersList.add(new Numbers("26", "iri abụọ na isii",Color.parseColor("#FF7349"),R.raw.number_two));
-        mNumbersList.add(new Numbers("27", "iri abụọ na asaa",Color.parseColor("#471437"),R.raw.number_two));
-        mNumbersList.add(new Numbers("28", "iri abụọ na asato",Color.parseColor("#B13254"),R.raw.number_two));
+        mNumbersList.add(new Numbers("26", "iri abụọ na isii",Color.parseColor("#FF7349"),R.raw.twentysix));
+        mNumbersList.add(new Numbers("27", "iri abụọ na asaa",Color.parseColor("#471437"),R.raw.twentyseven));
+        mNumbersList.add(new Numbers("28", "iri abụọ na asato",Color.parseColor("#B13254"),R.raw.twentyeight));
 
-        mNumbersList.add(new Numbers("29", "iri abụọ na itoolu",Color.parseColor("#FF9249"),R.raw.number_two));
-        mNumbersList.add(new Numbers("30", "iri atọ",Color.parseColor("#FF5449"),R.raw.number_two));
+        mNumbersList.add(new Numbers("29", "iri abụọ na itoolu",Color.parseColor("#FF9249"),R.raw.twentynine));
+        mNumbersList.add(new Numbers("30", "iri atọ",Color.parseColor("#FF5449"),R.raw.thirty));
 
-        listener = new ElevenToTwentyAdapter.RecyclerViewClickListener() {
+        ElevenToTwentyAdapter.RecyclerViewClickListener listener = new ElevenToTwentyAdapter.RecyclerViewClickListener() {
             @Override
             public void onClick(View view, int position) {
                 MediaPlayer mediaPlayer = MediaPlayer.create(view.getContext(), mNumbersList.get(position).getAudio());

@@ -41,7 +41,7 @@
             android:textSize="17dp"
             android:textStyle="bold"
             tools:layout_editor_absoluteX="67dp"
-            tools:layout_editor_absoluteY="101dp"></TextView>
+            tools:layout_editor_absoluteY="101dp" />
 
         <TextView
             android:id="@+id/english_name"
@@ -53,7 +53,7 @@
             android:layout_marginTop="5dp"
             android:textSize="13dp"
             tools:layout_editor_absoluteX="144dp"
-            tools:layout_editor_absoluteY="120dp"></TextView>
+            tools:layout_editor_absoluteY="120dp" />
 
     </LinearLayout>
 

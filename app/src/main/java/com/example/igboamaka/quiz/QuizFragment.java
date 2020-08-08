@@ -1,10 +1,7 @@
 package com.example.igboamaka.quiz;
 
-import android.content.Intent;
 import android.os.Bundle;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
@@ -14,7 +11,6 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.igboamaka.R;
-import com.example.igboamaka.home.numbers.NumbersActivity;
 import com.example.igboamaka.quiz.animals.AnimalQuizFragment;
 import com.example.igboamaka.quiz.bodyparts.BodyPartsQuizFragment;
 import com.example.igboamaka.quiz.colour.ColourQuizFragment;
@@ -22,6 +18,10 @@ import com.example.igboamaka.quiz.family.FamilyQuizFragment;
 import com.example.igboamaka.quiz.numbers.NumberQuizFragment;
 import com.example.igboamaka.quiz.sentences.SentenceQuizFragment;
 import com.google.android.material.card.MaterialCardView;
+
+import org.jetbrains.annotations.NotNull;
+
+import java.util.Objects;
 
 public class QuizFragment extends Fragment {
     MaterialCardView numberQuizCard, sentenceQuizCard, coloursCard, familyCard, animalCard, bodyPartsCard;
@@ -33,7 +33,7 @@ public class QuizFragment extends Fragment {
 
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+    public View onCreateView(@NotNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
        View view = getLayoutInflater().inflate(R.layout.fragment_quiz, container, false);
 
@@ -42,7 +42,7 @@ public class QuizFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 Fragment fragment = new NumberQuizFragment();
-                FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
+                FragmentManager fragmentManager = Objects.requireNonNull(getActivity()).getSupportFragmentManager();
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
                 fragmentTransaction.replace(R.id.fragment_container, fragment);
                 fragmentTransaction.addToBackStack(null);
@@ -55,7 +55,7 @@ public class QuizFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 Fragment fragment = new SentenceQuizFragment();
-                FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
+                FragmentManager fragmentManager = Objects.requireNonNull(getActivity()).getSupportFragmentManager();
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
                 fragmentTransaction.replace(R.id.fragment_container, fragment);
                 fragmentTransaction.addToBackStack(null);
@@ -68,7 +68,7 @@ public class QuizFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 Fragment fragment = new ColourQuizFragment();
-                FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
+                FragmentManager fragmentManager = Objects.requireNonNull(getActivity()).getSupportFragmentManager();
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
                 fragmentTransaction.replace(R.id.fragment_container, fragment);
                 fragmentTransaction.addToBackStack(null);
@@ -81,7 +81,7 @@ public class QuizFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 Fragment fragment = new FamilyQuizFragment();
-                FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
+                FragmentManager fragmentManager = Objects.requireNonNull(getActivity()).getSupportFragmentManager();
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
                 fragmentTransaction.replace(R.id.fragment_container, fragment);
                 fragmentTransaction.addToBackStack(null);
@@ -94,7 +94,7 @@ public class QuizFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 Fragment fragment = new AnimalQuizFragment();
-                FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
+                FragmentManager fragmentManager = Objects.requireNonNull(getActivity()).getSupportFragmentManager();
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
                 fragmentTransaction.replace(R.id.fragment_container, fragment);
                 fragmentTransaction.addToBackStack(null);
@@ -107,7 +107,7 @@ public class QuizFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 Fragment fragment = new BodyPartsQuizFragment();
-                FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
+                FragmentManager fragmentManager = Objects.requireNonNull(getActivity()).getSupportFragmentManager();
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
                 fragmentTransaction.replace(R.id.fragment_container, fragment);
                 fragmentTransaction.addToBackStack(null);

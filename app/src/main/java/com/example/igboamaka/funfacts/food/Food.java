@@ -1,9 +1,9 @@
 package com.example.igboamaka.funfacts.food;
 
 public class Food {
-    private String foodName;
-    private int foodImage;
-    private int foodBackground;
+    private final String foodName;
+    private final int foodImage;
+    private final int foodBackground;
 
     public Food(String foodName, int foodImage, int foodBackground) {
         this.foodName = foodName;

@@ -11,14 +11,12 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.example.igboamaka.R;
-import com.example.igboamaka.home.sentences.SentenceCategoryAdapter;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class AlphabetsActivity extends AppCompatActivity {
     List<Alphabets> alphabets;
-    private AlphabetAdapter.RecyclerViewClickListener listener;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -81,7 +79,7 @@ public class AlphabetsActivity extends AppCompatActivity {
         alphabets.add(new Alphabets("Y", Color.parseColor("#471437"), R.raw.y));
         alphabets.add(new Alphabets("Z", Color.parseColor("#B13254"), R.raw.z));
 
-        listener = new AlphabetAdapter.RecyclerViewClickListener() {
+        AlphabetAdapter.RecyclerViewClickListener listener = new AlphabetAdapter.RecyclerViewClickListener() {
             @Override
             public void onClick(View view, int position) {
                 MediaPlayer mediaPlayer = MediaPlayer.create(view.getContext(), alphabets.get(position).getAudio());

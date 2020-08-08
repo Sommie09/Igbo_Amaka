@@ -10,15 +10,13 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.igboamaka.R;
-import com.example.igboamaka.home.sentences.SentenceCategoryAdapter;
-import com.example.igboamaka.home.sentences.Sentences;
 import com.google.android.material.card.MaterialCardView;
 
 import java.util.List;
 
 public class NamesCategoryAdapter extends RecyclerView.Adapter<NamesCategoryAdapter.ViewHolder> {
-    private Context mContext;
-    private List<Names> names;
+    private final Context mContext;
+    private final List<Names> names;
 
     public NamesCategoryAdapter(Context context, List<Names> names) {
         mContext = context;
@@ -48,9 +46,9 @@ public class NamesCategoryAdapter extends RecyclerView.Adapter<NamesCategoryAdap
     }
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
-        TextView igboName;
-        TextView englishName;
-        MaterialCardView cardView;
+        final TextView igboName;
+        final TextView englishName;
+        final MaterialCardView cardView;
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
 

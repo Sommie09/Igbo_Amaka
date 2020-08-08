@@ -51,4 +51,13 @@
 
     </View>
 
+    <ImageView
+        android:layout_gravity="bottom|right"
+        android:layout_margin="5dp"
+        android:src="@drawable/ic_baseline_volume_up_24"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:contentDescription="TODO">
+    </ImageView>
+
 </com.google.android.material.card.MaterialCardView>

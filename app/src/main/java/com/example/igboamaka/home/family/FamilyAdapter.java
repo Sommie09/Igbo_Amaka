@@ -16,14 +16,14 @@ import com.google.android.material.card.MaterialCardView;
 import java.util.List;
 
 public class FamilyAdapter extends RecyclerView.Adapter<FamilyAdapter.ViewHolder> {
-    private Context mContext;
-    private List<Family> family;
+    private final Context mContext;
+    private final List<Family> family;
     private static RecyclerViewClickListener listener;
 
     public FamilyAdapter(Context context, List<Family> family, FamilyAdapter.RecyclerViewClickListener listener) {
         mContext = context;
         this.family = family;
-        this.listener = listener;
+        FamilyAdapter.listener = listener;
     }
 
     @NonNull
@@ -52,10 +52,10 @@ public class FamilyAdapter extends RecyclerView.Adapter<FamilyAdapter.ViewHolder
     }
 
     public static class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
-        TextView englishFamily;
-        TextView igboFamily;
-        ImageView familyImage;
-        MaterialCardView cardView;
+        final TextView englishFamily;
+        final TextView igboFamily;
+        final ImageView familyImage;
+        final MaterialCardView cardView;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);

@@ -12,22 +12,18 @@ import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewpager2.widget.ViewPager2;
 
 import com.example.igboamaka.R;
-import com.example.igboamaka.quiz.numbers.NumberQuiz;
-import com.example.igboamaka.quiz.numbers.NumberQuizAdapter;
 import com.google.android.material.card.MaterialCardView;
 
 import java.util.List;
 
 public class FamilyQuizAdapter extends RecyclerView.Adapter<FamilyQuizAdapter.ViewHolder> {
 
-    List<FamilyQuiz> familyQuiz;
-    private Context context;
-    private ViewPager2 mViewPager2;
+    final List<FamilyQuiz> familyQuiz;
+    private final Context context;
 
     public FamilyQuizAdapter(List<FamilyQuiz> familyQuiz, Context context, ViewPager2 viewPager2) {
         this.familyQuiz = familyQuiz;
         this.context = context;
-        mViewPager2 = viewPager2;
     }
 
     @NonNull
@@ -88,11 +84,20 @@ public class FamilyQuizAdapter extends RecyclerView.Adapter<FamilyQuizAdapter.Vi
     }
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
-        TextView questionCounter;
-        TextView question;
-        TextView option1, option2, option3, option4;
-        MaterialCardView option1Colour, option2Colour, option3Colour, option4Colour;
-        ImageView family_image1, family_image2, family_image3, family_image4;
+        final TextView questionCounter;
+        final TextView question;
+        final TextView option1;
+        final TextView option2;
+        final TextView option3;
+        final TextView option4;
+        final MaterialCardView option1Colour;
+        final MaterialCardView option2Colour;
+        final MaterialCardView option3Colour;
+        final MaterialCardView option4Colour;
+        final ImageView family_image1;
+        final ImageView family_image2;
+        final ImageView family_image3;
+        final ImageView family_image4;
 
 
         public ViewHolder(@NonNull View itemView) {

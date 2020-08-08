@@ -6,9 +6,7 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
-import com.example.igboamaka.home.sentences.GreetingsFragment;
-import com.example.igboamaka.home.sentences.SentencesFragment;
-
+@SuppressWarnings({"ALL", "deprecation", "ConstantConditions"})
 public class NamesPagerAdapter extends FragmentPagerAdapter {
 
     public NamesPagerAdapter(@NonNull FragmentManager fm) {

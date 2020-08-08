@@ -2,13 +2,11 @@ package com.example.igboamaka.funfacts;
 
 import android.content.Context;
 import android.content.Intent;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 
@@ -26,8 +24,8 @@ import java.util.List;
 
 public class FunFactsAdapter extends PagerAdapter {
 
-    List<FunFacts> funFacts;
-    Context mContext;
+    final List<FunFacts> funFacts;
+    final Context mContext;
 
     public FunFactsAdapter(List<FunFacts> funFacts, Context context) {
         this.funFacts = funFacts;

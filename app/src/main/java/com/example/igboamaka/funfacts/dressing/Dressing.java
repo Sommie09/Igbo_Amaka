@@ -1,9 +1,9 @@
 package com.example.igboamaka.funfacts.dressing;
 
 public class Dressing {
-    private int dressing_image;
-    private String dressing_type;
-    private String dressing_description;
+    private final int dressing_image;
+    private final String dressing_type;
+    private final String dressing_description;
 
     public Dressing(int dressing_image, String dressing_type, String dressing_description) {
         this.dressing_image = dressing_image;
