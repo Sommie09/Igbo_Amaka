@@ -52,8 +52,8 @@ public class KitchenFragment extends Fragment {
 
 
         houseHoldList.add(new HouseHold("Knife", "mma", Color.parseColor("#B13254"), R.raw.knife));
-        houseHoldList.add(new HouseHold("Food", "Nri",Color.parseColor("#FF5449"), R.raw.food));
-        houseHoldList.add(new HouseHold("Pot", "Ite",Color.parseColor("#FF9249"), R.raw.pot));
+        houseHoldList.add(new HouseHold("Food", "nri",Color.parseColor("#FF5449"), R.raw.food));
+        houseHoldList.add(new HouseHold("Pot", "Ite",Color.parseColor("#471437"), R.raw.pot));
 
         houseHoldList.add(new HouseHold("Refrigerator", "Igbe-ntuoyi",Color.parseColor("#FF7349"), R.raw.fridge));
         houseHoldList.add(new HouseHold("Kolanut", "ọji",Color.parseColor("#471437"), R.raw.kolanut));
