@@ -137,6 +137,7 @@
                 android:layout_margin="10dp"
                 android:clickable="true"
                 android:focusable="true"
+                android:contentDescription="@string/bodyparts_card_quiz"
                 app:cardBackgroundColor="@color/pale_yellow"
                 app:cardCornerRadius="15dp"
                 app:rippleColor="@color/white_colour">

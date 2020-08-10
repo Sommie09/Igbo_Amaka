@@ -56,4 +56,16 @@
     <string name="cloths_in_the_land_have_a_significant_meaning_or_purpose">Cloths in the land have a significant meaning or purpose</string>
     <string name="kedu">Kedu</string>
     <string name="how_are_you">How are you?</string>
+    <string name="animal_quiz_option3">animal_quiz_option3</string>
+    <string name="bodyparts_card_quiz">bodyparts_card_quiz</string>
+    <string name="colours_option3">colours_option3</string>
+    <string name="greetings_speaker">greetings_speaker</string>
+    <string name="animal_image">animal_image</string>
+    <string name="family_image">family_image</string>
+    <string name="food_image">food_image</string>
+    <string name="fun_facts_image">fun_facts_image</string>
+    <string name="proverbs_speaker">proverbs_speaker</string>
+    <string name="igbo_design">igbo_design</string>
+    <string name="igbo_design_right">igbo_design_right</string>
+    <string name="animal_speaker">animal_speaker</string>
 </resources>

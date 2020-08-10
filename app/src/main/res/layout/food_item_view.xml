@@ -24,7 +24,7 @@
                 android:layout_height="150dp"
                 android:scaleType="centerCrop"
                 android:src="@drawable/abacha"
-                android:contentDescription="@string/todo"
+                android:contentDescription="@string/food_image"
                 tools:ignore="ContentDescription">
             </ImageView>
 

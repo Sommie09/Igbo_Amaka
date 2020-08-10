@@ -10,7 +10,7 @@
     app:cardPreventCornerOverlap="true"
     app:cardUseCompatPadding="true"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="90dp">
 
     <RelativeLayout
         android:padding="15dp"

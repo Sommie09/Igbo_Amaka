@@ -171,8 +171,9 @@
 
                 <TextView
                     android:id="@+id/sentence_option4Text"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="50dp"
+                    android:layout_height="48dp"
+                    android:gravity="center"
                     android:layout_gravity="center"
                     android:fontFamily="@font/lato_regular"
                     android:text="@string/colours"

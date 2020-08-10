@@ -10,7 +10,7 @@
     app:cardPreventCornerOverlap="true"
     app:cardUseCompatPadding="true"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="110dp">
 
     <RelativeLayout
         android:padding="15dp"
@@ -29,7 +29,7 @@
                 android:id="@+id/animal_image"
                 android:src="@drawable/dog_image"
                 android:scaleType="centerCrop"
-                android:contentDescription="@string/todo"
+                android:contentDescription="@string/animal_image"
                 tools:ignore="ContentDescription">
             </ImageView>
 
@@ -79,7 +79,7 @@
         android:src="@drawable/ic_baseline_volume_up_24"
         android:layout_width="20dp"
         android:layout_height="20dp"
-        android:contentDescription="@string/todo"
+        android:contentDescription="@string/animal_speaker"
         tools:ignore="ContentDescription">
     </ImageView>
 

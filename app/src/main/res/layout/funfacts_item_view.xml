@@ -44,8 +44,7 @@
                         android:layout_height="match_parent"
                         android:scaleType="centerCrop"
                         android:src="@drawable/igbo_women"
-                        android:contentDescription="TODO"
-                        tools:ignore="ContentDescription,HardcodedText">
+                        android:contentDescription="@string/fun_facts_image">
 
                     </ImageView>
 

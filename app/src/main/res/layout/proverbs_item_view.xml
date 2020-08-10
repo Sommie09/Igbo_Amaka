@@ -22,7 +22,7 @@
             android:layout_gravity="center"
             android:layout_width="10dp"
             android:layout_height="10dp"
-            android:contentDescription="@string/todo"
+            android:contentDescription="@string/proverbs_speaker"
             tools:ignore="ContentDescription">
 
         </ImageView>

@@ -10,7 +10,7 @@
     app:cardPreventCornerOverlap="true"
     app:cardUseCompatPadding="true"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="100dp">
 
     <RelativeLayout
         android:padding="15dp"
@@ -29,7 +29,7 @@
                 android:id="@+id/family_image"
                 android:src="@drawable/family_father"
                 android:scaleType="fitCenter"
-                android:contentDescription="@string/todo"
+                android:contentDescription="@string/family_image"
                 tools:ignore="ContentDescription">
             </ImageView>
 

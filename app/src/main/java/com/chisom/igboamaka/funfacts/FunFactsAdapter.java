@@ -77,7 +77,6 @@ public class FunFactsAdapter extends PagerAdapter {
                         Intent foodIntent = new Intent(mContext, FoodActivity.class);
                         mContext.startActivity(foodIntent);
                         break;
-
                         case 3:
                         Intent statesIntent = new Intent(mContext, StateActivity.class);
                         mContext.startActivity(statesIntent);
