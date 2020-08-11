@@ -66,8 +66,8 @@ public class SentencesFragment extends Fragment {
         sentences.add(new Sentences("You are tall", "Ị toro ogologo", Color.parseColor("#B13254"),R.raw.tallyou));
 
         sentences.add(new Sentences("Go straight", "gaba n'iru",Color.parseColor("#FF7349"),R.raw.moveforward));
-        sentences.add(new Sentences("Turn left", "ba na aka-nri",Color.parseColor("#471437"),R.raw.left));
-        sentences.add(new Sentences("Turn right", "ba na aka-ekpe", Color.parseColor("#B13254"),R.raw.right));
+        sentences.add(new Sentences("Turn left", "ba na aka-nri",Color.parseColor("#471437"),R.raw.right));
+        sentences.add(new Sentences("Turn right", "ba na aka-ekpe", Color.parseColor("#B13254"),R.raw.left));
 
         sentences.add(new Sentences("I need a doctor", "a chọrọ m dibia oyibo", Color.parseColor("#B13254"),R.raw.doctor));
         sentences.add(new Sentences("It was nice talking to you", "ọ maka ikpara gị nkata",Color.parseColor("#FF5449"),R.raw.nicemeetingyou));
