@@ -95,13 +95,16 @@
         android:layout_height="191dp"
         android:layout_marginTop="16dp"
         android:layout_marginBottom="51dp"
+        android:contentDescription="@string/todo"
         android:scaleType="centerCrop"
         android:src="@drawable/ic_baseline_bubble_chart_24"
         android:tint="@color/pale_yellow"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.535"
+        app:layout_constraintStart_toEndOf="@+id/textView"
         app:layout_constraintTop_toTopOf="parent"
-        android:contentDescription="@string/todo"
+        app:layout_constraintVertical_bias="0.0"
         tools:ignore="ContentDescription" />
 
 

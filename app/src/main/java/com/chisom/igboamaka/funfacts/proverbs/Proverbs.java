@@ -4,13 +4,19 @@ public class Proverbs {
     private final String igboProverb;
     private final String englishProverb;
     private final int profileBackgroundColour;
-    private final int audio;
+    private int audio;
 
     public Proverbs(String igboProverb, String englishProverb, int profileBackgroundColour, int audio) {
         this.igboProverb = igboProverb;
         this.englishProverb = englishProverb;
         this.profileBackgroundColour = profileBackgroundColour;
         this.audio = audio;
+    }
+
+    public Proverbs(String igboProverb, String englishProverb, int profileBackgroundColour) {
+        this.igboProverb = igboProverb;
+        this.englishProverb = englishProverb;
+        this.profileBackgroundColour = profileBackgroundColour;
     }
 
     public String getIgboProverb() {

@@ -75,10 +75,10 @@ public class BodyPartsQuizFragment extends Fragment {
                     Color.RED,
                     Color.RED,
                     Color.RED,
-                    "ise",
-                    "abụọ",
-                    "isii",
-                    "asato"));
+                    "Ọnụ",
+                    "Olu",
+                    "Aka",
+                    "Obi"));
 
 
         bodyPartsQuiz.add(new BodyPartsQuiz(
@@ -88,10 +88,10 @@ public class BodyPartsQuizFragment extends Fragment {
                     Color.RED,
                     Color.RED,
                     Color.GREEN,
-                    "nari anọ",
-                    "otu puku",
-                    "otu nnari",
-                    "otu ijeri"));
+                    "Mbọ",
+                    "Ọba ụkwụ",
+                    "Iku anya",
+                    "ánya"));
 
 
         bodyPartsQuiz.add(new BodyPartsQuiz(
@@ -101,10 +101,10 @@ public class BodyPartsQuizFragment extends Fragment {
                     Color.GREEN,
                     Color.RED,
                     Color.RED,
-                    "ise",
-                    "anọ",
-                    "ise",
-                    "asato"));
+                    "Iku anya",
+                    "Ụkwụ/Ọkpa",
+                    "Ike",
+                    "Aka"));
 
         bodyPartsQuiz.add(new BodyPartsQuiz(
                     "Question 4/6",
@@ -113,10 +113,10 @@ public class BodyPartsQuizFragment extends Fragment {
                     Color.RED,
                     Color.RED,
                     Color.GREEN,
-                    "iri na atọ",
-                    "iri abụọ",
-                    "iri atọ",
-                    "iri na anọ"));
+                    "Ire",
+                    "Mkpịsị ụkwụ",
+                    "Olu",
+                    "Aka"));
 
         bodyPartsQuiz.add(new BodyPartsQuiz(
                     "Question 5/6",
@@ -125,10 +125,10 @@ public class BodyPartsQuizFragment extends Fragment {
                     Color.GREEN,
                     Color.RED,
                     Color.RED,
-                    "ise",
-                    "abụọ",
-                    "iri na itoolu",
-                    "otu puku"));
+                    "Imi",
+                    "Ntị",
+                    "Anya",
+                    "Obi"));
 
         bodyPartsQuiz.add(new BodyPartsQuiz(
                     "Question 6/6",
@@ -137,10 +137,10 @@ public class BodyPartsQuizFragment extends Fragment {
                     Color.GREEN,
                     Color.RED,
                     Color.RED,
-                    "iri abụọ na otu",
-                    "iri atọ",
-                    "iri abụọ na itoolu",
-                    "iri na otu"));
+                    "Olu",
+                    "Imi",
+                    "Afọ",
+                    "Ọba ụkwụ"));
 
 
 

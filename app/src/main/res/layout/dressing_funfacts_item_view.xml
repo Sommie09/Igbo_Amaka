@@ -7,7 +7,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <com.google.android.material.card.MaterialCardView
-        android:backgroundTint="@color/orange_pink"
+        android:backgroundTint="@color/pink_red"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:cardCornerRadius="50dp"

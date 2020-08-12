@@ -4,5 +4,4 @@
     android:animationOrder="normal"
     android:interpolator="@android:anim/accelerate_decelerate_interpolator"
     android:delay="15%">
-
 </layoutAnimation>

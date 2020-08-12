@@ -71,7 +71,7 @@ public class ColourQuizFragment extends Fragment {
 
         colourQuiz.add(new ColourQuiz(
                 "Question 1/15",
-                "I have \"five\" fingers",
+                "I have five fingers",
                 Color.GREEN,
                 Color.RED,
                 Color.RED,
@@ -86,7 +86,7 @@ public class ColourQuizFragment extends Fragment {
 
         colourQuiz.add(new ColourQuiz(
                 "Question 2/5",
-                "My neighbour just won a \"thousand' dollars",
+                "My neighbour just won a thousand dollars",
                 Color.RED,
                 Color.RED,
                 Color.RED,
@@ -101,7 +101,7 @@ public class ColourQuizFragment extends Fragment {
 
         colourQuiz.add(new ColourQuiz(
                 "Question 3/5",
-                "I have \"four\" siblings",
+                "I have four siblings",
                 Color.RED,
                 Color.GREEN,
                 Color.RED,
@@ -115,7 +115,7 @@ public class ColourQuizFragment extends Fragment {
 
         colourQuiz.add(new ColourQuiz(
                 "Question 4/5",
-                "I bought \"fourteen\" bags of rice",
+                "I bought fourteen bags of rice",
                 Color.RED,
                 Color.RED,
                 Color.RED,
@@ -129,7 +129,7 @@ public class ColourQuizFragment extends Fragment {
 
         colourQuiz.add(new ColourQuiz(
                 "Question 5/5",
-                "I just took \"two\" gallons \nof palm wine",
+                "I just took two gallons \nof palm wine",
                 Color.RED,
                 Color.GREEN,
                 Color.RED,

@@ -52,7 +52,7 @@ public class ProverbsActivity extends AppCompatActivity {
         proverbs.add(new Proverbs("Okuko nyuo ahu, ana achuwa ya oso", "When the fowl farts, the ground becomes a nuisance",Color.parseColor("#FF9249"),R.raw.okukooho));
 
         proverbs.add(new Proverbs("Ohia woro gi nku, sere gi onu", "The forest that denies you firewood has massaged your neck",Color.parseColor("#FF7349"),R.raw.forest));
-        proverbs.add(new Proverbs("Okuko mmanya na-egbu ahubegh i mmanwulu ara na-ayi", "A drunken fowl has not met a mad fox",Color.parseColor("#471437"),R.raw.drunkenfowl));
+        proverbs.add(new Proverbs("Okuko mmanya na-egbu ahubegh i \nmmanwulu ara na-ayi", "A drunken fowl has not met a mad fox",Color.parseColor("#471437"),R.raw.drunkenfowl));
         proverbs.add(new Proverbs("Onye si na ya anaghi ata anu nkita, \nya arakwala mmiri ofe ya", "He who abhors dog meat should not eat \ndog-meat soup", Color.parseColor("#B13254"),R.raw.dog_meat));
 
         proverbs.add(new Proverbs(" A tuoro omara, o mara, a tuoro \nofeke, o fenye ishi n'ohia", "If you tell a wise one, he understands; tell a \ndunce, he runs into the bush", Color.parseColor("#B13254"),R.raw.wiseone));
@@ -63,7 +63,7 @@ public class ProverbsActivity extends AppCompatActivity {
         proverbs.add(new Proverbs("O ji ngaji eri chetakwa ndi ji aka", "He who eats with spoon should remember \nthose who uses hand to eat",Color.parseColor("#471437"),R.raw.ngaji));
         proverbs.add(new Proverbs("Ara ga gba ndi ara", "Lunatics shall soon run mad", Color.parseColor("#B13254"),R.raw.lunatics));
 
-        proverbs.add(new Proverbs("Ewere otutu cho ewu ojii tupu \nabali eruo", "Look for a black goat during the day before \nthe night comes.",Color.parseColor("#FF9249"),R.raw.goat));
+        proverbs.add(new Proverbs("Ewere otutu cho ewu ojii tupu \nabali eruo", "Look for a black goat during the day before \nthe night comes.",Color.parseColor("#FF9249")));
 
         ProverbsAdapter.RecyclerViewClickListener listener = new ProverbsAdapter.RecyclerViewClickListener() {
             @Override
